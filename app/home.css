@@ -1,0 +1,139 @@
+body:has(.home) { overflow: hidden; }
+
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Stage fills everything under the header */
+.stage {
+  position: relative;
+  flex: 1 1 auto;
+  overflow: hidden;
+  background: var(--ivory);
+}
+
+.track {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  transition: transform 0.85s cubic-bezier(0.65, 0, 0.12, 1);
+}
+
+.slide {
+  flex: 0 0 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1.04fr 1fr;
+}
+
+.slide__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(28px, 6vw, 96px);
+  padding-right: clamp(28px, 5vw, 80px);
+}
+.slide__content .inner { max-width: 480px; }
+
+.slide__media { position: relative; }
+.slide__media .ph { position: absolute; inset: 0; }
+/* cover keeps each photo's own aspect ratio and crops to the panel; a per-photo
+   focal point (object-position) keeps the subject in frame as the panel reshapes
+   across devices. Default sits on the subject band; override per image below. */
+.slide__media .ph-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 42%; }
+
+/* Slide entrance */
+.slide .anim {
+  opacity: 0;
+  transform: translateY(18px);
+}
+.slide.is-active .anim {
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.2,0.7,0.2,1);
+}
+.slide.is-active .anim.d1 { transition-delay: 0.12s; }
+.slide.is-active .anim.d2 { transition-delay: 0.22s; }
+.slide.is-active .anim.d3 { transition-delay: 0.32s; }
+.slide.is-active .anim.d4 { transition-delay: 0.42s; }
+@media (prefers-reduced-motion: reduce) {
+  .slide .anim { opacity: 1; transform: none; }
+}
+
+.lead { font-family: var(--serif); font-size: clamp(2.6rem, 5vw, 4.6rem); line-height: 1; letter-spacing: -0.01em; margin: 18px 0 0; }
+.lead em { font-style: italic; color: var(--accent-d); }
+.sub { margin-top: 22px; color: var(--ink-soft); font-size: 1.04rem; max-width: 42ch; }
+.actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+
+/* price chip */
+.price-row { display: flex; align-items: baseline; gap: 14px; margin-top: 26px; }
+.price { font-family: var(--serif); font-size: 3.4rem; line-height: 1; }
+.price sup { font-size: 1.4rem; top: -1.1em; margin-right: 1px; }
+.price-note { color: var(--muted); font-size: 0.86rem; letter-spacing: 0.04em; }
+
+.mini-list { list-style: none; margin-top: 22px; display: grid; gap: 9px; }
+.mini-list li { display: flex; align-items: center; gap: 11px; font-size: 0.96rem; color: var(--ink-soft); }
+.mini-list li::before { content: ''; width: 6px; height: 6px; flex: none; transform: rotate(45deg); background: var(--accent); }
+
+/* Coming-soon trio slide */
+.trio-slide { grid-template-columns: 1fr; }
+.trio-wrap { display: flex; flex-direction: column; justify-content: center; padding: clamp(28px, 5vw, 70px) clamp(24px, 5vw, 64px); }
+.trio-head { text-align: center; margin-bottom: clamp(20px, 3vw, 40px); }
+.trio-head .lead { font-size: clamp(2.2rem, 4vw, 3.4rem); }
+.trio { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(16px, 2.4vw, 30px); }
+.trio-card { display: flex; flex-direction: column; }
+.trio-card .ph { aspect-ratio: 4 / 5; height: clamp(261.36px, 37.75vh, 435.6px); }
+.ph-fill { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.trio-meta { margin-top: 16px; }
+.trio-meta h3 { font-size: 1.7rem; }
+.trio-meta .tag { display: inline-block; margin-top: 4px; font-size: 0.66rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); }
+
+/* Controls */
+.arrow {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  z-index: 12;
+  width: 52px; height: 52px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: color-mix(in oklab, var(--paper) 80%, transparent);
+  border: 1px solid var(--line-2);
+  cursor: pointer; color: var(--ink);
+  transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease;
+}
+.arrow:hover { background: var(--ink); color: var(--paper); }
+.arrow:active { transform: translateY(-50%) scale(0.94); }
+.arrow--prev { left: clamp(14px, 2.2vw, 30px); }
+.arrow--next { right: clamp(14px, 2.2vw, 30px); }
+.arrow svg { width: 18px; height: 18px; }
+.arrow[disabled] { opacity: 0.32; pointer-events: none; }
+
+.dots {
+  position: absolute; left: 50%; bottom: 26px; transform: translateX(-50%);
+  z-index: 12;
+  display: flex; align-items: center; gap: 14px;
+}
+.dot {
+  width: 9px; height: 9px; border-radius: 50%;
+  border: 1px solid var(--line-2); background: transparent;
+  cursor: pointer; padding: 0;
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+.dot.is-active { background: var(--accent); border-color: var(--accent); transform: scale(1.25); }
+
+.counter {
+  position: absolute; right: clamp(20px, 4vw, 48px); bottom: 24px; z-index: 12;
+  font-family: var(--serif); font-size: 1.05rem; color: var(--muted); letter-spacing: 0.08em;
+}
+.counter b { color: var(--ink); font-weight: 500; }
+
+@media (max-width: 880px) {
+  .slide { grid-template-columns: 1fr; }
+  .slide__media { display: none; }
+  .slide__content { padding: clamp(28px, 8vw, 60px); text-align: left; }
+  .trio { grid-template-columns: 1fr; gap: 14px; }
+  .trio-card { flex-direction: row; align-items: center; gap: 16px; }
+  .trio-card .ph { width: 92px; height: 92px; aspect-ratio: 1; flex: none; }
+  .trio-meta { margin-top: 0; }
+  .arrow { width: 44px; height: 44px; }
+}

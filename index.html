@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>mywedding.events — Your wedding, beautifully organized</title>
+<link rel="stylesheet" href="styles.css" />
+<style>
+  body { overflow: hidden; }
+
+  .home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Stage fills everything under the header */
+  .stage {
+    position: relative;
+    flex: 1 1 auto;
+    overflow: hidden;
+    background: var(--ivory);
+  }
+
+  .track {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.85s cubic-bezier(0.65, 0, 0.12, 1);
+  }
+
+  .slide {
+    flex: 0 0 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1.04fr 1fr;
+  }
+
+  .slide__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(28px, 6vw, 96px);
+    padding-right: clamp(28px, 5vw, 80px);
+  }
+  .slide__content .inner { max-width: 480px; }
+
+  .slide__media { position: relative; }
+  .slide__media .ph { position: absolute; inset: 0; }
+  /* cover keeps each photo's own aspect ratio and crops to the panel; a per-photo
+     focal point (object-position) keeps the subject in frame as the panel reshapes
+     across devices. Default sits on the subject band; override per image below. */
+  .slide__media .ph-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 42%; }
+
+  /* Slide entrance */
+  .slide .anim {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  .slide.is-active .anim {
+    opacity: 1;
+    transform: none;
+    transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.2,0.7,0.2,1);
+  }
+  .slide.is-active .anim.d1 { transition-delay: 0.12s; }
+  .slide.is-active .anim.d2 { transition-delay: 0.22s; }
+  .slide.is-active .anim.d3 { transition-delay: 0.32s; }
+  .slide.is-active .anim.d4 { transition-delay: 0.42s; }
+  @media (prefers-reduced-motion: reduce) {
+    .slide .anim { opacity: 1; transform: none; }
+  }
+
+  .lead { font-family: var(--serif); font-size: clamp(2.6rem, 5vw, 4.6rem); line-height: 1; letter-spacing: -0.01em; margin: 18px 0 0; }
+  .lead em { font-style: italic; color: var(--accent-d); }
+  .sub { margin-top: 22px; color: var(--ink-soft); font-size: 1.04rem; max-width: 42ch; }
+  .actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+
+  /* price chip */
+  .price-row { display: flex; align-items: baseline; gap: 14px; margin-top: 26px; }
+  .price { font-family: var(--serif); font-size: 3.4rem; line-height: 1; }
+  .price sup { font-size: 1.4rem; top: -1.1em; margin-right: 1px; }
+  .price-note { color: var(--muted); font-size: 0.86rem; letter-spacing: 0.04em; }
+
+  .mini-list { list-style: none; margin-top: 22px; display: grid; gap: 9px; }
+  .mini-list li { display: flex; align-items: center; gap: 11px; font-size: 0.96rem; color: var(--ink-soft); }
+  .mini-list li::before { content: ''; width: 6px; height: 6px; flex: none; transform: rotate(45deg); background: var(--accent); }
+
+  /* Coming-soon trio slide */
+  .trio-slide { grid-template-columns: 1fr; }
+  .trio-wrap { display: flex; flex-direction: column; justify-content: center; padding: clamp(28px, 5vw, 70px) clamp(24px, 5vw, 64px); }
+  .trio-head { text-align: center; margin-bottom: clamp(20px, 3vw, 40px); }
+  .trio-head .lead { font-size: clamp(2.2rem, 4vw, 3.4rem); }
+  .trio { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(16px, 2.4vw, 30px); }
+  .trio-card { display: flex; flex-direction: column; }
+  .trio-card .ph { aspect-ratio: 4 / 5; height: clamp(261.36px, 37.75vh, 435.6px); }
+  .ph-fill { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .trio-meta { margin-top: 16px; }
+  .trio-meta h3 { font-size: 1.7rem; }
+  .trio-meta .tag { display: inline-block; margin-top: 4px; font-size: 0.66rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); }
+
+  /* Controls */
+  .arrow {
+    position: absolute; top: 50%; transform: translateY(-50%);
+    z-index: 12;
+    width: 52px; height: 52px; border-radius: 50%;
+    display: grid; place-items: center;
+    background: color-mix(in oklab, var(--paper) 80%, transparent);
+    border: 1px solid var(--line-2);
+    cursor: pointer; color: var(--ink);
+    transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease;
+  }
+  .arrow:hover { background: var(--ink); color: var(--paper); }
+  .arrow:active { transform: translateY(-50%) scale(0.94); }
+  .arrow--prev { left: clamp(14px, 2.2vw, 30px); }
+  .arrow--next { right: clamp(14px, 2.2vw, 30px); }
+  .arrow svg { width: 18px; height: 18px; }
+  .arrow[disabled] { opacity: 0.32; pointer-events: none; }
+
+  .dots {
+    position: absolute; left: 50%; bottom: 26px; transform: translateX(-50%);
+    z-index: 12;
+    display: flex; align-items: center; gap: 14px;
+  }
+  .dot {
+    width: 9px; height: 9px; border-radius: 50%;
+    border: 1px solid var(--line-2); background: transparent;
+    cursor: pointer; padding: 0;
+    transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+  }
+  .dot.is-active { background: var(--accent); border-color: var(--accent); transform: scale(1.25); }
+
+  .counter {
+    position: absolute; right: clamp(20px, 4vw, 48px); bottom: 24px; z-index: 12;
+    font-family: var(--serif); font-size: 1.05rem; color: var(--muted); letter-spacing: 0.08em;
+  }
+  .counter b { color: var(--ink); font-weight: 500; }
+
+  @media (max-width: 880px) {
+    .slide { grid-template-columns: 1fr; }
+    .slide__media { display: none; }
+    .slide__content { padding: clamp(28px, 8vw, 60px); text-align: left; }
+    .trio { grid-template-columns: 1fr; gap: 14px; }
+    .trio-card { flex-direction: row; align-items: center; gap: 16px; }
+    .trio-card .ph { width: 92px; height: 92px; aspect-ratio: 1; flex: none; }
+    .trio-meta { margin-top: 0; }
+    .arrow { width: 44px; height: 44px; }
+  }
+</style>
+</head>
+<body>
+<div class="home" data-screen-label="Home">
+
+  <!-- Header -->
+  <header class="site-header site-header--center">
+    <nav class="nav">
+      <a class="nav-link" href="invitation.html"><span class="nav-label">Digital Invitation</span></a>
+      <a class="nav-link" href="photo-qr.html"><span class="nav-label">Guest Photo QR</span><span class="nav-tag nav-tag--free">Free</span></a>
+      <span class="nav-link is-disabled"><span class="nav-label nav-tag-host">Photographers</span><span class="nav-tag nav-tag--soon">Coming Soon</span></span>
+      <span class="nav-link is-disabled"><span class="nav-label">Restaurants</span><span class="nav-tag nav-tag--soon">Coming Soon</span></span>
+      <span class="nav-link is-disabled"><span class="nav-label">Musicians</span><span class="nav-tag nav-tag--soon">Coming Soon</span></span>
+    </nav>
+  </header>
+
+  <!-- Slider stage -->
+  <div class="stage">
+    <div class="track" id="track">
+
+      <!-- Slide 1 — Welcome -->
+      <section class="slide is-active" data-screen-label="Slide 01 — Welcome">
+        <div class="slide__content">
+          <div class="inner">
+            <p class="eyebrow anim d1">Beautiful weddings, beautifully organized</p>
+            <h1 class="lead anim d2">Your wedding,<br />in one <em>elegant</em> place.</h1>
+            <p class="sub anim d3">Send a digital invitation guests will adore, collect every shared photo with a single QR code, and—soon—book the people who make the day. All under one calm, considered roof.</p>
+            <div class="actions anim d4">
+              <a class="btn btn--accent" href="invitation.html">Create your invitation</a>
+              <a class="btn btn--ghost" href="photo-qr.html">Guest Photo QR</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide__media">
+          <img class="ph-img" style="object-position: 50% 40%;" src="images/couple-portrait-new.png" alt="A couple walking a whitewashed Santorini path above the caldera" />
+        </div>
+      </section>
+
+      <!-- Slide 2 — Digital Invitation -->
+      <section class="slide" data-screen-label="Slide 02 — Digital Invitation">
+        <div class="slide__content">
+          <div class="inner">
+            <p class="eyebrow anim d1">Digital Invitation</p>
+            <h1 class="lead anim d2">An invitation<br />worthy of the <em>day</em>.</h1>
+            <div class="price-row anim d3">
+              <span class="price"><sup>$</sup>99</span>
+              <span class="price-note">one-time · unlimited invitees</span>
+            </div>
+            <ul class="mini-list anim d3">
+              <li>Customized to your style, with location, map & music</li>
+              <li>RSVP management with an email after every reply</li>
+              <li>A custom link for each invitee</li>
+            </ul>
+            <div class="actions anim d4">
+              <a class="btn" href="invitation.html">See everything included</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide__media">
+          <img class="ph-img" style="object-position: center;" src="images/invitation-phone-new2.png" alt="A digital wedding invitation shown on a phone held in hand" />
+        </div>
+      </section>
+
+      <!-- Slide 3 — Guest Photo QR -->
+      <section class="slide" data-screen-label="Slide 03 — Guest Photo QR">
+        <div class="slide__content">
+          <div class="inner">
+            <p class="eyebrow anim d1">Guest Photo QR · <span class="serif-italic" style="text-transform:none;letter-spacing:0;font-size:1.2em;">Free</span></p>
+            <h1 class="lead anim d2">Every photo,<br />from <em>every</em> guest.</h1>
+            <p class="sub anim d3">One little QR code on each table. Guests scan, upload the moments they captured, and your whole wedding gallery fills itself—no apps, no chasing, no cost.</p>
+            <div class="actions anim d4">
+              <a class="btn btn--accent" href="photo-qr.html">How it works</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide__media">
+          <img class="ph-img" style="object-position: 45% 46%;" src="images/photo-qr-hero.png" alt="A guest scanning a 'Capture the Love' table card QR code with their phone" />
+        </div>
+      </section>
+
+      <!-- Slide 4 — Coming soon -->
+      <section class="slide trio-slide" data-screen-label="Slide 04 — Coming Soon">
+        <div class="trio-wrap">
+          <div class="trio-head">
+            <p class="eyebrow anim d1">On the way</p>
+            <h1 class="lead anim d2">The people who make <em>the day</em>.</h1>
+          </div>
+          <div class="trio">
+            <article class="trio-card anim d3">
+              <div class="ph"><img class="ph-fill" src="images/photographer.png" alt="Photographer capturing a couple"></div>
+              <div class="trio-meta"><h3>Photographers</h3><span class="tag">Coming Soon</span></div>
+            </article>
+            <article class="trio-card anim d3">
+              <div class="ph"><img class="ph-fill" src="images/restaurant.png" alt="Elegant reception table setting"></div>
+              <div class="trio-meta"><h3>Restaurants</h3><span class="tag">Coming Soon</span></div>
+            </article>
+            <article class="trio-card anim d4">
+              <div class="ph"><img class="ph-fill" style="object-position: 72% center;" src="images/musicians.png" alt="A singer performing at a wedding amid candles and white roses"></div>
+              <div class="trio-meta"><h3>Musicians</h3><span class="tag">Coming Soon</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="arrow arrow--prev" id="prev" aria-label="Previous">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <button class="arrow arrow--next" id="next" aria-label="Next">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M9 5l7 7-7 7"/></svg>
+    </button>
+
+    <div class="dots" id="dots"></div>
+    <div class="counter"><b id="cur">01</b> / <span id="total">04</span></div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    const track  = document.getElementById('track');
+    const slides = Array.from(track.children);
+    const prev   = document.getElementById('prev');
+    const next   = document.getElementById('next');
+    const dotsEl = document.getElementById('dots');
+    const curEl  = document.getElementById('cur');
+    const n = slides.length;
+    let i = 0;
+
+    document.getElementById('total').textContent = String(n).padStart(2, '0');
+
+    // dots
+    slides.forEach((_, idx) => {
+      const b = document.createElement('button');
+      b.className = 'dot' + (idx === 0 ? ' is-active' : '');
+      b.setAttribute('aria-label', 'Go to slide ' + (idx + 1));
+      b.addEventListener('click', () => go(idx));
+      dotsEl.appendChild(b);
+    });
+    const dots = Array.from(dotsEl.children);
+
+    function go(idx) {
+      i = Math.max(0, Math.min(n - 1, idx));
+      track.style.transform = 'translateX(' + (-i * 100) + '%)';
+      slides.forEach((s, k) => s.classList.toggle('is-active', k === i));
+      dots.forEach((d, k) => d.classList.toggle('is-active', k === i));
+      curEl.textContent = String(i + 1).padStart(2, '0');
+      prev.disabled = i === 0;
+      next.disabled = i === n - 1;
+      localStorage.setItem('mwe_home_slide', String(i));
+    }
+
+    prev.addEventListener('click', () => go(i - 1));
+    next.addEventListener('click', () => go(i + 1));
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') go(i + 1);
+      if (e.key === 'ArrowLeft')  go(i - 1);
+    });
+
+    // wheel / trackpad advances slides instead of scrolling
+    let wheelLock = false;
+    window.addEventListener('wheel', (e) => {
+      if (wheelLock) return;
+      const d = Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY;
+      if (Math.abs(d) < 12) return;
+      wheelLock = true;
+      go(i + (d > 0 ? 1 : -1));
+      setTimeout(() => { wheelLock = false; }, 850);
+    }, { passive: true });
+
+    // touch swipe
+    let x0 = null;
+    window.addEventListener('touchstart', (e) => { x0 = e.touches[0].clientX; }, { passive: true });
+    window.addEventListener('touchend', (e) => {
+      if (x0 === null) return;
+      const dx = e.changedTouches[0].clientX - x0;
+      if (Math.abs(dx) > 45) go(i + (dx < 0 ? 1 : -1));
+      x0 = null;
+    }, { passive: true });
+
+    const saved = parseInt(localStorage.getItem('mwe_home_slide') || '0', 10);
+    go(Number.isFinite(saved) ? saved : 0);
+  })();
+</script>
+</body>
+</html>

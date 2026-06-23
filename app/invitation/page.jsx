@@ -33,7 +33,7 @@ export default function InvitationPage() {
           </div>
         </div>
         <div className="hero__media">
-          <div className="ph" data-label="invitation suite — flat lay"></div>
+          <img className="hero__media-img" src="/images/invitation-phone-new2.png" alt="A digital wedding invitation shown on a phone held in hand" />
         </div>
       </div>
 

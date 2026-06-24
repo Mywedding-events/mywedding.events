@@ -86,7 +86,7 @@ export default function Slider() {
         <section className={slideClass(1)} data-screen-label="Slide 02 — Digital Invitation">
           <div className="slide__content">
             <div className="inner">
-              <p className="eyebrow anim d1">Digital Invitation</p>
+              <p className="eyebrow anim d1">Digital Wedding Invitation</p>
               <h1 className="lead anim d2">An invitation<br />worthy of the <em>day</em>.</h1>
               <div className="price-row anim d3">
                 <span className="price"><sup>$</sup>99</span>

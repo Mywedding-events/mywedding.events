@@ -4,7 +4,99 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  title: 'Digital Invitation — mywedding.events',
+  title: 'Digital Wedding Invitation — Customized & Elegant, $99',
+  description:
+    'A beautifully crafted digital wedding invitation tailored to your story. Unlimited invitees, RSVP management, custom guest links, location & map, music, and a free Guest Photo QR — one-time $99.',
+  keywords: [
+    'digital wedding invitation',
+    'digital wedding invitations',
+    'online wedding invitation',
+    'electronic wedding invitation',
+    'custom digital wedding invitation',
+    'wedding invite online',
+    'wedding RSVP management',
+    'paperless wedding invitation',
+  ],
+  alternates: { canonical: '/invitation' },
+  openGraph: {
+    url: '/invitation',
+    title: 'Digital Wedding Invitation — Customized & Elegant, $99',
+    description:
+      'A beautifully crafted digital wedding invitation tailored to your story. Unlimited invitees, RSVP management, and a free Guest Photo QR — one-time $99.',
+    images: [
+      {
+        url: '/images/invitation-phone-new2.png',
+        width: 1200,
+        height: 630,
+        alt: 'A digital wedding invitation shown on a phone held in hand',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Digital Wedding Invitation — Customized & Elegant, $99',
+    description:
+      'Send a beautiful digital wedding invitation. Unlimited invitees, RSVP management, free Guest Photo QR. One-time $99.',
+    images: ['/images/invitation-phone-new2.png'],
+  },
+};
+
+const invitationJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: 'Digital Wedding Invitation',
+  description:
+    'A beautifully crafted digital wedding invitation tailored to your story. Includes RSVP management, custom guest links, music, location with map, and a free Guest Photo QR.',
+  brand: { '@type': 'Brand', name: 'mywedding.events' },
+  category: 'Wedding Invitations',
+  image: 'https://mywedding.events/images/invitation-phone-new2.png',
+  offers: {
+    '@type': 'Offer',
+    price: '99',
+    priceCurrency: 'USD',
+    availability: 'https://schema.org/InStock',
+    url: 'https://mywedding.events/invitation',
+    priceValidUntil: '2099-12-31',
+  },
+};
+
+const invitationFaqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How much does a digital wedding invitation cost?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'One-time $99. There are no subscriptions and no per-guest charges, no matter how many people you invite.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How many guests can I invite with a digital wedding invitation?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Unlimited. Invite ten guests or a thousand — the price never moves.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is included with a digital wedding invitation from mywedding.events?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'A fully customized invitation, location details and map, music, RSVP management with email notifications, a custom link for each invitee, and a free Guest Photo QR.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do guests need to install an app to RSVP or view the invitation?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'No. The digital wedding invitation and RSVP both open in the browser — no app required.',
+      },
+    },
+  ],
 };
 
 function Tick() {
@@ -23,9 +115,9 @@ export default function InvitationPage() {
       <div className="hero">
         <div className="hero__content">
           <div className="inner">
-            <p className="eyebrow">Digital Invitation</p>
+            <p className="eyebrow">Digital Wedding Invitation</p>
             <h1>The first thing<br />they&apos;ll <em>fall for</em>.</h1>
-            <p className="sub">A beautifully crafted digital invitation—tailored to your story, with everything your guests need to say yes and show up. One price, no per-guest fees, ever.</p>
+            <p className="sub">A beautifully crafted digital wedding invitation—tailored to your story, with everything your guests need to say yes and show up. One price, no per-guest fees, ever.</p>
             <div className="actions" style={{ display: 'flex', gap: 14, flexWrap: 'wrap', marginTop: 34 }}>
               <Link className="btn btn--accent" href="#pricing">Get started — $99</Link>
               <Link className="btn btn--ghost" href="#included">What&apos;s included</Link>
@@ -111,6 +203,15 @@ export default function InvitationPage() {
       </section>
 
       <Footer middleText="One-time $99 · unlimited invitees · Guest Photo QR included free" />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(invitationJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(invitationFaqJsonLd) }}
+      />
     </div>
   );
 }

@@ -18,7 +18,7 @@ function Tick() {
 export default function InvitationPage() {
   return (
     <div data-screen-label="Digital Invitation Page">
-      <Header active="invitation" />
+      <Header active="invitation" centered withBrand={false} />
 
       <div className="hero">
         <div className="hero__content">

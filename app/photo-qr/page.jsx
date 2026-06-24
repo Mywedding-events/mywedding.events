@@ -10,7 +10,7 @@ export const metadata = {
 export default function PhotoQrPage() {
   return (
     <div data-screen-label="Guest Photo QR Page">
-      <Header active="photo-qr" />
+      <Header active="photo-qr" centered withBrand={false} />
 
       <div className="hero">
         <div className="hero__content">

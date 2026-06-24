@@ -4,7 +4,38 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  title: 'Guest Photo QR — mywedding.events',
+  title: 'Guest Photo QR — Free with every Digital Wedding Invitation',
+  description:
+    'Guest Photo QR collects every guest’s wedding photos and videos into one shared gallery — automatically. Free with every $99 digital wedding invitation from mywedding.events.',
+  keywords: [
+    'wedding photo QR',
+    'guest photo QR code',
+    'wedding photo sharing app',
+    'shared wedding gallery',
+    'digital wedding invitation with photo sharing',
+  ],
+  alternates: { canonical: '/photo-qr' },
+  openGraph: {
+    url: '/photo-qr',
+    title: 'Guest Photo QR — Free with every Digital Wedding Invitation',
+    description:
+      'A single QR turns every guest’s phone into a contributor to your wedding album. Included free with the $99 digital wedding invitation.',
+    images: [
+      {
+        url: '/images/photo-qr-hero.png',
+        width: 1200,
+        height: 630,
+        alt: 'A guest scanning a wedding table card QR code to add photos to a shared gallery',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Guest Photo QR — Free with every Digital Wedding Invitation',
+    description:
+      'Collect every guest photo automatically. Free with the $99 digital wedding invitation.',
+    images: ['/images/photo-qr-hero.png'],
+  },
 };
 
 export default function PhotoQrPage() {

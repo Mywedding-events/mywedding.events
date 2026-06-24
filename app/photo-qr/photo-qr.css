@@ -21,7 +21,7 @@
 .hero__media { position: relative; background: var(--ivory); }
 .hero__media img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
-section { padding: clamp(56px, 9vw, 128px) clamp(20px, 4vw, 48px); }
+.photo-qr-page section { padding: clamp(56px, 9vw, 128px) clamp(20px, 4vw, 48px); }
 
 .what { background: var(--paper); border-bottom: 1px solid var(--line); }
 .what-grid { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: clamp(32px, 6vw, 90px); align-items: start; }

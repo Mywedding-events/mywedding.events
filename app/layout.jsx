@@ -18,6 +18,9 @@ const jost = Jost({
 
 export const metadata = {
   title: 'mywedding.events — Your wedding, beautifully organized',
+  icons: {
+    icon: '/images/256x256 mywedding.events circular logo.svg',
+  },
 };
 
 export const viewport = {

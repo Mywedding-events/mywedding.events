@@ -3,15 +3,15 @@ import Header from '@/components/Header';
 import Slider from '@/components/Slider';
 
 export const metadata = {
-  title: 'Digital Wedding Invitation — Elegant, Customized, $99',
+  title: 'Digital Wedding Invitations with RSVP — $99',
   description:
-    'mywedding.events creates beautiful digital wedding invitations with RSVP management, custom guest links, and a free Guest Photo QR. One-time $99, unlimited invitees.',
+    'Create a beautiful digital wedding invitation with RSVP tracking, custom guest links, and a free Guest Photo QR. One-time $99, unlimited invitees.',
   alternates: { canonical: '/' },
   openGraph: {
     url: '/',
-    title: 'Digital Wedding Invitation — Elegant, Customized, $99',
+    title: 'Digital Wedding Invitations with RSVP — $99',
     description:
-      'Beautiful digital wedding invitations with RSVP management and a free Guest Photo QR. One-time $99, unlimited invitees.',
+      'Beautiful digital wedding invitations with RSVP tracking, custom guest links, and a free Guest Photo QR. One-time $99, unlimited invitees.',
   },
 };
 

@@ -1,6 +1,5 @@
 import './photo-qr.css';
 import Link from 'next/link';
-import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
@@ -121,7 +120,7 @@ export default function PhotoQrPage() {
           </div>
         </div>
         <div className="hero__media">
-          <Image src="/images/wedding-guest-photo-qr-code.png" alt="A wedding guest scanning a 'Capture the Love' table card QR code to upload photos to a shared gallery" width={1136} height={1385} priority sizes="(max-width: 900px) 100vw, 50vw" />
+          <img src="/images/wedding-guest-photo-qr-code.png" alt="A wedding guest scanning a 'Capture the Love' table card QR code to upload photos to a shared gallery" />
         </div>
       </div>
 
@@ -146,25 +145,25 @@ export default function PhotoQrPage() {
         </div>
         <div className="steps">
           <div className="step">
-            <Image className="shot" src="/images/guest-photo-qr-step-1-display-code.png" alt="A Capture the Love wedding photo QR card displayed on a candlelit reception table" width={1122} height={1402} sizes="(max-width: 980px) 50vw, 25vw" />
+            <img className="shot" src="/images/guest-photo-qr-step-1-display-code.png" alt="A Capture the Love wedding photo QR card displayed on a candlelit reception table" />
             <span className="num">01</span>
             <h4>Display your code</h4>
             <p>Your unique QR appears on table cards, signage and your invitation.</p>
           </div>
           <div className="step">
-            <Image className="shot" src="/images/guest-photo-qr-step-2-guests-scan.png" alt="A wedding guest scanning the table QR card with their phone camera" width={1136} height={1385} sizes="(max-width: 980px) 50vw, 25vw" />
+            <img className="shot" src="/images/guest-photo-qr-step-2-guests-scan.png" alt="A wedding guest scanning the table QR card with their phone camera" />
             <span className="num">02</span>
             <h4>Guests scan it</h4>
             <p>A quick scan opens your upload page right in their browser—no app to install.</p>
           </div>
           <div className="step">
-            <Image className="shot" src="/images/guest-photo-qr-step-3-upload-photos.png" alt="A phone showing the photo selection screen ready to upload wedding photos to the shared gallery" width={1122} height={1402} sizes="(max-width: 980px) 50vw, 25vw" />
+            <img className="shot" src="/images/guest-photo-qr-step-3-upload-photos.png" alt="A phone showing the photo selection screen ready to upload wedding photos to the shared gallery" />
             <span className="num">03</span>
             <h4>They upload</h4>
             <p>Photos and videos upload straight from the camera roll in seconds.</p>
           </div>
           <div className="step">
-            <Image className="shot" src="/images/guest-photo-qr-step-4-collect-gallery.png" alt="A newlywed couple viewing their shared wedding photo gallery on a laptop" width={1122} height={1402} sizes="(max-width: 980px) 50vw, 25vw" />
+            <img className="shot" src="/images/guest-photo-qr-step-4-collect-gallery.png" alt="A newlywed couple viewing their shared wedding photo gallery on a laptop" />
             <span className="num">04</span>
             <h4>You collect it all</h4>
             <p>Every memory gathers in one private gallery for you to keep and share.</p>

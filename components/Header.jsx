@@ -13,7 +13,7 @@ export default function Header({ active, centered = false, withBrand = true }) {
     <header className={'site-header' + (centered ? ' site-header--center' : '')}>
       {withBrand && (
         <Link className="brand" href="/">
-          <img className="brand-mark" src="/assets/logo-trim.png" alt="mywedding.events monogram" />
+          <img className="brand-mark" src="/assets/mywedding-events-logo.png" alt="mywedding.events monogram" />
           <span className="brand-word">
             mywedding<span className="brand-dot">.</span>events
           </span>

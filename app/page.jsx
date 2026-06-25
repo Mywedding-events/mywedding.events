@@ -23,7 +23,7 @@ const homeJsonLd = {
     'A beautifully crafted digital wedding invitation tailored to your story. Includes RSVP management, custom guest links, music, location with map, and a free Guest Photo QR.',
   brand: { '@type': 'Brand', name: 'mywedding.events' },
   category: 'Wedding Invitations',
-  image: 'https://mywedding.events/images/invitation-phone-new2.png',
+  image: 'https://mywedding.events/images/digital-wedding-invitation-phone-mockup.png',
   offers: {
     '@type': 'Offer',
     price: '99',

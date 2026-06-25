@@ -22,7 +22,7 @@ export const metadata = {
       'A single QR turns every guest’s phone into a contributor to your wedding album. Included free with the $99 digital wedding invitation.',
     images: [
       {
-        url: '/images/photo-qr-hero.png',
+        url: '/images/wedding-guest-photo-qr-code.png',
         width: 1200,
         height: 630,
         alt: 'A guest scanning a wedding table card QR code to add photos to a shared gallery',
@@ -34,7 +34,7 @@ export const metadata = {
     title: 'Guest Photo QR — Free with every Digital Wedding Invitation',
     description:
       'Collect every guest photo automatically. Free with the $99 digital wedding invitation.',
-    images: ['/images/photo-qr-hero.png'],
+    images: ['/images/wedding-guest-photo-qr-code.png'],
   },
 };
 
@@ -120,7 +120,7 @@ export default function PhotoQrPage() {
           </div>
         </div>
         <div className="hero__media">
-          <img src="/images/photo-qr-hero.png" alt="A wedding guest scanning a 'Capture the Love' table card QR code to upload photos to a shared gallery" width="1600" height="2000" loading="eager" fetchPriority="high" decoding="async" />
+          <img src="/images/wedding-guest-photo-qr-code.png" alt="A wedding guest scanning a 'Capture the Love' table card QR code to upload photos to a shared gallery" width="1600" height="2000" loading="eager" fetchPriority="high" decoding="async" />
         </div>
       </div>
 
@@ -145,25 +145,25 @@ export default function PhotoQrPage() {
         </div>
         <div className="steps">
           <div className="step">
-            <img className="shot" src="/images/how-1.png" alt="A Capture the Love wedding photo QR card displayed on a candlelit reception table" width="800" height="600" loading="lazy" decoding="async" />
+            <img className="shot" src="/images/guest-photo-qr-step-1-display-code.png" alt="A Capture the Love wedding photo QR card displayed on a candlelit reception table" width="800" height="600" loading="lazy" decoding="async" />
             <span className="num">01</span>
             <h4>Display your code</h4>
             <p>Your unique QR appears on table cards, signage and your invitation.</p>
           </div>
           <div className="step">
-            <img className="shot" src="/images/how-2.png" alt="A wedding guest scanning the table QR card with their phone camera" width="800" height="600" loading="lazy" decoding="async" />
+            <img className="shot" src="/images/guest-photo-qr-step-2-guests-scan.png" alt="A wedding guest scanning the table QR card with their phone camera" width="800" height="600" loading="lazy" decoding="async" />
             <span className="num">02</span>
             <h4>Guests scan it</h4>
             <p>A quick scan opens your upload page right in their browser—no app to install.</p>
           </div>
           <div className="step">
-            <img className="shot" src="/images/how-3.png" alt="A phone showing the photo selection screen ready to upload wedding photos to the shared gallery" width="800" height="600" loading="lazy" decoding="async" />
+            <img className="shot" src="/images/guest-photo-qr-step-3-upload-photos.png" alt="A phone showing the photo selection screen ready to upload wedding photos to the shared gallery" width="800" height="600" loading="lazy" decoding="async" />
             <span className="num">03</span>
             <h4>They upload</h4>
             <p>Photos and videos upload straight from the camera roll in seconds.</p>
           </div>
           <div className="step">
-            <img className="shot" src="/images/how-4.png" alt="A newlywed couple viewing their shared wedding photo gallery on a laptop" width="800" height="600" loading="lazy" decoding="async" />
+            <img className="shot" src="/images/guest-photo-qr-step-4-collect-gallery.png" alt="A newlywed couple viewing their shared wedding photo gallery on a laptop" width="800" height="600" loading="lazy" decoding="async" />
             <span className="num">04</span>
             <h4>You collect it all</h4>
             <p>Every memory gathers in one private gallery for you to keep and share.</p>

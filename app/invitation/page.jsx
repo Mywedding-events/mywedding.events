@@ -134,7 +134,7 @@ export default function InvitationPage() {
           </div>
         </div>
         <div className="hero__media">
-          <img className="hero__media-img" src="/images/digital-wedding-invitation-phone-mockup.png" alt="An elegant digital wedding invitation displayed on a phone with RSVP and venue details" width="1600" height="2000" loading="eager" fetchPriority="high" decoding="async" />
+          <img className="hero__media-img" src="/images/digital-wedding-invitation-phone-mockup.png" alt="An elegant digital wedding invitation displayed on a phone with RSVP and venue details" width="1072" height="1467" loading="eager" fetchPriority="high" decoding="async" />
         </div>
       </div>
 

@@ -86,8 +86,13 @@ export const metadata = {
     },
   },
   icons: {
-    icon: '/images/256x256 mywedding.events circular logo.svg',
+    icon: [
+      { url: '/icon.svg', type: 'image/svg+xml' },
+    ],
+    shortcut: '/icon.svg',
+    apple: '/icon.svg',
   },
+  manifest: '/manifest.webmanifest',
   formatDetection: {
     email: false,
     telephone: false,
@@ -105,10 +110,19 @@ const organizationJsonLd = {
   '@type': 'Organization',
   name: SITE_NAME,
   url: SITE_URL,
-  logo: `${SITE_URL}/images/256x256 mywedding.events circular logo.svg`,
+  logo: `${SITE_URL}/icon.svg`,
   sameAs: [],
   description:
     'Beautiful digital wedding invitations with RSVP management and a free Guest Photo QR.',
+  contactPoint: [
+    {
+      '@type': 'ContactPoint',
+      contactType: 'customer support',
+      telephone: '+961-78-822-978',
+      availableLanguage: ['en'],
+      areaServed: 'Worldwide',
+    },
+  ],
 };
 
 const websiteJsonLd = {
@@ -117,6 +131,7 @@ const websiteJsonLd = {
   name: SITE_NAME,
   url: SITE_URL,
   inLanguage: 'en',
+  publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
 };
 
 export default function RootLayout({ children }) {

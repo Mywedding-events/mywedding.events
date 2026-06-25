@@ -70,8 +70,8 @@ export default function Slider() {
           <div className="slide__content">
             <div className="inner">
               <p className="eyebrow anim d1">Beautiful weddings, beautifully organized</p>
-              <h1 className="lead anim d2">Your wedding,<br />in one <em>beautiful</em> place.</h1>
-              <p className="sub anim d3">Send a digital invitation guests will adore, collect every shared photo with a single QR code, and—soon—book the people who make the day. All under one calm, considered roof.</p>
+              <h2 className="lead anim d2">Your wedding,<br />in one <em>beautiful</em> place.</h2>
+              <p className="sub anim d3">Send a digital wedding invitation guests will adore, collect every shared photo with a single QR code, and—soon—book the people who make the day. All under one calm, considered roof.</p>
               <div className="actions anim d4">
                 <Link className="btn btn--accent" href="/invitation">Create your invitation</Link>
                 <Link className="btn btn--ghost" href="/photo-qr">Guest Photo QR</Link>
@@ -79,7 +79,7 @@ export default function Slider() {
             </div>
           </div>
           <div className="slide__media">
-            <img className="ph-img" style={{ objectPosition: '50% 40%' }} src="/images/couple-portrait-new.png" alt="A couple walking a whitewashed Santorini path above the caldera" />
+            <img className="ph-img" style={{ objectPosition: '50% 40%' }} src="/images/couple-portrait-new.png" alt="A bride and groom walking a whitewashed Santorini path above the caldera at sunset" width="1600" height="2000" loading="eager" fetchPriority="high" decoding="async" />
           </div>
         </section>
 
@@ -87,7 +87,7 @@ export default function Slider() {
           <div className="slide__content">
             <div className="inner">
               <p className="eyebrow anim d1">Digital Wedding Invitation</p>
-              <h1 className="lead anim d2">An invitation<br />worthy of the <em>day</em>.</h1>
+              <h2 className="lead anim d2">An invitation<br />worthy of the <em>day</em>.</h2>
               <div className="price-row anim d3">
                 <span className="price"><sup>$</sup>99</span>
                 <span className="price-note">one-time · unlimited invitees</span>
@@ -103,7 +103,7 @@ export default function Slider() {
             </div>
           </div>
           <div className="slide__media">
-            <img className="ph-img" style={{ objectPosition: 'center' }} src="/images/invitation-phone-new2.png" alt="A digital wedding invitation shown on a phone held in hand" />
+            <img className="ph-img" style={{ objectPosition: 'center' }} src="/images/invitation-phone-new2.png" alt="An elegant digital wedding invitation displayed on a phone with RSVP and venue details" width="1600" height="2000" loading="lazy" decoding="async" />
           </div>
         </section>
 
@@ -111,15 +111,15 @@ export default function Slider() {
           <div className="slide__content">
             <div className="inner">
               <p className="eyebrow anim d1">Guest Photo QR · <span className="serif-italic" style={{ textTransform: 'none', letterSpacing: 0, fontSize: '1.2em' }}>Free</span></p>
-              <h1 className="lead anim d2">Every photo,<br />from <em>every</em> guest.</h1>
-              <p className="sub anim d3">One little QR code on each table. Guests scan, upload the moments they captured, and your whole wedding gallery fills itself—no apps, no chasing, no cost.</p>
+              <h2 className="lead anim d2">Every photo,<br />from <em>every</em> guest.</h2>
+              <p className="sub anim d3">One little QR code on each table. Guests scan, upload the moments they captured, and your whole shared wedding photo gallery fills itself—no apps, no chasing, no cost.</p>
               <div className="actions anim d4">
                 <Link className="btn btn--accent" href="/photo-qr">How it works</Link>
               </div>
             </div>
           </div>
           <div className="slide__media">
-            <img className="ph-img" style={{ objectPosition: '45% 46%' }} src="/images/photo-qr-hero.png" alt="A guest scanning a 'Capture the Love' table card QR code with their phone" />
+            <img className="ph-img" style={{ objectPosition: '45% 46%' }} src="/images/photo-qr-hero.png" alt="A wedding guest scanning a 'Capture the Love' table card QR code to upload photos to a shared gallery" width="1600" height="2000" loading="lazy" decoding="async" />
           </div>
         </section>
 
@@ -127,19 +127,19 @@ export default function Slider() {
           <div className="trio-wrap">
             <div className="trio-head">
               <p className="eyebrow anim d1">On the way</p>
-              <h1 className="lead anim d2">The people who make <em>the day</em>.</h1>
+              <h2 className="lead anim d2">The people who make <em>the day</em>.</h2>
             </div>
             <div className="trio">
               <article className="trio-card anim d3">
-                <div className="ph"><img className="ph-fill" src="/images/photographer.png" alt="Photographer capturing a couple" /></div>
+                <div className="ph"><img className="ph-fill" src="/images/photographer.png" alt="Wedding photographer capturing a couple at golden hour" width="900" height="1200" loading="lazy" decoding="async" /></div>
                 <div className="trio-meta"><h3>Photographers</h3><span className="tag">Coming Soon</span></div>
               </article>
               <article className="trio-card anim d3">
-                <div className="ph"><img className="ph-fill" src="/images/restaurant.png" alt="Elegant reception table setting" /></div>
+                <div className="ph"><img className="ph-fill" src="/images/restaurant.png" alt="Elegant wedding reception table setting at a restaurant venue" width="900" height="1200" loading="lazy" decoding="async" /></div>
                 <div className="trio-meta"><h3>Restaurants</h3><span className="tag">Coming Soon</span></div>
               </article>
               <article className="trio-card anim d4">
-                <div className="ph"><img className="ph-fill" style={{ objectPosition: '72% center' }} src="/images/musicians.png" alt="A singer performing at a wedding amid candles and white roses" /></div>
+                <div className="ph"><img className="ph-fill" style={{ objectPosition: '72% center' }} src="/images/musicians.png" alt="A wedding singer performing amid candles and white roses" width="900" height="1200" loading="lazy" decoding="async" /></div>
                 <div className="trio-meta"><h3>Musicians</h3><span className="tag">Coming Soon</span></div>
               </article>
             </div>
@@ -147,6 +147,24 @@ export default function Slider() {
         </section>
 
       </div>
+
+      <noscript>
+        <div className="noscript-content">
+          <section>
+            <h2>Your wedding, in one beautiful place.</h2>
+            <p>Send a digital wedding invitation guests will adore, collect every shared photo with a single QR code, and—soon—book the people who make the day.</p>
+            <p><Link href="/invitation">Create your digital wedding invitation</Link> · <Link href="/photo-qr">Guest Photo QR</Link></p>
+          </section>
+          <section>
+            <h2>Digital Wedding Invitation — $99</h2>
+            <p>One-time payment, unlimited invitees, RSVP management, custom guest links, location with map, music, and a free Guest Photo QR.</p>
+          </section>
+          <section>
+            <h2>Guest Photo QR — Free</h2>
+            <p>One QR code per table. Guests scan, upload their photos, and your shared wedding gallery fills itself — no apps, no chasing.</p>
+          </section>
+        </div>
+      </noscript>
 
       <button className="arrow arrow--prev" aria-label="Previous" disabled={i === 0} onClick={() => go(i - 1)}>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4"><path d="M15 5l-7 7 7 7" /></svg>

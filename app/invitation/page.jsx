@@ -60,6 +60,15 @@ const invitationJsonLd = {
   },
 };
 
+const invitationBreadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://mywedding.events/' },
+    { '@type': 'ListItem', position: 2, name: 'Digital Invitation', item: 'https://mywedding.events/invitation' },
+  ],
+};
+
 const invitationFaqJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -125,7 +134,7 @@ export default function InvitationPage() {
           </div>
         </div>
         <div className="hero__media">
-          <img className="hero__media-img" src="/images/invitation-phone-new2.png" alt="A digital wedding invitation shown on a phone held in hand" />
+          <img className="hero__media-img" src="/images/invitation-phone-new2.png" alt="An elegant digital wedding invitation displayed on a phone with RSVP and venue details" width="1600" height="2000" loading="eager" fetchPriority="high" decoding="async" />
         </div>
       </div>
 
@@ -184,6 +193,10 @@ export default function InvitationPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(invitationFaqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(invitationBreadcrumbJsonLd) }}
       />
     </div>
   );

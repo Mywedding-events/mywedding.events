@@ -142,7 +142,7 @@ export default function InvitationPage() {
               </div>
               <p className="note">Invite ten guests or a thousand—the price never moves. Built once, beautifully, for your wedding.</p>
               <div className="actions">
-                <Link className="btn btn--accent" href="#cta">Create your invitation</Link>
+                <a className="btn btn--accent" href="https://wa.me/96178822978" target="_blank" rel="noopener noreferrer">CONTACT US ON WHATSAPP <span aria-hidden="true">↗</span></a>
               </div>
             </div>
 
@@ -169,7 +169,7 @@ export default function InvitationPage() {
           <h2>Ready to send something <em>unforgettable</em>?</h2>
           <p>One beautiful invitation, unlimited guests, and the free Guest Photo QR included. All for $99.</p>
           <div className="actions">
-            <Link className="btn btn--light" href="#pricing">Create your invitation</Link>
+            <a className="btn btn--light" href="https://wa.me/96178822978" target="_blank" rel="noopener noreferrer">CONTACT US ON WHATSAPP <span aria-hidden="true">↗</span></a>
             <Link className="btn btn--light-ghost" href="/photo-qr">Explore Guest Photo QR</Link>
           </div>
         </div>

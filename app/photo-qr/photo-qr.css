@@ -35,7 +35,7 @@
 .how { border-bottom: 1px solid var(--line); }
 .how-head { text-align: center; max-width: 640px; margin: 0 auto clamp(40px, 6vw, 70px); }
 .how-head h2 { font-size: clamp(2rem, 4vw, 3rem); margin-top: 14px; }
-.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(12px, 2.6vw, 36px); max-width: var(--maxw); margin: 0 auto; }
+.steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(12px, 2.6vw, 36px); max-width: var(--maxw); margin: 0 auto; }
 .step .ph { aspect-ratio: 4/5; margin-bottom: 20px; }
 .step .shot { aspect-ratio: 4/5; width: 100%; max-width: 260px; object-fit: cover; display: block; margin: 0 auto 20px; border: 1px solid var(--line); }
 .step .num { font-family: var(--serif); font-style: italic; font-size: 2rem; color: var(--accent); line-height: 1; }

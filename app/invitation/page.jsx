@@ -164,33 +164,6 @@ export default function InvitationPage() {
         </div>
       </section>
 
-      <section className="how">
-        <div className="how-head">
-          <p className="eyebrow">From &ldquo;yes&rdquo; to sent</p>
-          <h2>Three simple steps.</h2>
-        </div>
-        <div className="steps">
-          <div className="step">
-            <div className="ph" data-label="choosing a design"></div>
-            <span className="num">01</span>
-            <h4>Tell us your style</h4>
-            <p>Share your names, date, colors and the feeling you&apos;re after. We tailor the invitation to match.</p>
-          </div>
-          <div className="step">
-            <div className="ph" data-label="adding the details"></div>
-            <span className="num">02</span>
-            <h4>Add your details</h4>
-            <p>Venue, map, music and your guest list. Each invitee gets their own personal link.</p>
-          </div>
-          <div className="step">
-            <div className="ph" data-label="rsvp inbox"></div>
-            <span className="num">03</span>
-            <h4>Send &amp; watch RSVPs roll in</h4>
-            <p>Replies land in one tidy dashboard, and an email arrives with every response.</p>
-          </div>
-        </div>
-      </section>
-
       <section className="cta-band" id="cta">
         <div className="wrap">
           <h2>Ready to send something <em>unforgettable</em>?</h2>

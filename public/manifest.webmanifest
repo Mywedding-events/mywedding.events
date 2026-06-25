@@ -1,0 +1,18 @@
+{
+  "name": "mywedding.events — Digital Wedding Invitations",
+  "short_name": "mywedding.events",
+  "description": "Beautiful digital wedding invitations with RSVP management and a free Guest Photo QR. One-time $99, unlimited invitees.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FFFDF8",
+  "theme_color": "#FFFDF8",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

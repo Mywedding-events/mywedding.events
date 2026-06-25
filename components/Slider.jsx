@@ -79,7 +79,7 @@ export default function Slider() {
             </div>
           </div>
           <div className="slide__media">
-            <img className="ph-img" style={{ objectPosition: '50% 40%' }} src="/images/couple-portrait-new.png" alt="A bride and groom walking a whitewashed Santorini path above the caldera at sunset" width="1600" height="2000" loading="eager" fetchPriority="high" decoding="async" />
+            <img className="ph-img" style={{ objectPosition: '50% 40%' }} src="/images/santorini-wedding-couple-portrait.png" alt="A bride and groom walking a whitewashed Santorini path above the caldera at sunset" width="1600" height="2000" loading="eager" fetchPriority="high" decoding="async" />
           </div>
         </section>
 
@@ -103,7 +103,7 @@ export default function Slider() {
             </div>
           </div>
           <div className="slide__media">
-            <img className="ph-img" style={{ objectPosition: 'center' }} src="/images/invitation-phone-new2.png" alt="An elegant digital wedding invitation displayed on a phone with RSVP and venue details" width="1600" height="2000" loading="lazy" decoding="async" />
+            <img className="ph-img" style={{ objectPosition: 'center' }} src="/images/digital-wedding-invitation-phone-mockup.png" alt="An elegant digital wedding invitation displayed on a phone with RSVP and venue details" width="1600" height="2000" loading="lazy" decoding="async" />
           </div>
         </section>
 
@@ -119,7 +119,7 @@ export default function Slider() {
             </div>
           </div>
           <div className="slide__media">
-            <img className="ph-img" style={{ objectPosition: '45% 46%' }} src="/images/photo-qr-hero.png" alt="A wedding guest scanning a 'Capture the Love' table card QR code to upload photos to a shared gallery" width="1600" height="2000" loading="lazy" decoding="async" />
+            <img className="ph-img" style={{ objectPosition: '45% 46%' }} src="/images/wedding-guest-photo-qr-code.png" alt="A wedding guest scanning a 'Capture the Love' table card QR code to upload photos to a shared gallery" width="1600" height="2000" loading="lazy" decoding="async" />
           </div>
         </section>
 
@@ -131,15 +131,15 @@ export default function Slider() {
             </div>
             <div className="trio">
               <article className="trio-card anim d3">
-                <div className="ph"><img className="ph-fill" src="/images/photographer.png" alt="Wedding photographer capturing a couple at golden hour" width="900" height="1200" loading="lazy" decoding="async" /></div>
+                <div className="ph"><img className="ph-fill" src="/images/wedding-photographer.png" alt="Wedding photographer capturing a couple at golden hour" width="900" height="1200" loading="lazy" decoding="async" /></div>
                 <div className="trio-meta"><h3>Photographers</h3><span className="tag">Coming Soon</span></div>
               </article>
               <article className="trio-card anim d3">
-                <div className="ph"><img className="ph-fill" src="/images/restaurant.png" alt="Elegant wedding reception table setting at a restaurant venue" width="900" height="1200" loading="lazy" decoding="async" /></div>
+                <div className="ph"><img className="ph-fill" src="/images/wedding-reception-restaurant.png" alt="Elegant wedding reception table setting at a restaurant venue" width="900" height="1200" loading="lazy" decoding="async" /></div>
                 <div className="trio-meta"><h3>Restaurants</h3><span className="tag">Coming Soon</span></div>
               </article>
               <article className="trio-card anim d4">
-                <div className="ph"><img className="ph-fill" style={{ objectPosition: '72% center' }} src="/images/musicians.png" alt="A wedding singer performing amid candles and white roses" width="900" height="1200" loading="lazy" decoding="async" /></div>
+                <div className="ph"><img className="ph-fill" style={{ objectPosition: '72% center' }} src="/images/wedding-musicians.png" alt="A wedding singer performing amid candles and white roses" width="900" height="1200" loading="lazy" decoding="async" /></div>
                 <div className="trio-meta"><h3>Musicians</h3><span className="tag">Coming Soon</span></div>
               </article>
             </div>

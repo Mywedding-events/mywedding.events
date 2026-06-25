@@ -25,7 +25,7 @@ export const metadata = {
       'A beautifully crafted digital wedding invitation tailored to your story. Unlimited invitees, RSVP management, and a free Guest Photo QR — one-time $99.',
     images: [
       {
-        url: '/images/invitation-phone-new2.png',
+        url: '/images/digital-wedding-invitation-phone-mockup.png',
         width: 1200,
         height: 630,
         alt: 'A digital wedding invitation shown on a phone held in hand',
@@ -37,7 +37,7 @@ export const metadata = {
     title: 'Digital Wedding Invitation — Customized & Elegant, $99',
     description:
       'Send a beautiful digital wedding invitation. Unlimited invitees, RSVP management, free Guest Photo QR. One-time $99.',
-    images: ['/images/invitation-phone-new2.png'],
+    images: ['/images/digital-wedding-invitation-phone-mockup.png'],
   },
 };
 
@@ -49,7 +49,7 @@ const invitationJsonLd = {
     'A beautifully crafted digital wedding invitation tailored to your story. Includes RSVP management, custom guest links, music, location with map, and a free Guest Photo QR.',
   brand: { '@type': 'Brand', name: 'mywedding.events' },
   category: 'Wedding Invitations',
-  image: 'https://mywedding.events/images/invitation-phone-new2.png',
+  image: 'https://mywedding.events/images/digital-wedding-invitation-phone-mockup.png',
   offers: {
     '@type': 'Offer',
     price: '99',
@@ -134,7 +134,7 @@ export default function InvitationPage() {
           </div>
         </div>
         <div className="hero__media">
-          <img className="hero__media-img" src="/images/invitation-phone-new2.png" alt="An elegant digital wedding invitation displayed on a phone with RSVP and venue details" width="1600" height="2000" loading="eager" fetchPriority="high" decoding="async" />
+          <img className="hero__media-img" src="/images/digital-wedding-invitation-phone-mockup.png" alt="An elegant digital wedding invitation displayed on a phone with RSVP and venue details" width="1600" height="2000" loading="eager" fetchPriority="high" decoding="async" />
         </div>
       </div>
 

@@ -18,7 +18,7 @@ const jost = Jost({
 
 const SITE_URL = 'https://mywedding.events';
 const SITE_NAME = 'mywedding.events';
-const OG_IMAGE = '/images/invitation-phone-new2.png';
+const OG_IMAGE = '/images/digital-wedding-invitation-phone-mockup.png';
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),

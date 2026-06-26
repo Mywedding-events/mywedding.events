@@ -12,8 +12,53 @@ export const metadata = {
   },
 };
 
-const sections = [{eyebrow:'Search intent',heading:'Built for couples who want clarity',paragraphs:['A digital wedding experience should do more than replace a printed card. It should give guests the details they need, make replies easy to manage, and reflect the tone of your celebration.', 'mywedding.events creates a polished invitation flow with custom styling, venue details, RSVP management, personalized guest links, and a free Guest Photo QR so your planning stays organized.'],items:['Custom design: tailored colors, wording, photos, and music', 'RSVP management: collect yes, no, and guest details in one place', 'Guest links: make every invitation feel personal', 'Photo QR: collect candid photos and videos from guests']},{eyebrow:'How it works',heading:'From wedding details to a shareable guest link',paragraphs:['You share your wedding information, preferred style, venue details, music, and any guest requirements. The invitation is then assembled into a guest-friendly experience that works on phones and desktops.', 'Guests receive a link, view the invitation, open the map, and RSVP without installing an app. After the wedding, the included photo QR helps gather the memories guests captured throughout the day.'],items:null},{eyebrow:'Why it helps',heading:'A simpler alternative to paper, forms, and group chats',paragraphs:['Printed invitations are beautiful, but they cannot update themselves, collect replies, or gather guest photos. A digital invitation keeps the romance of a custom design while adding practical planning tools.', 'Instead of juggling separate RSVP forms, map links, WhatsApp threads, and photo albums, your guests get one clear place to find everything.'],items:null}];
-const faqs = [{question:'Do guests need an app?',answer:'No. Guests open the invitation, RSVP form, and photo upload page directly in their browser.'},{question:'Is RSVP included?',answer:'Yes. RSVP management and email notifications are included with the $99 digital wedding invitation.'},{question:'Can the design match our wedding style?',answer:'Yes. The invitation can be customized around your colors, wording, photos, music, and event details.'},{question:'Is Guest Photo QR included?',answer:'Yes. Guest Photo QR is included free with every digital wedding invitation.'},{question:'Can we invite unlimited guests?',answer:'Yes. There are no per-guest charges or invitee caps.'},{question:'How do we get started?',answer:'Start from the digital wedding invitation page or contact mywedding.events on WhatsApp with your wedding details.'}];
+const highlights = [
+  { title: 'No printing, no mailing', desc: 'Skip print runs, postage, and lost envelopes' },
+  { title: 'Send in minutes, not weeks', desc: 'Share the moment it’s ready — no production wait' },
+  { title: 'Update details anytime', desc: 'Fix a time or venue without reprinting a thing' },
+  { title: 'Kinder to the planet', desc: 'No paper, no waste, no return-to-sender stack' },
+  { title: 'RSVP and venue map built in', desc: 'Everything guests need without an insert card' },
+  { title: 'Free Guest Photo QR', desc: 'Collect the day’s photos in one shared gallery' },
+];
+
+const sections = [
+  {
+    eyebrow: 'Why paperless',
+    heading: 'All the elegance of a card, none of the print run',
+    paragraphs: [
+      'Printed suites are lovely, but they come with proofs, print runs, postage, and the inevitable handful that arrive late or never arrive at all. A paperless wedding invitation removes that whole production line.',
+      'You keep the elegance of a custom design and gain something paper can’t offer: an invitation you can send instantly and update whenever plans shift.',
+    ],
+    items: null,
+  },
+  {
+    eyebrow: 'Less waste',
+    heading: 'A choice your guests — and the planet — appreciate',
+    paragraphs: [
+      'Going paperless means no stacks of unused cards, no envelopes in the recycling, and no extra prints “just in case.” It is a small, visible way to keep your celebration thoughtful.',
+      'And because nothing is mailed, last-minute guests are as easy to add as forwarding a link.',
+    ],
+    items: null,
+  },
+  {
+    eyebrow: 'One fair price',
+    heading: 'One-time $99, unlimited guests',
+    paragraphs: [
+      'There is no per-guest cost and no subscription. Invite as many people as you like for a single price, with RSVP and the free Guest Photo QR included.',
+      'Message us on WhatsApp with your wedding details to start your paperless invitation.',
+    ],
+    items: null,
+  },
+];
+
+const faqs = [
+  { question: 'What is a paperless wedding invitation?', answer: 'It is a custom digital invitation you share as a link instead of a printed card — with your details, venue map, music, and RSVP all in one place.' },
+  { question: 'Does paperless mean it looks less special?', answer: 'Not at all. Your invitation is custom-designed around your colors, fonts, and photos, so it feels just as considered as a printed suite.' },
+  { question: 'How do I send it to guests?', answer: 'Share the link by WhatsApp or email, or add a QR code to a small printed insert if you’d like a physical touch.' },
+  { question: 'Can I still add guests late?', answer: 'Yes. Adding a guest is as simple as sending another link — no reprinting or extra postage.' },
+  { question: 'Is RSVP included?', answer: 'Yes. RSVP management, email notifications, and a free Guest Photo QR are all included.' },
+  { question: 'How much does it cost?', answer: 'A one-time $99 with unlimited guests and no per-guest fees. Message us on WhatsApp to get started.' },
+];
 
 export default function Page() {
   return (
@@ -21,6 +66,10 @@ export default function Page() {
       eyebrow='Paperless Wedding Invitations'
       title='Paperless wedding invitations with less waste and more control'
       intro='Skip printing delays and mailing stress with a custom paperless wedding invitation that includes RSVP, maps, music, and guest photo collection.'
+      heroImage='/images/santorini-wedding-couple-portrait.png'
+      heroImageAlt='A couple celebrating their wedding without printed invitations'
+      highlights={highlights}
+      highlightsTitle='Why couples choose to go paperless'
       sections={sections}
       faqs={faqs}
     />

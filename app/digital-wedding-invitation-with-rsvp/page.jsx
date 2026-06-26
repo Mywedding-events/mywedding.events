@@ -12,17 +12,67 @@ export const metadata = {
   },
 };
 
-const sections = [{eyebrow:'Search intent',heading:'Built for couples who want clarity',paragraphs:['A digital wedding experience should do more than replace a printed card. It should give guests the details they need, make replies easy to manage, and reflect the tone of your celebration.', 'mywedding.events creates a polished invitation flow with custom styling, venue details, RSVP management, personalized guest links, and a free Guest Photo QR so your planning stays organized.'],items:['Custom design: tailored colors, wording, photos, and music', 'RSVP management: collect yes, no, and guest details in one place', 'Guest links: make every invitation feel personal', 'Photo QR: collect candid photos and videos from guests']},{eyebrow:'How it works',heading:'From wedding details to a shareable guest link',paragraphs:['You share your wedding information, preferred style, venue details, music, and any guest requirements. The invitation is then assembled into a guest-friendly experience that works on phones and desktops.', 'Guests receive a link, view the invitation, open the map, and RSVP without installing an app. After the wedding, the included photo QR helps gather the memories guests captured throughout the day.'],items:null},{eyebrow:'Why it helps',heading:'A simpler alternative to paper, forms, and group chats',paragraphs:['Printed invitations are beautiful, but they cannot update themselves, collect replies, or gather guest photos. A digital invitation keeps the romance of a custom design while adding practical planning tools.', 'Instead of juggling separate RSVP forms, map links, WhatsApp threads, and photo albums, your guests get one clear place to find everything.'],items:null}];
-const faqs = [{question:'Do guests need an app?',answer:'No. Guests open the invitation, RSVP form, and photo upload page directly in their browser.'},{question:'Is RSVP included?',answer:'Yes. RSVP management and email notifications are included with the $99 digital wedding invitation.'},{question:'Can the design match our wedding style?',answer:'Yes. The invitation can be customized around your colors, wording, photos, music, and event details.'},{question:'Is Guest Photo QR included?',answer:'Yes. Guest Photo QR is included free with every digital wedding invitation.'},{question:'Can we invite unlimited guests?',answer:'Yes. There are no per-guest charges or invitee caps.'},{question:'How do we get started?',answer:'Start from the digital wedding invitation page or contact mywedding.events on WhatsApp with your wedding details.'}];
+const highlights = [
+  { title: 'Invitation and RSVP in one link', desc: 'Guests view the details and reply on the same page' },
+  { title: 'Replies tied to each guest', desc: 'Personal links keep your headcount accurate' },
+  { title: 'Plus-one and meal questions', desc: 'Ask what you need before the day arrives' },
+  { title: 'Email notification per reply', desc: 'Know the moment someone confirms' },
+  { title: 'Venue map and music included', desc: 'Everything in one guest-friendly experience' },
+  { title: 'Free Guest Photo QR', desc: 'Collect the day’s candid moments afterward' },
+];
+
+const sections = [
+  {
+    eyebrow: 'One experience',
+    heading: 'The invitation and the RSVP live in the same place',
+    paragraphs: [
+      'When the invitation and the reply form are separate, guests read the details in one place and then have to hunt for a form somewhere else — and some never make it back. Here, both live behind one link.',
+      'A guest opens your invitation, reads the story and details, opens the venue map, and replies — all without leaving the page or switching to another tool.',
+    ],
+    items: null,
+  },
+  {
+    eyebrow: 'Accurate headcount',
+    heading: 'Every reply lands against the right guest',
+    paragraphs: [
+      'Because each guest has a personalized link, their RSVP is recorded against their name automatically. You see who is coming, who is bringing a plus-one, and any answers you asked for, like meal choice.',
+      'You also get an email notification with each reply, so your numbers stay current without a spreadsheet to maintain.',
+    ],
+    items: null,
+  },
+  {
+    eyebrow: 'One fair price',
+    heading: 'Invitation and RSVP for a one-time $99',
+    paragraphs: [
+      'RSVP is not a separate add-on — it is part of the same $99 invitation, with unlimited guests and no per-guest fees. The free Guest Photo QR is included too.',
+      'Message us on WhatsApp with your details and the questions you want to ask, and we will set it up.',
+    ],
+    items: null,
+  },
+];
+
+const faqs = [
+  { question: 'How do guests RSVP from the invitation?', answer: 'The RSVP form is built into the invitation. Guests open their personal link, read the details, and reply on the same page — no separate form or app.' },
+  { question: 'Will replies be tied to each guest?', answer: 'Yes. Personalized links record each reply against the right name, including plus-ones and any questions you set.' },
+  { question: 'Do I get notified of replies?', answer: 'Yes. You receive an email notification after each RSVP, and responses are organized in one place.' },
+  { question: 'Can I ask meal or dietary questions?', answer: 'Yes. You can add custom RSVP questions such as meal preference, dietary needs, or song requests.' },
+  { question: 'Do guests need an app?', answer: 'No. The invitation, RSVP, and photo upload all open in any browser.' },
+  { question: 'Is RSVP an extra cost?', answer: 'No. RSVP is included in the one-time $99 invitation, with unlimited guests and no per-guest fees.' },
+];
 
 export default function Page() {
   return (
     <SeoLandingPage
       eyebrow='Digital Wedding Invitation with RSVP'
-      title='Digital wedding invitation with RSVP tracking built in'
-      intro='Send a custom digital wedding invitation where guests can view details, open the map, enjoy your music, and RSVP from their personalized link.'
+      title='A digital wedding invitation with RSVP tracking built in'
+      intro='Send a custom digital wedding invitation where guests can view the details, open the map, enjoy your music, and RSVP from their own personalized link.'
+      heroImage='/images/couple-portrait.jpeg'
+      heroImageAlt='A couple whose digital wedding invitation includes built-in RSVP tracking'
+      highlights={highlights}
+      highlightsTitle='Invitation and RSVP, working together'
       sections={sections}
       faqs={faqs}
+      faqLead='The invitation and RSVP are one experience — included together in your custom digital invitation.'
     />
   );
 }

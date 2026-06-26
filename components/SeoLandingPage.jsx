@@ -2,7 +2,33 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-export default function SeoLandingPage({ eyebrow, title, intro, sections, faqs, primaryCta = 'Start your invitation', secondaryCta = 'Explore Photo QR' }) {
+const WHATSAPP = 'https://wa.me/96178822978';
+
+function Tick() {
+  return (
+    <span className="tick" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4"><path d="M5 13l4 4L19 7" /></svg>
+    </span>
+  );
+}
+
+export default function SeoLandingPage({
+  eyebrow,
+  title,
+  intro,
+  heroImage = '/images/digital-wedding-invitation-phone-mockup.png',
+  heroImageAlt = 'A digital wedding invitation displayed on a phone',
+  secondaryCta = { label: 'See the $99 invitation', href: '/digital-wedding-invitation' },
+  highlights,
+  highlightsEyebrow = 'What’s included',
+  highlightsTitle = 'Everything your wedding needs, in one link',
+  highlightsNote = 'Included with your custom digital wedding invitation — a one-time $99, with unlimited guests and no per-guest fees.',
+  sections,
+  faqs,
+  faqLead,
+  ctaTitle = 'Ready to make your wedding details easier to share?',
+  ctaText = 'Tell us about your wedding on WhatsApp and we’ll start your custom digital invitation — RSVP and a free Guest Photo QR included, all for one fair price.',
+}) {
   const faqJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -16,17 +42,40 @@ export default function SeoLandingPage({ eyebrow, title, intro, sections, faqs, 
   return (
     <div className="landing-page" data-screen-label={title}>
       <Header centered withBrand={false} />
-      <section className="landing-hero">
-        <div className="inner">
-          <p className="eyebrow">{eyebrow}</p>
-          <h1>{title}</h1>
-          <p className="sub">{intro}</p>
-          <div className="actions">
-            <Link className="btn btn--accent" href="/digital-wedding-invitation">{primaryCta}</Link>
-            <Link className="btn btn--ghost" href="/wedding-photo-qr-code">{secondaryCta}</Link>
+
+      <section className="seo-hero">
+        <div className="seo-hero__content">
+          <div className="inner">
+            <p className="eyebrow">{eyebrow}</p>
+            <h1>{title}</h1>
+            <p className="sub">{intro}</p>
+            <div className="actions">
+              <a className="btn btn--accent" href={WHATSAPP} target="_blank" rel="noopener noreferrer">Contact us on WhatsApp <span aria-hidden="true">↗</span></a>
+              <Link className="btn btn--ghost" href={secondaryCta.href}>{secondaryCta.label}</Link>
+            </div>
           </div>
         </div>
+        <div className="seo-hero__media">
+          <img src={heroImage} alt={heroImageAlt} loading="eager" fetchPriority="high" decoding="async" />
+        </div>
       </section>
+
+      {highlights && highlights.length > 0 ? (
+        <section className="seo-highlights">
+          <div className="wrap">
+            <div className="seo-highlights__head">
+              <p className="eyebrow">{highlightsEyebrow}</p>
+              <h2>{highlightsTitle}</h2>
+              {highlightsNote ? <p className="seo-highlights__note">{highlightsNote}</p> : null}
+            </div>
+            <ul className="seo-feat-list">
+              {highlights.map((item) => (
+                <li key={item.title}><Tick /><span className="ftxt">{item.title}<small>{item.desc}</small></span></li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      ) : null}
 
       {sections.map((section) => (
         <section className="landing-section" key={section.heading}>
@@ -51,6 +100,7 @@ export default function SeoLandingPage({ eyebrow, title, intro, sections, faqs, 
         <div className="wrap">
           <p className="eyebrow">FAQ</p>
           <h2>Helpful answers before you decide.</h2>
+          {faqLead ? <p className="landing-faq-lead">{faqLead}</p> : null}
           <div className="landing-faq">
             {faqs.map(({ question, answer }) => (
               <article key={question}>
@@ -64,11 +114,11 @@ export default function SeoLandingPage({ eyebrow, title, intro, sections, faqs, 
 
       <section className="cta-band">
         <div className="wrap">
-          <h2>Ready to make your wedding details easier to share?</h2>
-          <p>Get a custom digital invitation with RSVP and Guest Photo QR for one fair price.</p>
+          <h2>{ctaTitle}</h2>
+          <p>{ctaText}</p>
           <div className="actions">
-            <Link className="btn btn--light" href="/digital-wedding-invitation">See the $99 invitation</Link>
-            <a className="btn btn--light-ghost" href="https://wa.me/96178822978" target="_blank" rel="noopener noreferrer">Contact on WhatsApp ↗</a>
+            <a className="btn btn--light" href={WHATSAPP} target="_blank" rel="noopener noreferrer">Contact us on WhatsApp <span aria-hidden="true">↗</span></a>
+            <Link className="btn btn--light-ghost" href={secondaryCta.href}>{secondaryCta.label}</Link>
           </div>
         </div>
       </section>

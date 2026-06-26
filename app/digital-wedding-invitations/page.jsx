@@ -12,15 +12,64 @@ export const metadata = {
   },
 };
 
-const sections = [{eyebrow:'Search intent',heading:'Built for couples who want clarity',paragraphs:['A digital wedding experience should do more than replace a printed card. It should give guests the details they need, make replies easy to manage, and reflect the tone of your celebration.', 'mywedding.events creates a polished invitation flow with custom styling, venue details, RSVP management, personalized guest links, and a free Guest Photo QR so your planning stays organized.'],items:['Custom design: tailored colors, wording, photos, and music', 'RSVP management: collect yes, no, and guest details in one place', 'Guest links: make every invitation feel personal', 'Photo QR: collect candid photos and videos from guests']},{eyebrow:'How it works',heading:'From wedding details to a shareable guest link',paragraphs:['You share your wedding information, preferred style, venue details, music, and any guest requirements. The invitation is then assembled into a guest-friendly experience that works on phones and desktops.', 'Guests receive a link, view the invitation, open the map, and RSVP without installing an app. After the wedding, the included photo QR helps gather the memories guests captured throughout the day.'],items:null},{eyebrow:'Why it helps',heading:'A simpler alternative to paper, forms, and group chats',paragraphs:['Printed invitations are beautiful, but they cannot update themselves, collect replies, or gather guest photos. A digital invitation keeps the romance of a custom design while adding practical planning tools.', 'Instead of juggling separate RSVP forms, map links, WhatsApp threads, and photo albums, your guests get one clear place to find everything.'],items:null}];
-const faqs = [{question:'Do guests need an app?',answer:'No. Guests open the invitation, RSVP form, and photo upload page directly in their browser.'},{question:'Is RSVP included?',answer:'Yes. RSVP management and email notifications are included with the $99 digital wedding invitation.'},{question:'Can the design match our wedding style?',answer:'Yes. The invitation can be customized around your colors, wording, photos, music, and event details.'},{question:'Is Guest Photo QR included?',answer:'Yes. Guest Photo QR is included free with every digital wedding invitation.'},{question:'Can we invite unlimited guests?',answer:'Yes. There are no per-guest charges or invitee caps.'},{question:'How do we get started?',answer:'Start from the digital wedding invitation page or contact mywedding.events on WhatsApp with your wedding details.'}];
+const highlights = [
+  { title: 'A design that matches your wedding', desc: 'Custom colors, fonts, wording, photos, and music' },
+  { title: 'Built-in RSVP management', desc: 'Track every yes, no, and plus-one in one place' },
+  { title: 'A personal link for each guest', desc: 'Named greetings instead of one generic card' },
+  { title: 'Venue details with a tap-to-open map', desc: 'Guests find the ceremony and reception in seconds' },
+  { title: 'Free Guest Photo QR', desc: 'Collect candid photos and videos from everyone' },
+  { title: 'Unlimited guests, one-time $99', desc: 'No subscriptions and no per-guest fees, ever' },
+];
+
+const sections = [
+  {
+    eyebrow: 'Why digital',
+    heading: 'A wedding invitation that does more than a printed card',
+    paragraphs: [
+      'A printed card looks beautiful on the table, but it cannot update itself, gather replies, or remember who is bringing a plus-one. A digital wedding invitation keeps the elegance of a custom design and adds the practical tools that planning a wedding actually needs.',
+      'Everything your guests need — the story, the schedule, the venue, the music, and the RSVP — lives behind one link they can open on any phone, with nothing to download.',
+    ],
+    items: null,
+  },
+  {
+    eyebrow: 'How it works',
+    heading: 'From your wedding details to a link you can share',
+    paragraphs: [
+      'You send us your wedding information, design direction, venue, and any guest questions you want to ask. We assemble it into a polished invitation that reads beautifully on phones and desktops alike.',
+      'When it is ready, you share the link however you like — WhatsApp, email, or a printed insert with a QR code. Guests open it, view the details, and RSVP in a couple of taps.',
+    ],
+    items: null,
+  },
+  {
+    eyebrow: 'One fair price',
+    heading: 'Everything included for a one-time $99',
+    paragraphs: [
+      'There are no monthly fees and no charge per guest. Invite fifty people or five hundred — the price never moves, and the free Guest Photo QR is included with every invitation.',
+      'When you are ready, message us on WhatsApp with your wedding details and we will start your custom design.',
+    ],
+    items: null,
+  },
+];
+
+const faqs = [
+  { question: 'What is a digital wedding invitation?', answer: 'It is a custom invitation page guests open from a link on any phone or computer. It holds your wedding details, venue map, music, and an RSVP form — no app or printing required.' },
+  { question: 'How much does it cost?', answer: 'A one-time $99. There are no subscriptions and no per-guest charges, no matter how many people you invite.' },
+  { question: 'Can the design match our wedding style?', answer: 'Yes. Each invitation is customized around your colors, fonts, wording, photos, music, and venue details.' },
+  { question: 'Do our guests need to install anything?', answer: 'No. The invitation, RSVP form, and photo upload all open directly in the browser.' },
+  { question: 'Is the Guest Photo QR really free?', answer: 'Yes. Guest Photo QR is included free with every digital wedding invitation so you can collect guest photos and videos in one gallery.' },
+  { question: 'How do we get started?', answer: 'Message mywedding.events on WhatsApp with your wedding date, venue, and design preferences and we will begin your custom invitation.' },
+];
 
 export default function Page() {
   return (
     <SeoLandingPage
       eyebrow='Digital Wedding Invitations'
       title='Digital wedding invitations designed for modern couples'
-      intro='Create elegant digital wedding invitations with RSVP, custom guest links, maps, music, and a free wedding photo QR code for one simple price.'
+      intro='Create an elegant digital wedding invitation with RSVP, custom guest links, maps, music, and a free wedding photo QR code — all for one simple price.'
+      heroImage='/images/digital-wedding-invitation-phone-mockup.png'
+      heroImageAlt='An elegant digital wedding invitation shown on a phone with RSVP and venue details'
+      highlights={highlights}
+      highlightsTitle='Everything a modern wedding invitation should do'
       sections={sections}
       faqs={faqs}
     />

@@ -13,4 +13,4 @@ const faqs = [
 ];
 const sections = [{ eyebrow: 'Answers', heading: 'Everything in one place', paragraphs: ['Use this FAQ to understand what is included, how guests RSVP, and how Guest Photo QR helps gather the candid photos guests take throughout your wedding.', 'For package details, visit the digital wedding invitation page or the wedding photo QR code page.'], items: ['Digital invitation: custom design with venue details and music', 'RSVP: browser-based replies and notifications', 'Photo QR: guest uploads without an app'] }];
 
-export default function FaqPage() { return <SeoLandingPage eyebrow="FAQ" title="Digital Wedding Invitation FAQ" intro="Answers about RSVP, guest links, pricing, customization, and Guest Photo QR for mywedding.events." sections={sections} faqs={faqs} />; }
+export default function FaqPage() { return <SeoLandingPage eyebrow="FAQ" title="Digital Wedding Invitation FAQ" intro="Answers about RSVP, guest links, pricing, customization, and Guest Photo QR for mywedding.events." heroImage="/images/digital-wedding-invitation-phone-mockup.png" heroImageAlt="A digital wedding invitation shown on a phone" sections={sections} faqs={faqs} />; }

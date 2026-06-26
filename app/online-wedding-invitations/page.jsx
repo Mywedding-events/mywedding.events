@@ -12,15 +12,64 @@ export const metadata = {
   },
 };
 
-const sections = [{eyebrow:'Search intent',heading:'Built for couples who want clarity',paragraphs:['A digital wedding experience should do more than replace a printed card. It should give guests the details they need, make replies easy to manage, and reflect the tone of your celebration.', 'mywedding.events creates a polished invitation flow with custom styling, venue details, RSVP management, personalized guest links, and a free Guest Photo QR so your planning stays organized.'],items:['Custom design: tailored colors, wording, photos, and music', 'RSVP management: collect yes, no, and guest details in one place', 'Guest links: make every invitation feel personal', 'Photo QR: collect candid photos and videos from guests']},{eyebrow:'How it works',heading:'From wedding details to a shareable guest link',paragraphs:['You share your wedding information, preferred style, venue details, music, and any guest requirements. The invitation is then assembled into a guest-friendly experience that works on phones and desktops.', 'Guests receive a link, view the invitation, open the map, and RSVP without installing an app. After the wedding, the included photo QR helps gather the memories guests captured throughout the day.'],items:null},{eyebrow:'Why it helps',heading:'A simpler alternative to paper, forms, and group chats',paragraphs:['Printed invitations are beautiful, but they cannot update themselves, collect replies, or gather guest photos. A digital invitation keeps the romance of a custom design while adding practical planning tools.', 'Instead of juggling separate RSVP forms, map links, WhatsApp threads, and photo albums, your guests get one clear place to find everything.'],items:null}];
-const faqs = [{question:'Do guests need an app?',answer:'No. Guests open the invitation, RSVP form, and photo upload page directly in their browser.'},{question:'Is RSVP included?',answer:'Yes. RSVP management and email notifications are included with the $99 digital wedding invitation.'},{question:'Can the design match our wedding style?',answer:'Yes. The invitation can be customized around your colors, wording, photos, music, and event details.'},{question:'Is Guest Photo QR included?',answer:'Yes. Guest Photo QR is included free with every digital wedding invitation.'},{question:'Can we invite unlimited guests?',answer:'Yes. There are no per-guest charges or invitee caps.'},{question:'How do we get started?',answer:'Start from the digital wedding invitation page or contact mywedding.events on WhatsApp with your wedding details.'}];
+const highlights = [
+  { title: 'Opens on any phone or computer', desc: 'Nothing to install — just tap the link' },
+  { title: 'Share it however you like', desc: 'WhatsApp, email, or a QR code on a printed insert' },
+  { title: 'Always up to date', desc: 'Change a time or detail without reprinting anything' },
+  { title: 'Personal greeting per guest', desc: 'Each link feels addressed to that guest' },
+  { title: 'RSVP and venue map included', desc: 'Everything guests need in one place' },
+  { title: 'Free Guest Photo QR', desc: 'Gather candid moments from the whole celebration' },
+];
+
+const sections = [
+  {
+    eyebrow: 'Why online',
+    heading: 'One link your guests can open anywhere',
+    paragraphs: [
+      'An online wedding invitation goes wherever your guests are. There is no envelope to mail, no app to download, and no waiting on the post — you send a link and it opens instantly on any device.',
+      'Because it lives online, it can hold far more than a card ever could: your story, the schedule, directions, music, and a place to reply, all in one elegant experience.',
+    ],
+    items: null,
+  },
+  {
+    eyebrow: 'Polished, not generic',
+    heading: 'A custom design, not a template everyone recognizes',
+    paragraphs: [
+      'Free online invitation builders tend to look the same. Your invitation is designed around your wedding — your colors, fonts, wording, and photos — so it feels like yours from the first screen.',
+      'The result is a calm, considered experience that reflects the tone of your celebration rather than a busy form.',
+    ],
+    items: null,
+  },
+  {
+    eyebrow: 'One fair price',
+    heading: 'Unlimited guests for a one-time $99',
+    paragraphs: [
+      'Send your invitation to as many guests as you like — the price never changes and there are no subscriptions. RSVP and the free Guest Photo QR are included.',
+      'Message us on WhatsApp with your details and we will start your online invitation.',
+    ],
+    items: null,
+  },
+];
+
+const faqs = [
+  { question: 'How do guests open an online invitation?', answer: 'You share a link by WhatsApp, email, or a QR code. Guests tap it and the invitation opens in their browser — no app and no account needed.' },
+  { question: 'Can I update details after sending it?', answer: 'Yes. Because it lives online, details like timing or directions can be updated without reprinting or resending anything.' },
+  { question: 'Does it work on older phones?', answer: 'Yes. The invitation is built to open smoothly on any modern phone, tablet, or computer.' },
+  { question: 'Is it a template or a custom design?', answer: 'It is custom. Your invitation is designed around your wedding colors, fonts, wording, photos, and venue details.' },
+  { question: 'Is RSVP included?', answer: 'Yes. RSVP management and email notifications are included, along with a free Guest Photo QR.' },
+  { question: 'How much does it cost?', answer: 'A one-time $99 with unlimited guests and no per-guest fees. Message us on WhatsApp to begin.' },
+];
 
 export default function Page() {
   return (
     <SeoLandingPage
       eyebrow='Online Wedding Invitations'
       title='Online wedding invitations that feel personal'
-      intro='Send a beautiful online wedding invitation guests can open anywhere, with RSVP tracking, venue details, and a polished experience from first tap to final reply.'
+      intro='Send a beautiful online wedding invitation guests can open anywhere, with RSVP tracking, venue details, and a polished experience from the first tap to the final reply.'
+      heroImage='/images/invitation-phone-mockup.png'
+      heroImageAlt='An online wedding invitation open in a phone browser with the couple’s details'
+      highlights={highlights}
+      highlightsTitle='Why couples send their invitation online'
       sections={sections}
       faqs={faqs}
     />

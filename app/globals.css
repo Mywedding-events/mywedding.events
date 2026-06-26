@@ -35,8 +35,10 @@
   --accent-t: oklch(0.60 0.066 72 / 0.12);
 
   /* Type */
-  --serif: var(--font-serif), 'Cormorant Garamond', Georgia, serif;
-  --sans:  var(--font-sans), 'Jost', system-ui, sans-serif;
+  --font-serif: 'Cormorant Garamond';
+  --font-sans: 'Jost';
+  --serif: var(--font-serif), Georgia, serif;
+  --sans:  var(--font-sans), system-ui, sans-serif;
 
   /* Rhythm */
   --maxw: 1240px;
@@ -252,4 +254,48 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.05; }
   .nav-label { display: none; }
   .nav-link { padding: 4px; }
   .nav-tag { font-size: 0.52rem; }
+}
+
+/* ---------- FAQ blocks ---------- */
+.faq {
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+}
+
+.faq-head {
+  max-width: 680px;
+  margin: 0 auto clamp(32px, 5vw, 56px);
+  text-align: center;
+}
+
+.faq-head h2 {
+  margin-top: 14px;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+.faq-list {
+  display: grid;
+  gap: 14px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.faq-list details {
+  border: 1px solid var(--line);
+  background: var(--ivory);
+  padding: 0 clamp(18px, 3vw, 28px);
+}
+
+.faq-list summary {
+  cursor: pointer;
+  padding: 20px 0;
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.faq-list p {
+  padding: 0 0 22px;
+  color: var(--ink-soft);
 }

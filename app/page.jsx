@@ -3,22 +3,22 @@ import Header from '@/components/Header';
 import Slider from '@/components/Slider';
 
 export const metadata = {
-  title: 'Digital Wedding Invitations with RSVP — $99',
+  title: 'Digital Wedding Invitations with RSVP & Photo QR — $99',
   description:
-    'Create a beautiful digital wedding invitation with RSVP tracking, custom guest links, and a free Guest Photo QR. One-time $99, unlimited invitees.',
+    'Create a custom digital wedding invitation with RSVP tracking, personalized guest links, and a free wedding photo QR code. One-time $99, unlimited invitees.',
   alternates: { canonical: '/' },
   openGraph: {
     url: '/',
-    title: 'Digital Wedding Invitations with RSVP — $99',
+    title: 'Digital Wedding Invitations with RSVP & Photo QR — $99',
     description:
-      'Beautiful digital wedding invitations with RSVP tracking, custom guest links, and a free Guest Photo QR. One-time $99, unlimited invitees.',
+      'Custom digital wedding invitations with RSVP tracking, personalized guest links, and a free wedding photo QR code. One-time $99, unlimited invitees.',
   },
 };
 
 const homeJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Product',
-  name: 'Digital Wedding Invitation',
+  name: 'Digital Wedding Invitation with RSVP and Guest Photo QR',
   description:
     'A beautifully crafted digital wedding invitation tailored to your story. Includes RSVP management, custom guest links, music, location with map, and a free Guest Photo QR.',
   brand: { '@type': 'Brand', name: 'mywedding.events' },
@@ -55,13 +55,13 @@ export default function HomePage() {
     <div className="home" data-screen-label="Home">
       <Header centered withBrand={false} />
       <h1 className="visually-hidden">
-        Digital Wedding Invitations with RSVP — beautifully crafted, fully customized, one-time $99
+        Digital Wedding Invitations with RSVP and Photo QR — custom, fully personalized, one-time $99
       </h1>
       <p className="visually-hidden">
-        mywedding.events creates beautiful digital wedding invitations with RSVP management,
-        custom guest links, location and map, music, and a free Guest Photo QR that collects
-        every guest&apos;s photos into one shared wedding gallery. One-time $99, unlimited invitees,
-        no subscriptions.
+        mywedding.events creates custom digital wedding invitations with RSVP tracking,
+        personalized guest links, location and map, music, and a free wedding photo QR code
+        that collects every guest&apos;s photos into one shared gallery. One-time $99,
+        unlimited invitees, no subscriptions.
       </p>
       <Slider />
       <script

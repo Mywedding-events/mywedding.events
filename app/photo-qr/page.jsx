@@ -114,7 +114,7 @@ export default function PhotoQrPage() {
             <h1>Every photo,<br />from <em>every</em> guest.</h1>
             <p className="sub">Your guests capture moments you&apos;ll never see from the front of the room. Guest Photo QR gathers every one of them automatically, into a single shared gallery. No apps. No cost.</p>
             <div className="actions">
-              <Link className="btn btn--accent" href="/invitation">Included with every invitation</Link>
+              <Link className="btn btn--accent" href="/digital-wedding-invitation">Included with every invitation</Link>
               <Link className="btn btn--ghost" href="#how">See how it works</Link>
             </div>
           </div>
@@ -218,7 +218,7 @@ export default function PhotoQrPage() {
           <h2>Don&apos;t let a single moment <em>slip away</em>.</h2>
           <p>Guest Photo QR comes included at no extra cost with your $99 Digital Invitation.</p>
           <div className="actions">
-            <Link className="btn btn--light" href="/invitation">Get the invitation + Photo QR</Link>
+            <Link className="btn btn--light" href="/digital-wedding-invitation">Get the invitation + Photo QR</Link>
             <Link className="btn btn--light-ghost" href="/">Back to home</Link>
           </div>
         </div>

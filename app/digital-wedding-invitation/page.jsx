@@ -17,9 +17,9 @@ export const metadata = {
     'wedding RSVP management',
     'paperless wedding invitation',
   ],
-  alternates: { canonical: '/invitation' },
+  alternates: { canonical: '/digital-wedding-invitation' },
   openGraph: {
-    url: '/invitation',
+    url: '/digital-wedding-invitation',
     title: 'Digital Wedding Invitation — Customized & Elegant, $99',
     description:
       'A beautifully crafted digital wedding invitation tailored to your story. Unlimited invitees, RSVP management, and a free Guest Photo QR — one-time $99.',
@@ -55,7 +55,7 @@ const invitationJsonLd = {
     price: '99',
     priceCurrency: 'USD',
     availability: 'https://schema.org/InStock',
-    url: 'https://mywedding.events/invitation',
+    url: 'https://mywedding.events/digital-wedding-invitation',
     priceValidUntil: '2099-12-31',
   },
 };
@@ -65,7 +65,7 @@ const invitationBreadcrumbJsonLd = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://mywedding.events/' },
-    { '@type': 'ListItem', position: 2, name: 'Digital Invitation', item: 'https://mywedding.events/invitation' },
+    { '@type': 'ListItem', position: 2, name: 'Digital Invitation', item: 'https://mywedding.events/digital-wedding-invitation' },
   ],
 };
 

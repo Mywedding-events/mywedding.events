@@ -4,9 +4,9 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  title: 'Digital Wedding Invitation — Customized & Elegant, $99',
+  title: 'Digital Wedding Invitation with RSVP — Custom Design for $99',
   description:
-    'A beautifully crafted digital wedding invitation tailored to your story. Unlimited invitees, RSVP management, custom guest links, location & map, music, and a free Guest Photo QR — one-time $99.',
+    'Get a custom digital wedding invitation with RSVP tracking, personalized guest links, location and map, music, and a free wedding photo QR code — one-time $99.',
   keywords: [
     'digital wedding invitation',
     'digital wedding invitations',
@@ -20,9 +20,9 @@ export const metadata = {
   alternates: { canonical: '/digital-wedding-invitation' },
   openGraph: {
     url: '/digital-wedding-invitation',
-    title: 'Digital Wedding Invitation — Customized & Elegant, $99',
+    title: 'Digital Wedding Invitation with RSVP — Custom Design for $99',
     description:
-      'A beautifully crafted digital wedding invitation tailored to your story. Unlimited invitees, RSVP management, and a free Guest Photo QR — one-time $99.',
+      'A custom digital wedding invitation with RSVP tracking, personalized guest links, and a free wedding photo QR code — one-time $99.',
     images: [
       {
         url: '/images/digital-wedding-invitation-phone-mockup.png',
@@ -34,7 +34,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Digital Wedding Invitation — Customized & Elegant, $99',
+    title: 'Digital Wedding Invitation with RSVP — Custom Design for $99',
     description:
       'Send a beautiful digital wedding invitation. Unlimited invitees, RSVP management, free Guest Photo QR. One-time $99.',
     images: ['/images/digital-wedding-invitation-phone-mockup.png'],
@@ -169,6 +169,58 @@ export default function InvitationPage() {
               </ul>
             </div>
 
+          </div>
+        </div>
+      </section>
+
+
+      <section className="how invitation-how" id="how-it-works">
+        <div className="how-head">
+          <p className="eyebrow">How it works</p>
+          <h2>Custom digital wedding invitations, from first draft to final RSVP.</h2>
+        </div>
+        <div className="steps">
+          <div className="step">
+            <span className="num">01</span>
+            <h4>Share your wedding details</h4>
+            <p>Send your names, date, venue, colors, wording, music preference, and guest list so your invitation can be tailored to your day.</p>
+          </div>
+          <div className="step">
+            <span className="num">02</span>
+            <h4>Review your custom design</h4>
+            <p>Your digital wedding invitation is crafted with the essential details guests need: schedule, location, map, RSVP, and your personal style.</p>
+          </div>
+          <div className="step">
+            <span className="num">03</span>
+            <h4>Send personalized guest links</h4>
+            <p>Each invitee receives a custom link, responds from their phone, and helps you keep every RSVP organized in one place.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="faq" id="faq">
+        <div className="wrap">
+          <div className="faq-head">
+            <p className="eyebrow">Questions couples ask</p>
+            <h2>Digital wedding invitation FAQs</h2>
+          </div>
+          <div className="faq-list">
+            <details>
+              <summary>How much does a digital wedding invitation cost?</summary>
+              <p>One-time $99. There are no subscriptions and no per-guest charges, no matter how many people you invite.</p>
+            </details>
+            <details>
+              <summary>How many guests can I invite with a digital wedding invitation?</summary>
+              <p>Unlimited. Invite ten guests or a thousand — the price never moves.</p>
+            </details>
+            <details>
+              <summary>What is included with a digital wedding invitation from mywedding.events?</summary>
+              <p>A fully customized invitation, location details and map, music, RSVP management with email notifications, a custom link for each invitee, and a free Guest Photo QR.</p>
+            </details>
+            <details>
+              <summary>Do guests need to install an app to RSVP or view the invitation?</summary>
+              <p>No. The digital wedding invitation and RSVP both open in the browser — no app required.</p>
+            </details>
           </div>
         </div>
       </section>

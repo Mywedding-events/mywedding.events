@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  title: 'Guest Photo QR — Free with every Digital Wedding Invitation',
+  title: 'Wedding Photo QR Code for Guest Uploads — Free with Invitation',
   description:
     'Guest Photo QR collects every guest’s wedding photos and videos into one shared gallery — automatically. Free with every $99 digital wedding invitation from mywedding.events.',
   keywords: [
@@ -17,7 +17,7 @@ export const metadata = {
   alternates: { canonical: '/wedding-photo-qr-code' },
   openGraph: {
     url: '/wedding-photo-qr-code',
-    title: 'Guest Photo QR — Free with every Digital Wedding Invitation',
+    title: 'Wedding Photo QR Code for Guest Uploads — Free with Invitation',
     description:
       'A single QR turns every guest’s phone into a contributor to your wedding album. Included free with the $99 digital wedding invitation.',
     images: [
@@ -31,12 +31,44 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Guest Photo QR — Free with every Digital Wedding Invitation',
+    title: 'Wedding Photo QR Code for Guest Uploads — Free with Invitation',
     description:
       'Collect every guest photo automatically. Free with the $99 digital wedding invitation.',
     images: ['/images/wedding-guest-photo-qr-code.png'],
   },
 };
+
+
+const photoQrFaqs = [
+  {
+    question: 'What is a wedding photo QR code?',
+    answer: 'It is a scannable QR code that opens a private upload page where guests can add wedding photos and videos to one shared gallery.',
+  },
+  {
+    question: 'Do guests need to download an app?',
+    answer: 'No. Guests scan the QR code and upload from their browser, so there is no app to install.',
+  },
+  {
+    question: 'Can guests upload videos too?',
+    answer: 'Yes. The Guest Photo QR is designed for photos and videos guests capture during your celebration.',
+  },
+  {
+    question: 'Is the gallery private?',
+    answer: 'Yes. Your wedding gallery is created for your event so you can collect, keep, and share memories on your terms.',
+  },
+  {
+    question: 'Where should we display the QR code?',
+    answer: 'Place it on table cards, welcome signage, the guest book table, programs, or inside your digital wedding invitation.',
+  },
+  {
+    question: 'Is the QR code free?',
+    answer: 'Yes. Guest Photo QR is included free with every $99 digital wedding invitation from mywedding.events.',
+  },
+  {
+    question: 'Can older guests use it easily?',
+    answer: 'Yes. The flow is simple: scan the code, open the page, and choose photos from the phone camera roll.',
+  },
+];
 
 const photoQrBreadcrumbJsonLd = {
   '@context': 'https://schema.org',
@@ -102,6 +134,20 @@ const photoQrServiceJsonLd = {
   },
 };
 
+
+const photoQrFaqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: photoQrFaqs.map(({ question, answer }) => ({
+    '@type': 'Question',
+    name: question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: answer,
+    },
+  })),
+};
+
 export default function PhotoQrPage() {
   return (
     <div className="photo-qr-page" data-screen-label="Guest Photo QR Page">
@@ -120,7 +166,7 @@ export default function PhotoQrPage() {
           </div>
         </div>
         <div className="hero__media">
-          <img src="/images/wedding-guest-photo-qr-code.png" alt="A wedding guest scanning a 'Capture the Love' table card QR code to upload photos to a shared gallery" />
+          <img src="/images/wedding-guest-photo-qr-code.png" alt="A wedding guest scanning a 'Capture the Love' table card QR code to upload photos to a shared gallery" width="1536" height="1024" loading="eager" fetchPriority="high" decoding="async" />
         </div>
       </div>
 
@@ -145,25 +191,25 @@ export default function PhotoQrPage() {
         </div>
         <div className="steps">
           <div className="step">
-            <img className="shot" src="/images/guest-photo-qr-step-1-display-code.png" alt="A Capture the Love wedding photo QR card displayed on a candlelit reception table" />
+            <img className="shot" src="/images/guest-photo-qr-step-1-display-code.png" width="1024" height="1536" loading="lazy" decoding="async" alt="A Capture the Love wedding photo QR card displayed on a candlelit reception table" />
             <span className="num">01</span>
             <h4>Display your code</h4>
             <p>Your unique QR appears on table cards, signage and your invitation.</p>
           </div>
           <div className="step">
-            <img className="shot" src="/images/guest-photo-qr-step-2-guests-scan.png" alt="A wedding guest scanning the table QR card with their phone camera" />
+            <img className="shot" src="/images/guest-photo-qr-step-2-guests-scan.png" width="1024" height="1536" loading="lazy" decoding="async" alt="A wedding guest scanning the table QR card with their phone camera" />
             <span className="num">02</span>
             <h4>Guests scan it</h4>
             <p>A quick scan opens your upload page right in their browser—no app to install.</p>
           </div>
           <div className="step">
-            <img className="shot" src="/images/guest-photo-qr-step-3-upload-photos.png" alt="A phone showing the photo selection screen ready to upload wedding photos to the shared gallery" />
+            <img className="shot" src="/images/guest-photo-qr-step-3-upload-photos.png" width="1024" height="1536" loading="lazy" decoding="async" alt="A phone showing the photo selection screen ready to upload wedding photos to the shared gallery" />
             <span className="num">03</span>
             <h4>They upload</h4>
             <p>Photos and videos upload straight from the camera roll in seconds.</p>
           </div>
           <div className="step">
-            <img className="shot" src="/images/guest-photo-qr-step-4-collect-gallery.png" alt="A newlywed couple viewing their shared wedding photo gallery on a laptop" />
+            <img className="shot" src="/images/guest-photo-qr-step-4-collect-gallery.png" width="1024" height="1536" loading="lazy" decoding="async" alt="A newlywed couple viewing their shared wedding photo gallery on a laptop" />
             <span className="num">04</span>
             <h4>You collect it all</h4>
             <p>Every memory gathers in one private gallery for you to keep and share.</p>
@@ -212,6 +258,25 @@ export default function PhotoQrPage() {
         </div>
       </section>
 
+
+      <section className="faq" id="faq">
+        <div className="wrap faq-wrap">
+          <div className="faq-head">
+            <p className="eyebrow">Wedding photo QR FAQ</p>
+            <h2>Simple photo sharing for every guest.</h2>
+            <p>Guest Photo QR helps you collect candid wedding photos and videos without apps, group chats, or scattered albums.</p>
+          </div>
+          <div className="faq-list">
+            {photoQrFaqs.map(({ question, answer }) => (
+              <article className="faq-item" key={question}>
+                <h3>{question}</h3>
+                <p>{answer}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="cta-band">
         <div className="wrap">
           <p className="eyebrow">Free with every invitation</p>
@@ -237,6 +302,10 @@ export default function PhotoQrPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(photoQrBreadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(photoQrFaqJsonLd) }}
       />
     </div>
   );

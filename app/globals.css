@@ -35,8 +35,8 @@
   --accent-t: oklch(0.60 0.066 72 / 0.12);
 
   /* Type */
-  --serif: var(--font-serif), 'Cormorant Garamond', Georgia, serif;
-  --sans:  var(--font-sans), 'Jost', system-ui, sans-serif;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans:  'Jost', system-ui, sans-serif;
 
   /* Rhythm */
   --maxw: 1240px;
@@ -253,3 +253,13 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.05; }
   .nav-link { padding: 4px; }
   .nav-tag { font-size: 0.52rem; }
 }
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 18px;
+  max-width: 620px;
+}
+.footer-nav a { color: var(--ink-soft); }
+.footer-nav a:hover { color: var(--accent-d); }

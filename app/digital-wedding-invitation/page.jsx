@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  title: 'Digital Wedding Invitation — Customized & Elegant, $99',
+  title: 'Digital Wedding Invitation with RSVP — Custom Design for $99',
   description:
     'A beautifully crafted digital wedding invitation tailored to your story. Unlimited invitees, RSVP management, custom guest links, location & map, music, and a free Guest Photo QR — one-time $99.',
   keywords: [
@@ -20,7 +20,7 @@ export const metadata = {
   alternates: { canonical: '/digital-wedding-invitation' },
   openGraph: {
     url: '/digital-wedding-invitation',
-    title: 'Digital Wedding Invitation — Customized & Elegant, $99',
+    title: 'Digital Wedding Invitation with RSVP — Custom Design for $99',
     description:
       'A beautifully crafted digital wedding invitation tailored to your story. Unlimited invitees, RSVP management, and a free Guest Photo QR — one-time $99.',
     images: [
@@ -34,12 +34,44 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Digital Wedding Invitation — Customized & Elegant, $99',
+    title: 'Digital Wedding Invitation with RSVP — Custom Design for $99',
     description:
       'Send a beautiful digital wedding invitation. Unlimited invitees, RSVP management, free Guest Photo QR. One-time $99.',
     images: ['/images/digital-wedding-invitation-phone-mockup.png'],
   },
 };
+
+
+const invitationFaqs = [
+  {
+    question: 'How much does a digital wedding invitation cost?',
+    answer: 'One-time $99. There are no subscriptions and no per-guest charges, no matter how many people you invite.',
+  },
+  {
+    question: 'Can I invite unlimited guests?',
+    answer: 'Yes. Invite ten guests or a thousand — the price never moves.',
+  },
+  {
+    question: 'Do guests need an app?',
+    answer: 'No. Your invitation, guest details, and RSVP form open directly in the browser on any modern phone or computer.',
+  },
+  {
+    question: 'Can guests RSVP from their phone?',
+    answer: 'Yes. Guests can RSVP from their personalized invitation link, and you receive an email notification after each reply.',
+  },
+  {
+    question: 'Can you match our wedding colors and theme?',
+    answer: 'Yes. Each invitation is customized around your wedding colors, fonts, wording, photos, music, venue details, and story.',
+  },
+  {
+    question: 'Is the Guest Photo QR included?',
+    answer: 'Yes. Every $99 digital wedding invitation includes a free Guest Photo QR so guests can upload photos and videos to one shared gallery.',
+  },
+  {
+    question: 'How long does setup take?',
+    answer: 'Setup timing depends on your content and revision needs, but the process starts as soon as you share your wedding details, design direction, and guest requirements.',
+  },
+];
 
 const invitationJsonLd = {
   '@context': 'https://schema.org',
@@ -72,40 +104,14 @@ const invitationBreadcrumbJsonLd = {
 const invitationFaqJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'How much does a digital wedding invitation cost?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'One-time $99. There are no subscriptions and no per-guest charges, no matter how many people you invite.',
-      },
+  mainEntity: invitationFaqs.map(({ question, answer }) => ({
+    '@type': 'Question',
+    name: question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: answer,
     },
-    {
-      '@type': 'Question',
-      name: 'How many guests can I invite with a digital wedding invitation?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Unlimited. Invite ten guests or a thousand — the price never moves.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What is included with a digital wedding invitation from mywedding.events?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'A fully customized invitation, location details and map, music, RSVP management with email notifications, a custom link for each invitee, and a free Guest Photo QR.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Do guests need to install an app to RSVP or view the invitation?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'No. The digital wedding invitation and RSVP both open in the browser — no app required.',
-      },
-    },
-  ],
+  })),
 };
 
 function Tick() {
@@ -169,6 +175,25 @@ export default function InvitationPage() {
               </ul>
             </div>
 
+          </div>
+        </div>
+      </section>
+
+
+      <section className="faq" id="faq">
+        <div className="wrap faq-wrap">
+          <div className="faq-head">
+            <p className="eyebrow">Digital invitation FAQ</p>
+            <h2>Questions couples ask before getting started.</h2>
+            <p>Everything below is included in your custom digital wedding invitation with RSVP, guest links, and the free Guest Photo QR.</p>
+          </div>
+          <div className="faq-list">
+            {invitationFaqs.map(({ question, answer }) => (
+              <article className="faq-item" key={question}>
+                <h3>{question}</h3>
+                <p>{answer}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>

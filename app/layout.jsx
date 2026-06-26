@@ -1,20 +1,4 @@
 import './globals.css';
-import { Cormorant_Garamond, Jost } from 'next/font/google';
-
-const cormorant = Cormorant_Garamond({
-  subsets: ['latin'],
-  weight: ['400', '500', '600'],
-  style: ['normal', 'italic'],
-  variable: '--font-serif',
-  display: 'swap',
-});
-
-const jost = Jost({
-  subsets: ['latin'],
-  weight: ['300', '400', '500'],
-  variable: '--font-sans',
-  display: 'swap',
-});
 
 const SITE_URL = 'https://mywedding.events';
 const SITE_NAME = 'mywedding.events';
@@ -23,7 +7,7 @@ const OG_IMAGE = '/images/digital-wedding-invitation-phone-mockup.png';
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Digital Wedding Invitation — Elegant, Customized, $99 | mywedding.events',
+    default: 'Digital Wedding Invitations with RSVP & Photo QR — $99 | mywedding.events',
     template: '%s | mywedding.events',
   },
   description:
@@ -54,7 +38,7 @@ export const metadata = {
     type: 'website',
     siteName: SITE_NAME,
     url: SITE_URL,
-    title: 'Digital Wedding Invitation — Elegant, Customized, $99',
+    title: 'Digital Wedding Invitations with RSVP & Photo QR — $99',
     description:
       'A beautifully crafted digital wedding invitation tailored to your story. Unlimited invitees, RSVP management, and a free Guest Photo QR — for one fair $99.',
     images: [
@@ -69,7 +53,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Digital Wedding Invitation — Elegant, Customized, $99',
+    title: 'Digital Wedding Invitations with RSVP & Photo QR — $99',
     description:
       'Send a beautiful digital wedding invitation. One-time $99, unlimited invitees, RSVP management, free Guest Photo QR.',
     images: [OG_IMAGE],
@@ -136,7 +120,7 @@ const websiteJsonLd = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${jost.variable}`}>
+    <html lang="en">
       <head>
         <script
           type="application/ld+json"

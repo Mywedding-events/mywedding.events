@@ -179,7 +179,7 @@ export default function InvitationPage() {
           <p>One beautiful invitation, unlimited guests, and the free Guest Photo QR included. All for $99.</p>
           <div className="actions">
             <a className="btn btn--light" href="https://wa.me/96178822978" target="_blank" rel="noopener noreferrer">CONTACT US ON WHATSAPP <span aria-hidden="true">↗</span></a>
-            <Link className="btn btn--light-ghost" href="/photo-qr">Explore Guest Photo QR</Link>
+            <Link className="btn btn--light-ghost" href="/wedding-photo-qr-code">Explore Guest Photo QR</Link>
           </div>
         </div>
       </section>

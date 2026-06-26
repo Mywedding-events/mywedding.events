@@ -16,7 +16,7 @@ export default function sitemap() {
       priority: 0.9,
     },
     {
-      url: `${SITE_URL}/photo-qr`,
+      url: `${SITE_URL}/wedding-photo-qr-code`,
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.7,

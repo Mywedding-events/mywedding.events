@@ -74,7 +74,7 @@ export default function Slider() {
               <p className="sub anim d3">Send a digital wedding invitation guests will adore, collect every shared photo with a single QR code, and—soon—book the people who make the day. All under one calm, considered roof.</p>
               <div className="actions anim d4">
                 <Link className="btn btn--accent" href="/digital-wedding-invitation">Create your invitation</Link>
-                <Link className="btn btn--ghost" href="/photo-qr">Guest Photo QR</Link>
+                <Link className="btn btn--ghost" href="/wedding-photo-qr-code">Guest Photo QR</Link>
               </div>
             </div>
           </div>
@@ -114,7 +114,7 @@ export default function Slider() {
               <h2 className="lead anim d2">Every photo,<br />from <em>every</em> guest.</h2>
               <p className="sub anim d3">One little QR code on each table. Guests scan, upload the moments they captured, and your whole shared wedding photo gallery fills itself—no apps, no chasing, no cost.</p>
               <div className="actions anim d4">
-                <Link className="btn btn--accent" href="/photo-qr">How it works</Link>
+                <Link className="btn btn--accent" href="/wedding-photo-qr-code">How it works</Link>
               </div>
             </div>
           </div>
@@ -153,7 +153,7 @@ export default function Slider() {
           <section>
             <h2>Your wedding, in one beautiful place.</h2>
             <p>Send a digital wedding invitation guests will adore, collect every shared photo with a single QR code, and—soon—book the people who make the day.</p>
-            <p><Link href="/digital-wedding-invitation">Create your digital wedding invitation</Link> · <Link href="/photo-qr">Guest Photo QR</Link></p>
+            <p><Link href="/digital-wedding-invitation">Create your digital wedding invitation</Link> · <Link href="/wedding-photo-qr-code">Guest Photo QR</Link></p>
           </section>
           <section>
             <h2>Digital Wedding Invitation — $99</h2>

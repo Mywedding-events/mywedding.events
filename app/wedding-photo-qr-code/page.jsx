@@ -1,4 +1,4 @@
-import './photo-qr.css';
+import './wedding-photo-qr-code.css';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -14,9 +14,9 @@ export const metadata = {
     'shared wedding gallery',
     'digital wedding invitation with photo sharing',
   ],
-  alternates: { canonical: '/photo-qr' },
+  alternates: { canonical: '/wedding-photo-qr-code' },
   openGraph: {
-    url: '/photo-qr',
+    url: '/wedding-photo-qr-code',
     title: 'Guest Photo QR — Free with every Digital Wedding Invitation',
     description:
       'A single QR turns every guest’s phone into a contributor to your wedding album. Included free with the $99 digital wedding invitation.',
@@ -43,7 +43,7 @@ const photoQrBreadcrumbJsonLd = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://mywedding.events/' },
-    { '@type': 'ListItem', position: 2, name: 'Guest Photo QR', item: 'https://mywedding.events/photo-qr' },
+    { '@type': 'ListItem', position: 2, name: 'Guest Photo QR', item: 'https://mywedding.events/wedding-photo-qr-code' },
   ],
 };
 
@@ -60,28 +60,28 @@ const photoQrHowToJsonLd = {
       position: 1,
       name: 'Display your code',
       text: 'Your unique QR appears on table cards, signage and your digital wedding invitation.',
-      url: 'https://mywedding.events/photo-qr#how',
+      url: 'https://mywedding.events/wedding-photo-qr-code#how',
     },
     {
       '@type': 'HowToStep',
       position: 2,
       name: 'Guests scan it',
       text: 'A quick scan opens your upload page right in their browser — no app to install.',
-      url: 'https://mywedding.events/photo-qr#how',
+      url: 'https://mywedding.events/wedding-photo-qr-code#how',
     },
     {
       '@type': 'HowToStep',
       position: 3,
       name: 'They upload',
       text: 'Photos and videos upload straight from the camera roll in seconds.',
-      url: 'https://mywedding.events/photo-qr#how',
+      url: 'https://mywedding.events/wedding-photo-qr-code#how',
     },
     {
       '@type': 'HowToStep',
       position: 4,
       name: 'You collect it all',
       text: 'Every memory gathers in one private gallery for you to keep and share.',
-      url: 'https://mywedding.events/photo-qr#how',
+      url: 'https://mywedding.events/wedding-photo-qr-code#how',
     },
   ],
 };

@@ -79,7 +79,7 @@ export default function Slider() {
             </div>
           </div>
           <div className="slide__media">
-            <img className="ph-img" style={{ objectPosition: '50% 40%' }} src="/images/santorini-wedding-couple-portrait.png" alt="A bride and groom walking a whitewashed Santorini path above the caldera at sunset" width="2160" height="2700" loading="lazy" decoding="async" />
+            <img className="ph-img" style={{ objectPosition: '50% 40%' }} src="/images/santorini-wedding-couple-portrait.png" alt="A bride and groom walking a whitewashed Santorini path above the caldera at sunset" width="2160" height="2700" loading="eager" fetchPriority="high" decoding="async" />
           </div>
         </section>
 

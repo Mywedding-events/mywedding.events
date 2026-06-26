@@ -1,4 +1,21 @@
 import './globals.css';
+import { Cormorant_Garamond, Jost } from 'next/font/google';
+
+const cormorant = Cormorant_Garamond({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  style: ['normal', 'italic'],
+  variable: '--font-serif',
+  display: 'swap',
+});
+
+const jost = Jost({
+  subsets: ['latin'],
+  weight: ['300', '400', '500'],
+  variable: '--font-sans',
+  display: 'swap',
+});
+
 const SITE_URL = 'https://mywedding.events';
 const SITE_NAME = 'mywedding.events';
 const OG_IMAGE = '/images/digital-wedding-invitation-phone-mockup.png';
@@ -6,11 +23,11 @@ const OG_IMAGE = '/images/digital-wedding-invitation-phone-mockup.png';
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Digital Wedding Invitations with RSVP & Photo QR — $99 | mywedding.events',
+    default: 'Digital Wedding Invitation — Elegant, Customized, $99 | mywedding.events',
     template: '%s | mywedding.events',
   },
   description:
-    'Create a custom digital wedding invitation with RSVP tracking, personalized guest links, and a free wedding photo QR code. One-time $99, unlimited invitees.',
+    'Send a beautiful digital wedding invitation guests will adore. One-time $99, unlimited invitees, RSVP management, custom guest links, and a free Guest Photo QR — all in one place.',
   keywords: [
     'digital wedding invitation',
     'digital wedding invitations',
@@ -119,14 +136,8 @@ const websiteJsonLd = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${cormorant.variable} ${jost.variable}`}>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Jost:wght@300;400;500&display=swap"
-          rel="stylesheet"
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}

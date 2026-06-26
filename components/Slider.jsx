@@ -73,7 +73,7 @@ export default function Slider() {
               <h2 className="lead anim d2">Your wedding,<br />in one <em>beautiful</em> place.</h2>
               <p className="sub anim d3">Send a digital wedding invitation guests will adore, collect every shared photo with a single QR code, and—soon—book the people who make the day. All under one calm, considered roof.</p>
               <div className="actions anim d4">
-                <Link className="btn btn--accent" href="/invitation">Create your invitation</Link>
+                <Link className="btn btn--accent" href="/digital-wedding-invitation">Create your invitation</Link>
                 <Link className="btn btn--ghost" href="/photo-qr">Guest Photo QR</Link>
               </div>
             </div>
@@ -98,7 +98,7 @@ export default function Slider() {
                 <li>A custom link for each invitee</li>
               </ul>
               <div className="actions anim d4">
-                <Link className="btn" href="/invitation">See everything included</Link>
+                <Link className="btn" href="/digital-wedding-invitation">See everything included</Link>
               </div>
             </div>
           </div>
@@ -153,7 +153,7 @@ export default function Slider() {
           <section>
             <h2>Your wedding, in one beautiful place.</h2>
             <p>Send a digital wedding invitation guests will adore, collect every shared photo with a single QR code, and—soon—book the people who make the day.</p>
-            <p><Link href="/invitation">Create your digital wedding invitation</Link> · <Link href="/photo-qr">Guest Photo QR</Link></p>
+            <p><Link href="/digital-wedding-invitation">Create your digital wedding invitation</Link> · <Link href="/photo-qr">Guest Photo QR</Link></p>
           </section>
           <section>
             <h2>Digital Wedding Invitation — $99</h2>

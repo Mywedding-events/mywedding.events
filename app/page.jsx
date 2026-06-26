@@ -29,7 +29,7 @@ const homeJsonLd = {
     price: '99',
     priceCurrency: 'USD',
     availability: 'https://schema.org/InStock',
-    url: 'https://mywedding.events/invitation',
+    url: 'https://mywedding.events/digital-wedding-invitation',
     priceValidUntil: '2099-12-31',
   },
 };

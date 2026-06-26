@@ -10,7 +10,7 @@ export default function sitemap() {
       priority: 1.0,
     },
     {
-      url: `${SITE_URL}/invitation`,
+      url: `${SITE_URL}/digital-wedding-invitation`,
       lastModified: now,
       changeFrequency: 'weekly',
       priority: 0.9,

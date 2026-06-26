@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 const NAV_ITEMS = [
-  { href: '/invitation', label: 'Digital Invitation', key: 'invitation' },
+  { href: '/digital-wedding-invitation', label: 'Digital Invitation', key: 'invitation' },
   { href: '/photo-qr', label: 'Guest Photo QR', key: 'photo-qr', tag: { text: 'Free', kind: 'free' } },
   { label: 'Photographers', key: 'photographers', disabled: true, tag: { text: 'Coming Soon', kind: 'soon' } },
   { label: 'Restaurants', key: 'restaurants', disabled: true, tag: { text: 'Coming Soon', kind: 'soon' } },

@@ -1,4 +1,22 @@
 import './globals.css';
+import { Cormorant_Garamond, Jost } from 'next/font/google';
+
+// Site-wide typography — the only two fonts the design uses:
+//   serif (Cormorant Garamond) for headings & display, sans (Jost) for body & UI.
+const serif = Cormorant_Garamond({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  style: ['normal', 'italic'],
+  variable: '--font-serif',
+  display: 'swap',
+});
+
+const sans = Jost({
+  subsets: ['latin'],
+  weight: ['300', '400', '500'],
+  variable: '--font-sans',
+  display: 'swap',
+});
 
 const SITE_URL = 'https://mywedding.events';
 const SITE_NAME = 'mywedding.events';
@@ -120,7 +138,7 @@ const websiteJsonLd = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${serif.variable} ${sans.variable}`}>
       <head>
         <script
           type="application/ld+json"

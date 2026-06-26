@@ -249,9 +249,12 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.05; }
   :root { --header-h: 72px; }
 }
 @media (max-width: 680px) {
-  .nav-label { display: none; }
-  .nav-link { padding: 4px; }
-  .nav-tag { font-size: 0.52rem; }
+  /* Keep the real, tappable links legible; drop the non-clickable
+     "Coming Soon" teasers that would otherwise overflow the bar. */
+  .nav { gap: 18px; }
+  .nav-link.is-disabled { display: none; }
+  .nav-link { padding: 6px 0; }
+  .nav-tag { font-size: 0.5rem; }
 }
 
 .footer-nav {

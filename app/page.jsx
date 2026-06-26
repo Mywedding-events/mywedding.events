@@ -55,12 +55,11 @@ export default function HomePage() {
   return (
     <div className="home" data-screen-label="Home">
       <Header centered withBrand={false} />
-
       <main>
         <section className="home-hero">
           <div className="home-hero__copy">
             <p className="eyebrow">Digital wedding invitations</p>
-            <h1>Digital Wedding Invitations with RSVP &amp; Photo QR</h1>
+            <h1>Digital Wedding Invitations with RSVP & Photo QR</h1>
             <p>
               Create a custom online wedding invitation your guests can open instantly, RSVP
               from any phone, and use to upload wedding photos through a private QR-powered gallery.
@@ -123,7 +122,6 @@ export default function HomePage() {
 
         <Slider />
       </main>
-
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homeJsonLd) }}

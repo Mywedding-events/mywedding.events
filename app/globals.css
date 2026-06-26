@@ -35,8 +35,10 @@
   --accent-t: oklch(0.60 0.066 72 / 0.12);
 
   /* Type */
-  --serif: var(--font-serif), 'Cormorant Garamond', Georgia, serif;
-  --sans:  var(--font-sans), 'Jost', system-ui, sans-serif;
+  --font-serif: 'Cormorant Garamond';
+  --font-sans: 'Jost';
+  --serif: var(--font-serif), Georgia, serif;
+  --sans:  var(--font-sans), system-ui, sans-serif;
 
   /* Rhythm */
   --maxw: 1240px;

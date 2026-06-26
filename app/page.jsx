@@ -1,4 +1,5 @@
 import './home.css';
+import Link from 'next/link';
 import Header from '@/components/Header';
 import Slider from '@/components/Slider';
 
@@ -54,16 +55,73 @@ export default function HomePage() {
   return (
     <div className="home" data-screen-label="Home">
       <Header centered withBrand={false} />
-      <h1 className="visually-hidden">
-        Digital Wedding Invitations with RSVP and Photo QR — custom, fully personalized, one-time $99
-      </h1>
-      <p className="visually-hidden">
-        mywedding.events creates custom digital wedding invitations with RSVP tracking,
-        personalized guest links, location and map, music, and a free wedding photo QR code
-        that collects every guest&apos;s photos into one shared gallery. One-time $99,
-        unlimited invitees, no subscriptions.
-      </p>
-      <Slider />
+      <main>
+        <section className="home-hero">
+          <div className="home-hero__copy">
+            <p className="eyebrow">Digital wedding invitations</p>
+            <h1>Digital Wedding Invitations with RSVP &amp; Photo QR</h1>
+            <p>
+              Create a custom online wedding invitation your guests can open instantly, RSVP
+              from any phone, and use to upload wedding photos through a private QR-powered gallery.
+              One beautiful invitation, unlimited invitees, one-time $99.
+            </p>
+            <div className="actions">
+              <Link className="btn btn--accent" href="/digital-wedding-invitation">
+                Create your invitation
+              </Link>
+              <Link className="btn btn--ghost" href="/wedding-photo-qr-code">
+                Explore photo QR
+              </Link>
+            </div>
+          </div>
+          <div className="home-hero__media">
+            <img
+              src="/images/digital-wedding-invitation-phone-mockup.png"
+              alt="A custom digital wedding invitation with RSVP details displayed on a phone"
+              width="1072"
+              height="1467"
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
+            />
+          </div>
+        </section>
+
+        <section className="seo-panels" aria-labelledby="home-services-heading">
+          <div className="seo-panels__head">
+            <p className="eyebrow">Everything guests need</p>
+            <h2 id="home-services-heading">A wedding invitation website built for RSVPs, details, and memories.</h2>
+          </div>
+          <div className="seo-panels__grid">
+            <article>
+              <h3>Custom digital wedding invitation</h3>
+              <p>
+                Share your wedding story with a paperless invitation customized to your colors,
+                wording, venue, music, and guest list.
+              </p>
+              <Link href="/digital-wedding-invitation">See the invitation package</Link>
+            </article>
+            <article>
+              <h3>Online RSVP management</h3>
+              <p>
+                Guests reply from their phones, and you receive every RSVP update without chasing
+                messages across group chats.
+              </p>
+              <Link href="/digital-wedding-invitation#included">View RSVP features</Link>
+            </article>
+            <article>
+              <h3>Free wedding photo QR code</h3>
+              <p>
+                Place one QR code on tables or signage so guests can upload candid photos and videos
+                into one shared wedding gallery.
+              </p>
+              <Link href="/wedding-photo-qr-code">Learn about Guest Photo QR</Link>
+            </article>
+          </div>
+        </section>
+
+        <Slider />
+      </main>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homeJsonLd) }}

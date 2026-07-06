@@ -55,7 +55,7 @@ export default function HomePage() {
     <div className="home" data-screen-label="Home">
       <Header centered withBrand={false} />
       <h1 className="visually-hidden">
-        Digital Wedding Invitations with RSVP — beautifully crafted, fully customized, one-time $99
+        Digital Wedding Invitations with RSVP. Beautifully crafted, fully customized, one-time $99
       </h1>
       <p className="visually-hidden">
         mywedding.events creates beautiful digital wedding invitations with RSVP management,

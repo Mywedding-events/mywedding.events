@@ -70,7 +70,7 @@ export default function Slider() {
           <div className="slide__content">
             <div className="inner">
               <p className="eyebrow anim d1">Beautiful weddings, beautifully organized</p>
-              <h2 className="lead anim d2">Your wedding,<br />in one <em>beautiful</em> place.</h2>
+              <h2 className="lead anim d2">Your wedding,<br />in <em> one place.</em> </h2>
               <p className="sub anim d3">Send a digital wedding invitation guests will adore, collect every shared photo with a single QR code, and—soon—book the people who make the day. All under one calm, considered roof.</p>
               <div className="actions anim d4">
                 <Link className="btn btn--accent" href="/digital-wedding-invitation">Create your invitation</Link>

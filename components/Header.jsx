@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const NAV_ITEMS = [
   { href: '/digital-wedding-invitation', label: 'Digital Invitation', key: 'invitation' },
-  { href: '/wedding-photo-qr-code', label: 'Guest Photo QR', key: 'photo-qr', tag: { text: '$49', kind: 'free' } },
+  { href: '/wedding-photo-qr-code', label: 'Guest Photo QR', key: 'photo-qr' },
 ];
 
 export default function Header({ active, centered = false, withBrand = true }) {

@@ -1,10 +1,10 @@
 import Link from 'next/link';
 
 const footerLinks = [
-  { href: '/digital-wedding-invitation', label: 'Digital Wedding Invitation' },
-  { href: '/wedding-photo-qr-code', label: 'Wedding Photo QR Code' },
-  { href: '/digital-wedding-invitations', label: 'Digital Wedding Invitations' },
-  { href: '/wedding-rsvp-website', label: 'Wedding RSVP Website' },
+  { href: '/digital-wedding-invitation', label: 'Digital Invitations' },
+  { href: '/wedding-photo-qr-code', label: 'Guest Photo QR' },
+  { href: '/digital-wedding-invitations', label: 'For Weddings' },
+  { href: '/wedding-rsvp-website', label: 'RSVP Website' },
   { href: '/faq', label: 'FAQs' },
   { href: '/contact', label: 'Contact' },
   { href: '/privacy-policy', label: 'Privacy Policy' },
@@ -15,9 +15,9 @@ export default function Footer({ middleText }) {
   return (
     <footer className="site-footer">
       <Link className="brand" href="/">
-        <img className="brand-mark" src="/assets/mywedding-events-logo.png" alt="mywedding.events monogram" />
+        <img className="brand-mark" src="/assets/my-day-logo.svg" alt="My Day" />
         <span className="brand-word">
-          mywedding<span className="brand-dot">.</span>events
+          My <span className="brand-accent">Day</span>
         </span>
       </Link>
       <nav className="footer-nav" aria-label="Footer navigation">
@@ -26,7 +26,7 @@ export default function Footer({ middleText }) {
         ))}
       </nav>
       <span>{middleText}</span>
-      <span>© 2026 mywedding.events</span>
+      <span>© 2026 My Day</span>
     </footer>
   );
 }

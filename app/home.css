@@ -77,6 +77,28 @@ body:has(.home) { overflow: hidden; }
 .mini-list li { display: flex; align-items: center; gap: 11px; font-size: 0.96rem; color: var(--ink-soft); }
 .mini-list li::before { content: ''; width: 6px; height: 6px; flex: none; transform: rotate(45deg); background: var(--accent); }
 
+/* occasions chips */
+.occasions {
+  list-style: none;
+  margin: 24px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  max-width: 44ch;
+}
+.occasions li {
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  color: var(--ink-soft);
+  padding: 6px 13px;
+  border: 1px solid var(--line-2);
+  border-radius: 999px;
+  background: color-mix(in oklab, var(--paper) 70%, transparent);
+  white-space: nowrap;
+}
+.occasions li:last-child { color: var(--accent-d); border-color: var(--accent-t); }
+
 /* Controls */
 .arrow {
   position: absolute; top: 50%; transform: translateY(-50%);

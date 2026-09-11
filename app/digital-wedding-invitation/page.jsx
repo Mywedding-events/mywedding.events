@@ -4,39 +4,41 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  title: 'Digital Wedding Invitation with RSVP — Custom Design for $99',
+  title: 'Digital Invitation with RSVP — Custom Design for $99',
   description:
-    'A beautifully crafted digital wedding invitation tailored to your story. Unlimited invitees, RSVP management, custom guest links, location & map, and music — one-time $99. Add the Guest Photo QR for $49.',
+    'A beautifully crafted digital invitation tailored to your occasion — weddings, engagements, Kateb Kteb, baptisms, birthdays, Awwal Erbene and more. Unlimited invitees, RSVP management, custom guest links, location & map, and music — one-time $99. Add the Guest Photo QR for $49.',
   keywords: [
-    'digital wedding invitation',
-    'digital wedding invitations',
-    'online wedding invitation',
-    'electronic wedding invitation',
-    'custom digital wedding invitation',
-    'wedding invite online',
-    'wedding RSVP management',
-    'paperless wedding invitation',
+    'digital invitation',
+    'digital invitations',
+    'online invitation',
+    'wedding invitation',
+    'engagement invitation',
+    'baptism invitation',
+    'birthday invitation',
+    'custom digital invitation',
+    'invitation with RSVP',
+    'paperless invitation',
   ],
   alternates: { canonical: '/digital-wedding-invitation' },
   openGraph: {
     url: '/digital-wedding-invitation',
-    title: 'Digital Wedding Invitation with RSVP — Custom Design for $99',
+    title: 'Digital Invitation with RSVP — Custom Design for $99',
     description:
-      'A beautifully crafted digital wedding invitation tailored to your story. Unlimited invitees and RSVP management — one-time $99. Add the Guest Photo QR for $49.',
+      'A beautifully crafted digital invitation tailored to your occasion. Unlimited invitees and RSVP management — one-time $99. Add the Guest Photo QR for $49.',
     images: [
       {
         url: '/images/digital-wedding-invitation-phone-mockup.png',
         width: 1200,
         height: 630,
-        alt: 'A digital wedding invitation shown on a phone held in hand',
+        alt: 'A digital invitation shown on a phone held in hand',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Digital Wedding Invitation with RSVP — Custom Design for $99',
+    title: 'Digital Invitation with RSVP — Custom Design for $99',
     description:
-      'Send a beautiful digital wedding invitation. Unlimited invitees, RSVP management. One-time $99. Guest Photo QR available for $49.',
+      'Send a beautiful digital invitation for any occasion. Unlimited invitees, RSVP management. One-time $99. Guest Photo QR available for $49.',
     images: ['/images/digital-wedding-invitation-phone-mockup.png'],
   },
 };
@@ -44,7 +46,11 @@ export const metadata = {
 
 const invitationFaqs = [
   {
-    question: 'How much does a digital wedding invitation cost?',
+    question: 'What occasions can I use a digital invitation for?',
+    answer: 'Any occasion worth gathering for — weddings, engagements, Kateb Kteb, baptisms, birthdays, Awwal Erbene, showers, anniversaries and more. Each invitation is designed around your event.',
+  },
+  {
+    question: 'How much does a digital invitation cost?',
     answer: 'One-time $99. There are no subscriptions and no per-guest charges, no matter how many people you invite.',
   },
   {
@@ -60,8 +66,8 @@ const invitationFaqs = [
     answer: 'Yes. Guests can RSVP from their personalized invitation link, and you receive an email notification after each reply.',
   },
   {
-    question: 'Can you match our wedding colors and theme?',
-    answer: 'Yes. Each invitation is customized around your wedding colors, fonts, wording, photos, music, venue details, and story.',
+    question: 'Can you match our colors and theme?',
+    answer: 'Yes. Each invitation is customized around your colors, fonts, wording, photos, music, venue details, and story.',
   },
   {
     question: 'How much is the Guest Photo QR?',
@@ -69,18 +75,18 @@ const invitationFaqs = [
   },
   {
     question: 'How long does setup take?',
-    answer: 'Setup timing depends on your content and revision needs, but the process starts as soon as you share your wedding details, design direction, and guest requirements.',
+    answer: 'Setup timing depends on your content and revision needs, but the process starts as soon as you share your event details, design direction, and guest requirements.',
   },
 ];
 
 const invitationJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Product',
-  name: 'Digital Wedding Invitation',
+  name: 'Digital Invitation',
   description:
-    'A beautifully crafted digital wedding invitation tailored to your story. Includes RSVP management, custom guest links, music, and location with map. Guest Photo QR available separately for $49.',
-  brand: { '@type': 'Brand', name: 'mywedding.events' },
-  category: 'Wedding Invitations',
+    'A beautifully crafted digital invitation tailored to your occasion — weddings, engagements, Kateb Kteb, baptisms, birthdays, Awwal Erbene and more. Includes RSVP management, custom guest links, music, and location with map. Guest Photo QR available separately for $49.',
+  brand: { '@type': 'Brand', name: 'My Day' },
+  category: 'Invitations',
   image: 'https://mywedding.events/images/digital-wedding-invitation-phone-mockup.png',
   offers: {
     '@type': 'Offer',
@@ -130,9 +136,9 @@ export default function InvitationPage() {
       <div className="hero">
         <div className="hero__content">
           <div className="inner">
-            <p className="eyebrow">Digital Wedding Invitation</p>
+            <p className="eyebrow">Digital Invitation</p>
             <h1>The first thing<br />they&apos;ll <em>fall for</em>.</h1>
-            <p className="sub">A beautifully crafted digital wedding invitation—tailored to your story, with everything your guests need to say yes and show up. One price, no per-guest fees, ever.</p>
+            <p className="sub">A beautifully crafted digital invitation for any occasion—weddings, engagements, Kateb Kteb, baptisms, birthdays, Awwal Erbene and more—tailored to your story, with everything your guests need to say yes and show up. One price, no per-guest fees, ever.</p>
             <div className="actions" style={{ display: 'flex', gap: 14, flexWrap: 'wrap', marginTop: 34 }}>
               <Link className="btn btn--accent" href="#pricing">Get started — $99</Link>
               <Link className="btn btn--ghost" href="#included">What&apos;s included</Link>
@@ -155,7 +161,7 @@ export default function InvitationPage() {
                 <span className="amt"><sup>$</sup>99</span>
                 <span className="meta"><b>One-time payment</b>No subscriptions.<br />No per-guest charges.</span>
               </div>
-              <p className="note">Invite ten guests or a thousand—the price never moves. Built once, beautifully, for your wedding.</p>
+              <p className="note">Invite ten guests or a thousand—the price never moves. Built once, beautifully, for your occasion.</p>
               <div className="actions">
                 <a className="btn btn--accent" href="https://wa.me/96178822978" target="_blank" rel="noopener noreferrer">CONTACT US ON WHATSAPP <span aria-hidden="true">↗</span></a>
               </div>
@@ -184,8 +190,8 @@ export default function InvitationPage() {
         <div className="wrap faq-wrap">
           <div className="faq-head">
             <p className="eyebrow">Digital invitation FAQ</p>
-            <h2>Questions couples ask before getting started.</h2>
-            <p>Everything below is included in your custom digital wedding invitation with RSVP and guest links, plus an optional Guest Photo QR for $49.</p>
+            <h2>Questions people ask before getting started.</h2>
+            <p>Everything below is included in your custom digital invitation with RSVP and guest links, plus an optional Guest Photo QR for $49.</p>
           </div>
           <div className="faq-list">
             {invitationFaqs.map(({ question, answer }) => (

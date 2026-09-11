@@ -16,7 +16,7 @@
 }
 
 /* ============================================================
-   mywedding.events — shared elegant design system
+   My Day — shared elegant design system
    Editorial-luxe · warm neutrals · serif + geometric sans
    ============================================================ */
 
@@ -114,7 +114,8 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.05; }
   width: auto;
   display: block;
 }
-.brand-word { display: inline-flex; align-items: baseline; }
+.brand-word { display: inline-flex; align-items: baseline; gap: 0.24ch; }
+.brand .brand-accent { color: var(--accent); font-style: italic; }
 .brand .brand-dot { color: var(--accent); font-style: italic; }
 .is-over .brand { color: var(--paper); }
 

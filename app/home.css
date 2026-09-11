@@ -77,19 +77,6 @@ body:has(.home) { overflow: hidden; }
 .mini-list li { display: flex; align-items: center; gap: 11px; font-size: 0.96rem; color: var(--ink-soft); }
 .mini-list li::before { content: ''; width: 6px; height: 6px; flex: none; transform: rotate(45deg); background: var(--accent); }
 
-/* Coming-soon trio slide */
-.trio-slide { grid-template-columns: 1fr; }
-.trio-wrap { display: flex; flex-direction: column; justify-content: center; padding: clamp(28px, 5vw, 70px) clamp(24px, 5vw, 64px); }
-.trio-head { text-align: center; margin-bottom: clamp(20px, 3vw, 40px); }
-.trio-head .lead { font-size: clamp(2.2rem, 4vw, 3.4rem); }
-.trio { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(16px, 2.4vw, 30px); }
-.trio-card { display: flex; flex-direction: column; }
-.trio-card .ph { aspect-ratio: 4 / 5; height: clamp(261.36px, 37.75vh, 435.6px); }
-.ph-fill { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.trio-meta { margin-top: 16px; }
-.trio-meta h3 { font-size: 1.7rem; }
-.trio-meta .tag { display: inline-block; margin-top: 4px; font-size: 0.66rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); }
-
 /* Controls */
 .arrow {
   position: absolute; top: 50%; transform: translateY(-50%);
@@ -131,9 +118,5 @@ body:has(.home) { overflow: hidden; }
   .slide { grid-template-columns: 1fr; }
   .slide__media { display: none; }
   .slide__content { padding: clamp(28px, 8vw, 60px); text-align: left; }
-  .trio { grid-template-columns: 1fr; gap: 14px; }
-  .trio-card { flex-direction: row; align-items: center; gap: 16px; }
-  .trio-card .ph { width: 92px; height: 92px; aspect-ratio: 1; flex: none; }
-  .trio-meta { margin-top: 0; }
   .arrow { width: 44px; height: 44px; }
 }

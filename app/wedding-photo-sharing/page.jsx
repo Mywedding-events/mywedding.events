@@ -3,12 +3,12 @@ import SeoLandingPage from '@/components/SeoLandingPage';
 
 export const metadata = {
   title: 'Wedding photo sharing without scattered group chats',
-  description: 'Collect candid wedding photos and videos from every guest in one private gallery using a QR code included with your digital invitation.',
+  description: 'Collect candid wedding photos and videos from every guest in one private gallery using the $49 Guest Photo QR.',
   alternates: { canonical: '/wedding-photo-sharing' },
   openGraph: {
     url: '/wedding-photo-sharing',
     title: 'Wedding photo sharing without scattered group chats',
-    description: 'Collect candid wedding photos and videos from every guest in one private gallery using a QR code included with your digital invitation.',
+    description: 'Collect candid wedding photos and videos from every guest in one private gallery using the $49 Guest Photo QR.',
   },
 };
 
@@ -18,7 +18,7 @@ const highlights = [
   { title: 'No app for guests', desc: 'They scan a code and upload from the browser' },
   { title: 'Nothing lost after the day', desc: 'No more asking people to “send me that one”' },
   { title: 'Private to your wedding', desc: 'Shared only with the guests you invite' },
-  { title: 'Included free with your invitation', desc: 'Comes with every $99 digital invitation' },
+  { title: 'A simple one-time $49', desc: 'No subscription and no per-guest fees' },
 ];
 
 const sections = [
@@ -41,11 +41,11 @@ const sections = [
     items: null,
   },
   {
-    eyebrow: 'Included free',
-    heading: 'Part of your digital wedding invitation',
+    eyebrow: 'Simple pricing',
+    heading: 'A one-time $49, on its own or alongside your invitation',
     paragraphs: [
-      'Guest photo sharing comes free with every $99 digital wedding invitation through the Guest Photo QR, so your invitation, RSVP, and photos all come from one place.',
-      'Message us on WhatsApp to set up your invitation with photo sharing included.',
+      'Guest photo sharing runs on the Guest Photo QR — a standalone product for a one-time $49. Order it on its own, or add it to your $99 digital wedding invitation so your invitation, RSVP, and photos all come from one place.',
+      'Message us on WhatsApp to set up your Guest Photo QR.',
     ],
     items: null,
   },
@@ -57,7 +57,7 @@ const faqs = [
   { question: 'Is the gallery private?', answer: 'Yes. The gallery is for your wedding and shared only with the guests you give the link or code to.' },
   { question: 'Why not just use a group chat?', answer: 'Group chats compress photos, scatter them across threads, and miss anyone not in the chat. One shared gallery keeps everything together at full quality.' },
   { question: 'Do guests need to install an app?', answer: 'No. Everything happens in the browser after scanning the code.' },
-  { question: 'How much does it cost?', answer: 'Photo sharing is included free with every $99 digital wedding invitation. Message us on WhatsApp to begin.' },
+  { question: 'How much does it cost?', answer: 'Guest photo sharing runs on the Guest Photo QR, a one-time $49. Message us on WhatsApp to begin.' },
 ];
 
 export default function Page() {
@@ -65,7 +65,7 @@ export default function Page() {
     <SeoLandingPage
       eyebrow='Wedding Photo Sharing'
       title='Wedding photo sharing without scattered group chats'
-      intro='Collect candid wedding photos and videos from every guest in one private gallery, using a QR code included with your digital invitation.'
+      intro='Collect candid wedding photos and videos from every guest in one private gallery, using the Guest Photo QR — a one-time $49.'
       heroImage='/images/guest-photo-qr-step-4-collect-gallery.png'
       heroImageAlt='A shared wedding gallery filled with photos uploaded by guests'
       highlights={highlights}
@@ -74,7 +74,7 @@ export default function Page() {
       faqs={faqs}
       secondaryCta={{ label: 'Explore Guest Photo QR', href: '/wedding-photo-qr-code' }}
       ctaTitle='Ready to gather every photo from your day?'
-      ctaText='Message us on WhatsApp and we’ll set up your digital invitation with free guest photo sharing, so the whole day is collected in one gallery.'
+      ctaText='Message us on WhatsApp and we’ll set up your Guest Photo QR for $49, so the whole day is collected in one gallery.'
     />
   );
 }

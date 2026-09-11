@@ -7,7 +7,7 @@ const faqs = [
   { question: 'How much does a digital wedding invitation cost?', answer: 'The custom digital wedding invitation is $99 as a one-time payment with no per-guest charge.' },
   { question: 'Can I invite unlimited guests?', answer: 'Yes. You can invite unlimited guests without changing the price.' },
   { question: 'Do guests need an app?', answer: 'No. Invitations, RSVPs, and photo uploads work in the browser.' },
-  { question: 'Is Guest Photo QR included?', answer: 'Yes. Guest Photo QR is included free with every digital wedding invitation.' },
+  { question: 'How much is Guest Photo QR?', answer: 'Guest Photo QR is a separate product for a one-time $49. It can be added to any digital wedding invitation or ordered on its own.' },
   { question: 'Can we use custom wording and colors?', answer: 'Yes. Your invitation can be customized around your wedding style and information.' },
   { question: 'Can guests upload videos?', answer: 'Yes. Guest Photo QR is designed for guest photo and video uploads.' },
 ];

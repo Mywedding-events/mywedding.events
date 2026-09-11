@@ -29,7 +29,7 @@ export const metadata = {
     template: '%s | mywedding.events',
   },
   description:
-    'Send a beautiful digital wedding invitation guests will adore. One-time $99, unlimited invitees, RSVP management, custom guest links, and a free Guest Photo QR — all in one place.',
+    'Send a beautiful digital wedding invitation guests will adore. One-time $99, unlimited invitees, RSVP management, and custom guest links, plus a Guest Photo QR available separately for $49.',
   keywords: [
     'digital wedding invitation',
     'digital wedding invitations',
@@ -58,7 +58,7 @@ export const metadata = {
     url: SITE_URL,
     title: 'Digital Wedding Invitations with RSVP & Photo QR — $99',
     description:
-      'A beautifully crafted digital wedding invitation tailored to your story. Unlimited invitees, RSVP management, and a free Guest Photo QR — for one fair $99.',
+      'A beautifully crafted digital wedding invitation tailored to your story. Unlimited invitees and RSVP management for one fair $99, with a Guest Photo QR available separately for $49.',
     images: [
       {
         url: OG_IMAGE,
@@ -73,7 +73,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Digital Wedding Invitations with RSVP & Photo QR — $99',
     description:
-      'Send a beautiful digital wedding invitation. One-time $99, unlimited invitees, RSVP management, free Guest Photo QR.',
+      'Send a beautiful digital wedding invitation. One-time $99, unlimited invitees, RSVP management. Guest Photo QR available for $49.',
     images: [OG_IMAGE],
   },
   robots: {
@@ -115,7 +115,7 @@ const organizationJsonLd = {
   logo: `${SITE_URL}/icon.svg`,
   sameAs: [],
   description:
-    'Beautiful digital wedding invitations with RSVP management and a free Guest Photo QR.',
+    'Beautiful digital wedding invitations with RSVP management, plus a Guest Photo QR available separately for $49.',
   contactPoint: [
     {
       '@type': 'ContactPoint',

@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 export const metadata = {
   title: 'Digital Wedding Invitation with RSVP — Custom Design for $99',
   description:
-    'A beautifully crafted digital wedding invitation tailored to your story. Unlimited invitees, RSVP management, custom guest links, location & map, music, and a free Guest Photo QR — one-time $99.',
+    'A beautifully crafted digital wedding invitation tailored to your story. Unlimited invitees, RSVP management, custom guest links, location & map, and music — one-time $99. Add the Guest Photo QR for $49.',
   keywords: [
     'digital wedding invitation',
     'digital wedding invitations',
@@ -22,7 +22,7 @@ export const metadata = {
     url: '/digital-wedding-invitation',
     title: 'Digital Wedding Invitation with RSVP — Custom Design for $99',
     description:
-      'A beautifully crafted digital wedding invitation tailored to your story. Unlimited invitees, RSVP management, and a free Guest Photo QR — one-time $99.',
+      'A beautifully crafted digital wedding invitation tailored to your story. Unlimited invitees and RSVP management — one-time $99. Add the Guest Photo QR for $49.',
     images: [
       {
         url: '/images/digital-wedding-invitation-phone-mockup.png',
@@ -36,7 +36,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Digital Wedding Invitation with RSVP — Custom Design for $99',
     description:
-      'Send a beautiful digital wedding invitation. Unlimited invitees, RSVP management, free Guest Photo QR. One-time $99.',
+      'Send a beautiful digital wedding invitation. Unlimited invitees, RSVP management. One-time $99. Guest Photo QR available for $49.',
     images: ['/images/digital-wedding-invitation-phone-mockup.png'],
   },
 };
@@ -64,8 +64,8 @@ const invitationFaqs = [
     answer: 'Yes. Each invitation is customized around your wedding colors, fonts, wording, photos, music, venue details, and story.',
   },
   {
-    question: 'Is the Guest Photo QR included?',
-    answer: 'Yes. Every $99 digital wedding invitation includes a free Guest Photo QR so guests can upload photos and videos to one shared gallery.',
+    question: 'How much is the Guest Photo QR?',
+    answer: 'Guest Photo QR is a separate product for a one-time $49. Add it to your invitation so guests can upload photos and videos to one shared gallery.',
   },
   {
     question: 'How long does setup take?',
@@ -78,7 +78,7 @@ const invitationJsonLd = {
   '@type': 'Product',
   name: 'Digital Wedding Invitation',
   description:
-    'A beautifully crafted digital wedding invitation tailored to your story. Includes RSVP management, custom guest links, music, location with map, and a free Guest Photo QR.',
+    'A beautifully crafted digital wedding invitation tailored to your story. Includes RSVP management, custom guest links, music, and location with map. Guest Photo QR available separately for $49.',
   brand: { '@type': 'Brand', name: 'mywedding.events' },
   category: 'Wedding Invitations',
   image: 'https://mywedding.events/images/digital-wedding-invitation-phone-mockup.png',
@@ -171,8 +171,8 @@ export default function InvitationPage() {
                 <li><Tick /><span className="ftxt">RSVP management<small>Track every yes, no &amp; plus-one in one place</small></span></li>
                 <li><Tick /><span className="ftxt">Receive an email after each RSVP<small>A gentle notification with every reply</small></span></li>
                 <li><Tick /><span className="ftxt">Custom link for each invitee<small>Personalized greetings, one link per guest</small></span></li>
-                <li><Tick /><span className="ftxt">Guest Photo QR <span className="free-pill">Free</span><small>Collect every guest&apos;s photos automatically</small></span></li>
               </ul>
+              <p className="addon-note">Add <Link href="/wedding-photo-qr-code">Guest Photo QR</Link> <span className="free-pill">+$49</span> to collect every guest&apos;s photos automatically.</p>
             </div>
 
           </div>
@@ -185,7 +185,7 @@ export default function InvitationPage() {
           <div className="faq-head">
             <p className="eyebrow">Digital invitation FAQ</p>
             <h2>Questions couples ask before getting started.</h2>
-            <p>Everything below is included in your custom digital wedding invitation with RSVP, guest links, and the free Guest Photo QR.</p>
+            <p>Everything below is included in your custom digital wedding invitation with RSVP and guest links, plus an optional Guest Photo QR for $49.</p>
           </div>
           <div className="faq-list">
             {invitationFaqs.map(({ question, answer }) => (
@@ -201,7 +201,7 @@ export default function InvitationPage() {
       <section className="cta-band" id="cta">
         <div className="wrap">
           <h2>Ready to send something <em>unforgettable</em>?</h2>
-          <p>One beautiful invitation, unlimited guests, and the free Guest Photo QR included. All for $99.</p>
+          <p>One beautiful invitation with unlimited guests, all for $99 — and add the Guest Photo QR for $49.</p>
           <div className="actions">
             <a className="btn btn--light" href="https://wa.me/96178822978" target="_blank" rel="noopener noreferrer">CONTACT US ON WHATSAPP <span aria-hidden="true">↗</span></a>
             <Link className="btn btn--light-ghost" href="/wedding-photo-qr-code">Explore Guest Photo QR</Link>
@@ -209,7 +209,7 @@ export default function InvitationPage() {
         </div>
       </section>
 
-      <Footer middleText="One-time $99 · unlimited invitees · Guest Photo QR included free" />
+      <Footer middleText="One-time $99 · unlimited invitees · Guest Photo QR add-on $49" />
 
       <script
         type="application/ld+json"

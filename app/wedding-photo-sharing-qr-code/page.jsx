@@ -18,7 +18,7 @@ const highlights = [
   { title: 'Photos and videos welcome', desc: 'Capture the candids your photographer can’t' },
   { title: 'Everything in one gallery', desc: 'No scattered group chats or lost albums' },
   { title: 'Works for every guest', desc: 'Any modern phone, any age, no learning curve' },
-  { title: 'Included free with your invitation', desc: 'Guest Photo QR comes with every $99 invitation' },
+  { title: 'A simple one-time $49', desc: 'No subscription and no per-guest fees' },
 ];
 
 const sections = [
@@ -41,11 +41,11 @@ const sections = [
     items: null,
   },
   {
-    eyebrow: 'Included free',
-    heading: 'Part of your digital wedding invitation',
+    eyebrow: 'Simple pricing',
+    heading: 'A one-time $49, on its own or with your invitation',
     paragraphs: [
-      'Guest Photo QR is included free with every $99 digital wedding invitation — so your invitation, RSVP, and photo collection all come from one place.',
-      'Message us on WhatsApp to set up your invitation with the photo QR included.',
+      'Guest Photo QR is a standalone product for a one-time $49. Order it on its own, or add it to your $99 digital wedding invitation so your invitation, RSVP, and photo collection all come from one place.',
+      'Message us on WhatsApp to set up your Guest Photo QR.',
     ],
     items: null,
   },
@@ -57,7 +57,7 @@ const faqs = [
   { question: 'Can guests upload videos too?', answer: 'Yes. The QR code accepts both photos and videos, so you capture the moments as well as the moods.' },
   { question: 'Where should we place the QR code?', answer: 'Anywhere guests gather — on each table, on signage, at the bar, or printed on your invitation. One code works for everyone.' },
   { question: 'Where do the photos go?', answer: 'Every upload lands in one shared gallery for you, instead of being scattered across group chats and individual phones.' },
-  { question: 'How much does it cost?', answer: 'Guest Photo QR is included free with every $99 digital wedding invitation. Message us on WhatsApp to get started.' },
+  { question: 'How much does it cost?', answer: 'Guest Photo QR is a one-time $49, with no subscription and no per-guest fees. Message us on WhatsApp to get started.' },
 ];
 
 export default function Page() {
@@ -74,7 +74,7 @@ export default function Page() {
       faqs={faqs}
       secondaryCta={{ label: 'Explore Guest Photo QR', href: '/wedding-photo-qr-code' }}
       ctaTitle='Ready to collect every guest’s photos?'
-      ctaText='Message us on WhatsApp and we’ll set up your digital invitation with the free Guest Photo QR so every guest can share their photos and videos in one place.'
+      ctaText='Message us on WhatsApp and we’ll set up your Guest Photo QR for $49 so every guest can share their photos and videos in one place.'
     />
   );
 }

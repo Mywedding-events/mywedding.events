@@ -18,7 +18,7 @@ const highlights = [
   { title: 'Update details anytime', desc: 'Fix a time or venue without reprinting a thing' },
   { title: 'Kinder to the planet', desc: 'No paper, no waste, no return-to-sender stack' },
   { title: 'RSVP and venue map built in', desc: 'Everything guests need without an insert card' },
-  { title: 'Free Guest Photo QR', desc: 'Collect the day’s photos in one shared gallery' },
+  { title: 'Add Guest Photo QR for $49', desc: 'Collect the day’s photos in one shared gallery' },
 ];
 
 const sections = [
@@ -44,7 +44,7 @@ const sections = [
     eyebrow: 'One fair price',
     heading: 'One-time $99, unlimited guests',
     paragraphs: [
-      'There is no per-guest cost and no subscription. Invite as many people as you like for a single price, with RSVP and the free Guest Photo QR included.',
+      'There is no per-guest cost and no subscription. Invite as many people as you like for a single price, with RSVP included and the Guest Photo QR available for a one-time $49.',
       'Message us on WhatsApp with your wedding details to start your paperless invitation.',
     ],
     items: null,
@@ -56,7 +56,7 @@ const faqs = [
   { question: 'Does paperless mean it looks less special?', answer: 'Not at all. Your invitation is custom-designed around your colors, fonts, and photos, so it feels just as considered as a printed suite.' },
   { question: 'How do I send it to guests?', answer: 'Share the link by WhatsApp or email, or add a QR code to a small printed insert if you’d like a physical touch.' },
   { question: 'Can I still add guests late?', answer: 'Yes. Adding a guest is as simple as sending another link — no reprinting or extra postage.' },
-  { question: 'Is RSVP included?', answer: 'Yes. RSVP management, email notifications, and a free Guest Photo QR are all included.' },
+  { question: 'Is RSVP included?', answer: 'Yes. RSVP management and email notifications are included. The Guest Photo QR is available separately for a one-time $49.' },
   { question: 'How much does it cost?', answer: 'A one-time $99 with unlimited guests and no per-guest fees. Message us on WhatsApp to get started.' },
 ];
 

@@ -4,9 +4,9 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  title: 'Wedding Photo QR Code for Guest Uploads — Free with Invitation',
+  title: 'Wedding Photo QR Code for Guest Uploads — $49',
   description:
-    'Guest Photo QR collects every guest’s wedding photos and videos into one shared gallery — automatically. Free with every $99 digital wedding invitation from mywedding.events.',
+    'Guest Photo QR collects every guest’s wedding photos and videos into one shared gallery — automatically. A one-time $49 from mywedding.events.',
   keywords: [
     'wedding photo QR',
     'guest photo QR code',
@@ -17,9 +17,9 @@ export const metadata = {
   alternates: { canonical: '/wedding-photo-qr-code' },
   openGraph: {
     url: '/wedding-photo-qr-code',
-    title: 'Wedding Photo QR Code for Guest Uploads — Free with Invitation',
+    title: 'Wedding Photo QR Code for Guest Uploads — $49',
     description:
-      'A single QR turns every guest’s phone into a contributor to your wedding album. Included free with the $99 digital wedding invitation.',
+      'A single QR turns every guest’s phone into a contributor to your wedding album. A one-time $49.',
     images: [
       {
         url: '/images/wedding-guest-photo-qr-code.png',
@@ -31,9 +31,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Wedding Photo QR Code for Guest Uploads — Free with Invitation',
+    title: 'Wedding Photo QR Code for Guest Uploads — $49',
     description:
-      'Collect every guest photo automatically. Free with the $99 digital wedding invitation.',
+      'Collect every guest photo automatically. A one-time $49.',
     images: ['/images/wedding-guest-photo-qr-code.png'],
   },
 };
@@ -61,8 +61,8 @@ const photoQrFaqs = [
     answer: 'Place it on table cards, welcome signage, the guest book table, programs, or inside your digital wedding invitation.',
   },
   {
-    question: 'Is the QR code free?',
-    answer: 'Yes. Guest Photo QR is included free with every $99 digital wedding invitation from mywedding.events.',
+    question: 'How much does the QR code cost?',
+    answer: 'Guest Photo QR is a one-time $49. There is no subscription and no per-guest charge, however many guests upload.',
   },
   {
     question: 'Can older guests use it easily?',
@@ -125,10 +125,10 @@ const photoQrServiceJsonLd = {
   serviceType: 'Wedding photo sharing',
   provider: { '@type': 'Organization', name: 'mywedding.events', url: 'https://mywedding.events' },
   description:
-    'A single QR code that turns every wedding guest’s phone into a contributor to one shared, private wedding photo gallery. Free with every $99 digital wedding invitation from mywedding.events.',
+    'A single QR code that turns every wedding guest’s phone into a contributor to one shared, private wedding photo gallery. A one-time $49 from mywedding.events.',
   offers: {
     '@type': 'Offer',
-    price: '0',
+    price: '49',
     priceCurrency: 'USD',
     availability: 'https://schema.org/InStock',
   },
@@ -156,11 +156,11 @@ export default function PhotoQrPage() {
       <div className="hero">
         <div className="hero__content">
           <div className="inner">
-            <p className="eyebrow free-line">Guest Photo QR <span className="free-pill">Always Free</span></p>
+            <p className="eyebrow free-line">Guest Photo QR <span className="free-pill">$49 one-time</span></p>
             <h1>Every photo,<br />from <em>every</em> guest.</h1>
-            <p className="sub">Your guests capture moments you&apos;ll never see from the front of the room. Guest Photo QR gathers every one of them automatically, into a single shared gallery. No apps. No cost.</p>
+            <p className="sub">Your guests capture moments you&apos;ll never see from the front of the room. Guest Photo QR gathers every one of them automatically, into a single shared gallery. No apps, one flat $49.</p>
             <div className="actions">
-              <Link className="btn btn--accent" href="/digital-wedding-invitation">Included with every invitation</Link>
+              <a className="btn btn--accent" href="https://wa.me/96178822978" target="_blank" rel="noopener noreferrer">Get it for $49 <span aria-hidden="true">↗</span></a>
               <Link className="btn btn--ghost" href="#how">See how it works</Link>
             </div>
           </div>
@@ -179,7 +179,7 @@ export default function PhotoQrPage() {
           <div className="body">
             <p className="lead-line">Guest Photo QR is a single code that turns every guest&apos;s phone into a contributor to your wedding album.</p>
             <p>Place the code on tables, in the program, or beside the guest book. When someone scans it, they&apos;re taken to your private upload page—branded to your wedding where they can drop in the photos and videos they took that day.</p>
-            <p>Everything lands in one place, in real time. No chasing group chats, no &ldquo;can you send me that one?&rdquo;, no missing the candid shots from the dance floor. And because it comes bundled with your Digital Invitation, it&apos;s completely <em>free</em>.</p>
+            <p>Everything lands in one place, in real time. No chasing group chats, no &ldquo;can you send me that one?&rdquo;, no missing the candid shots from the dance floor. It&apos;s a single <em>one-time $49</em>, with no subscription and no per-guest charge.</p>
           </div>
         </div>
       </section>
@@ -279,17 +279,17 @@ export default function PhotoQrPage() {
 
       <section className="cta-band">
         <div className="wrap">
-          <p className="eyebrow">Free with every invitation</p>
+          <p className="eyebrow">A one-time $49</p>
           <h2>Don&apos;t let a single moment <em>slip away</em>.</h2>
-          <p>Guest Photo QR comes included at no extra cost with your $99 Digital Invitation.</p>
+          <p>Guest Photo QR is a one-time $49 — its own shared gallery for your wedding, with no subscription and no per-guest fees.</p>
           <div className="actions">
-            <Link className="btn btn--light" href="/digital-wedding-invitation">Get the invitation + Photo QR</Link>
+            <a className="btn btn--light" href="https://wa.me/96178822978" target="_blank" rel="noopener noreferrer">Get Guest Photo QR — $49 <span aria-hidden="true">↗</span></a>
             <Link className="btn btn--light-ghost" href="/">Back to home</Link>
           </div>
         </div>
       </section>
 
-      <Footer middleText="Guest Photo QR · always free with your Digital Invitation" />
+      <Footer middleText="Guest Photo QR · a one-time $49" />
 
       <script
         type="application/ld+json"

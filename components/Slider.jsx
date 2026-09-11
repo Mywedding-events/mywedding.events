@@ -110,9 +110,9 @@ export default function Slider() {
         <section className={slideClass(2)} data-screen-label="Slide 03 — Guest Photo QR">
           <div className="slide__content">
             <div className="inner">
-              <p className="eyebrow anim d1">Guest Photo QR · <span className="serif-italic" style={{ textTransform: 'none', letterSpacing: 0, fontSize: '1.2em' }}>Free</span></p>
+              <p className="eyebrow anim d1">Guest Photo QR · <span className="serif-italic" style={{ textTransform: 'none', letterSpacing: 0, fontSize: '1.2em' }}>$49</span></p>
               <h2 className="lead anim d2">Every photo,<br />from <em>every</em> guest.</h2>
-              <p className="sub anim d3">One little QR code on each table. Guests scan, upload the moments they captured, and your whole shared wedding photo gallery fills itself—no apps, no chasing, no cost.</p>
+              <p className="sub anim d3">One little QR code on each table. Guests scan, upload the moments they captured, and your whole shared wedding photo gallery fills itself—no apps, no chasing, one flat $49.</p>
               <div className="actions anim d4">
                 <Link className="btn btn--accent" href="/wedding-photo-qr-code">How it works</Link>
               </div>
@@ -134,11 +134,11 @@ export default function Slider() {
           </section>
           <section>
             <h2>Digital Wedding Invitation — $99</h2>
-            <p>One-time payment, unlimited invitees, RSVP management, custom guest links, location with map, music, and a free Guest Photo QR.</p>
+            <p>One-time payment, unlimited invitees, RSVP management, custom guest links, location with map, and music.</p>
           </section>
           <section>
-            <h2>Guest Photo QR — Free</h2>
-            <p>One QR code per table. Guests scan, upload their photos, and your shared wedding gallery fills itself — no apps, no chasing.</p>
+            <h2>Guest Photo QR — $49</h2>
+            <p>One QR code per table. Guests scan, upload their photos, and your shared wedding gallery fills itself — no apps, no chasing. A one-time $49.</p>
           </section>
         </div>
       </noscript>

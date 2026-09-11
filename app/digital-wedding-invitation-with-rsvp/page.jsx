@@ -18,7 +18,7 @@ const highlights = [
   { title: 'Plus-one and meal questions', desc: 'Ask what you need before the day arrives' },
   { title: 'Email notification per reply', desc: 'Know the moment someone confirms' },
   { title: 'Venue map and music included', desc: 'Everything in one guest-friendly experience' },
-  { title: 'Free Guest Photo QR', desc: 'Collect the day’s candid moments afterward' },
+  { title: 'Add Guest Photo QR for $49', desc: 'Collect the day’s candid moments afterward' },
 ];
 
 const sections = [
@@ -44,7 +44,7 @@ const sections = [
     eyebrow: 'One fair price',
     heading: 'Invitation and RSVP for a one-time $99',
     paragraphs: [
-      'RSVP is not a separate add-on — it is part of the same $99 invitation, with unlimited guests and no per-guest fees. The free Guest Photo QR is included too.',
+      'RSVP is not a separate add-on — it is part of the same $99 invitation, with unlimited guests and no per-guest fees. The Guest Photo QR can be added for a one-time $49.',
       'Message us on WhatsApp with your details and the questions you want to ask, and we will set it up.',
     ],
     items: null,

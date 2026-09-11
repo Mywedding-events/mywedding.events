@@ -27,7 +27,7 @@ export default function SeoLandingPage({
   faqs,
   faqLead,
   ctaTitle = 'Ready to make your wedding details easier to share?',
-  ctaText = 'Tell us about your wedding on WhatsApp and we’ll start your custom digital invitation — RSVP and a free Guest Photo QR included, all for one fair price.',
+  ctaText = 'Tell us about your wedding on WhatsApp and we’ll start your custom digital invitation with RSVP included, all for one fair price — and add the Guest Photo QR for $49 whenever you like.',
 }) {
   const faqJsonLd = {
     '@context': 'https://schema.org',

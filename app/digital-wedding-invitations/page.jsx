@@ -3,12 +3,12 @@ import SeoLandingPage from '@/components/SeoLandingPage';
 
 export const metadata = {
   title: 'Digital wedding invitations designed for modern couples',
-  description: 'Create elegant digital wedding invitations with RSVP, custom guest links, maps, music, and a free wedding photo QR code for one simple price.',
+  description: 'Create elegant digital wedding invitations with RSVP, custom guest links, maps, and music for one simple price, plus an optional $49 wedding photo QR code.',
   alternates: { canonical: '/digital-wedding-invitations' },
   openGraph: {
     url: '/digital-wedding-invitations',
     title: 'Digital wedding invitations designed for modern couples',
-    description: 'Create elegant digital wedding invitations with RSVP, custom guest links, maps, music, and a free wedding photo QR code for one simple price.',
+    description: 'Create elegant digital wedding invitations with RSVP, custom guest links, maps, and music for one simple price, plus an optional $49 wedding photo QR code.',
   },
 };
 
@@ -17,7 +17,7 @@ const highlights = [
   { title: 'Built-in RSVP management', desc: 'Track every yes, no, and plus-one in one place' },
   { title: 'A personal link for each guest', desc: 'Named greetings instead of one generic card' },
   { title: 'Venue details with a tap-to-open map', desc: 'Guests find the ceremony and reception in seconds' },
-  { title: 'Free Guest Photo QR', desc: 'Collect candid photos and videos from everyone' },
+  { title: 'Add Guest Photo QR for $49', desc: 'Collect candid photos and videos from everyone' },
   { title: 'Unlimited guests, one-time $99', desc: 'No subscriptions and no per-guest fees, ever' },
 ];
 
@@ -44,7 +44,7 @@ const sections = [
     eyebrow: 'One fair price',
     heading: 'Everything included for a one-time $99',
     paragraphs: [
-      'There are no monthly fees and no charge per guest. Invite fifty people or five hundred — the price never moves, and the free Guest Photo QR is included with every invitation.',
+      'There are no monthly fees and no charge per guest. Invite fifty people or five hundred — the price never moves, and the Guest Photo QR can be added for a one-time $49.',
       'When you are ready, message us on WhatsApp with your wedding details and we will start your custom design.',
     ],
     items: null,
@@ -56,7 +56,7 @@ const faqs = [
   { question: 'How much does it cost?', answer: 'A one-time $99. There are no subscriptions and no per-guest charges, no matter how many people you invite.' },
   { question: 'Can the design match our wedding style?', answer: 'Yes. Each invitation is customized around your colors, fonts, wording, photos, music, and venue details.' },
   { question: 'Do our guests need to install anything?', answer: 'No. The invitation, RSVP form, and photo upload all open directly in the browser.' },
-  { question: 'Is the Guest Photo QR really free?', answer: 'Yes. Guest Photo QR is included free with every digital wedding invitation so you can collect guest photos and videos in one gallery.' },
+  { question: 'How much is the Guest Photo QR?', answer: 'Guest Photo QR is a separate product for a one-time $49. Add it to your invitation to collect guest photos and videos in one gallery.' },
   { question: 'How do we get started?', answer: 'Message mywedding.events on WhatsApp with your wedding date, venue, and design preferences and we will begin your custom invitation.' },
 ];
 
@@ -65,7 +65,7 @@ export default function Page() {
     <SeoLandingPage
       eyebrow='Digital Wedding Invitations'
       title='Digital wedding invitations designed for modern couples'
-      intro='Create an elegant digital wedding invitation with RSVP, custom guest links, maps, music, and a free wedding photo QR code — all for one simple price.'
+      intro='Create an elegant digital wedding invitation with RSVP, custom guest links, maps, and music for one simple price — and add the $49 wedding photo QR code whenever you like.'
       heroImage='/images/digital-wedding-invitation-phone-mockup.png'
       heroImageAlt='An elegant digital wedding invitation shown on a phone with RSVP and venue details'
       highlights={highlights}

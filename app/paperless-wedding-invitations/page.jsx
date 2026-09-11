@@ -14,7 +14,7 @@ export const metadata = {
 
 const highlights = [
   { title: 'No printing, no mailing', desc: 'Skip print runs, postage, and lost envelopes' },
-  { title: 'Send in minutes, not weeks', desc: 'Share the moment it’s ready — no production wait' },
+  { title: 'Send in minutes, not weeks', desc: 'Share the moment it’s ready, no production wait' },
   { title: 'Update details anytime', desc: 'Fix a time or venue without reprinting a thing' },
   { title: 'Kinder to the planet', desc: 'No paper, no waste, no return-to-sender stack' },
   { title: 'RSVP and venue map built in', desc: 'Everything guests need without an insert card' },
@@ -33,7 +33,7 @@ const sections = [
   },
   {
     eyebrow: 'Less waste',
-    heading: 'A choice your guests — and the planet — appreciate',
+    heading: 'A choice your guests, and the planet, appreciate',
     paragraphs: [
       'Going paperless means no stacks of unused cards, no envelopes in the recycling, and no extra prints “just in case.” It is a small, visible way to keep your celebration thoughtful.',
       'And because nothing is mailed, last-minute guests are as easy to add as forwarding a link.',
@@ -52,10 +52,10 @@ const sections = [
 ];
 
 const faqs = [
-  { question: 'What is a paperless wedding invitation?', answer: 'It is a custom digital invitation you share as a link instead of a printed card — with your details, venue map, music, and RSVP all in one place.' },
+  { question: 'What is a paperless wedding invitation?', answer: 'It is a custom digital invitation you share as a link instead of a printed card, with your details, venue map, music, and RSVP all in one place.' },
   { question: 'Does paperless mean it looks less special?', answer: 'Not at all. Your invitation is custom-designed around your colors, fonts, and photos, so it feels just as considered as a printed suite.' },
   { question: 'How do I send it to guests?', answer: 'Share the link by WhatsApp or email, or add a QR code to a small printed insert if you’d like a physical touch.' },
-  { question: 'Can I still add guests late?', answer: 'Yes. Adding a guest is as simple as sending another link — no reprinting or extra postage.' },
+  { question: 'Can I still add guests late?', answer: 'Yes. Adding a guest is as simple as sending another link, no reprinting or extra postage.' },
   { question: 'Is RSVP included?', answer: 'Yes. RSVP management and email notifications are included. The Guest Photo QR is available separately for a one-time $49.' },
   { question: 'How much does it cost?', answer: 'A one-time $99 with unlimited guests and no per-guest fees. Message us on WhatsApp to get started.' },
 ];

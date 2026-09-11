@@ -22,12 +22,12 @@ export default function SeoLandingPage({
   highlights,
   highlightsEyebrow = 'What’s included',
   highlightsTitle = 'Everything your occasion needs, in one link',
-  highlightsNote = 'Included with your custom digital invitation — a one-time $99, with unlimited guests and no per-guest fees.',
+  highlightsNote = 'Included with your custom digital invitation, a one-time $99, with unlimited guests and no per-guest fees.',
   sections,
   faqs,
   faqLead,
   ctaTitle = 'Ready to make your event details easier to share?',
-  ctaText = 'Tell us about your occasion on WhatsApp and we’ll start your custom digital invitation with RSVP included, all for one fair price — and add the Guest Photo QR for $49 whenever you like.',
+  ctaText = 'Tell us about your occasion on WhatsApp and we’ll start your custom digital invitation with RSVP included, all for one fair price, and add the Guest Photo QR for $49 whenever you like.',
 }) {
   const faqJsonLd = {
     '@context': 'https://schema.org',

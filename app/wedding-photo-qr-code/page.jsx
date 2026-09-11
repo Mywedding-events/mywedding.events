@@ -4,9 +4,9 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  title: 'Guest Photo QR Code for Event Photo Uploads — $49',
+  title: 'Guest Photo QR Code for Event Photo Uploads ($49)',
   description:
-    'Guest Photo QR collects every guest’s photos and videos from any event — weddings, engagements, baptisms, birthdays and more — into one shared gallery, automatically. A one-time $49 from My Day.',
+    'Guest Photo QR collects every guest’s photos and videos from any event, weddings, engagements, baptisms, birthdays and more, into one shared gallery, automatically. A one-time $49 from My Day.',
   keywords: [
     'guest photo QR',
     'event photo QR code',
@@ -18,7 +18,7 @@ export const metadata = {
   alternates: { canonical: '/wedding-photo-qr-code' },
   openGraph: {
     url: '/wedding-photo-qr-code',
-    title: 'Guest Photo QR Code for Event Photo Uploads — $49',
+    title: 'Guest Photo QR Code for Event Photo Uploads ($49)',
     description:
       'A single QR turns every guest’s phone into a contributor to your event album. A one-time $49.',
     images: [
@@ -32,7 +32,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Guest Photo QR Code for Event Photo Uploads — $49',
+    title: 'Guest Photo QR Code for Event Photo Uploads ($49)',
     description:
       'Collect every guest photo automatically. A one-time $49.',
     images: ['/images/wedding-guest-photo-qr-code.png'],
@@ -43,7 +43,7 @@ export const metadata = {
 const photoQrFaqs = [
   {
     question: 'What is a guest photo QR code?',
-    answer: 'It is a scannable QR code that opens a private upload page where guests can add photos and videos to one shared gallery — for any event, from weddings to birthdays.',
+    answer: 'It is a scannable QR code that opens a private upload page where guests can add photos and videos to one shared gallery, for any event, from weddings to birthdays.',
   },
   {
     question: 'Do guests need to download an app?',
@@ -85,7 +85,7 @@ const photoQrHowToJsonLd = {
   '@type': 'HowTo',
   name: 'How to collect every guest photo with a Guest Photo QR code',
   description:
-    'Use a single QR code to gather every guest’s photos and videos into one private, shared gallery — for any event, no apps required.',
+    'Use a single QR code to gather every guest’s photos and videos into one private, shared gallery, for any event, no apps required.',
   totalTime: 'PT2M',
   step: [
     {
@@ -99,7 +99,7 @@ const photoQrHowToJsonLd = {
       '@type': 'HowToStep',
       position: 2,
       name: 'Guests scan it',
-      text: 'A quick scan opens your upload page right in their browser — no app to install.',
+      text: 'A quick scan opens your upload page right in their browser, no app to install.',
       url: 'https://mywedding.events/wedding-photo-qr-code#how',
     },
     {
@@ -122,7 +122,7 @@ const photoQrHowToJsonLd = {
 const photoQrServiceJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
-  name: 'Guest Photo QR — shared event photo gallery',
+  name: 'Guest Photo QR: shared event photo gallery',
   serviceType: 'Event photo sharing',
   provider: { '@type': 'Organization', name: 'My Day', url: 'https://mywedding.events' },
   description:
@@ -159,7 +159,7 @@ export default function PhotoQrPage() {
           <div className="inner">
             <p className="eyebrow free-line">Guest Photo QR <span className="free-pill">$49 one-time</span></p>
             <h1>Every photo,<br />from <em>every</em> guest.</h1>
-            <p className="sub">Your guests capture moments you&apos;ll never see from the front of the room. Guest Photo QR gathers every one of them automatically, into a single shared gallery—for weddings, birthdays, baptisms and every celebration. No apps, one flat $49.</p>
+            <p className="sub">Your guests capture moments you&apos;ll never see from the front of the room. Guest Photo QR gathers every one of them automatically, into a single shared gallery, for weddings, birthdays, baptisms and every celebration. No apps, one flat $49.</p>
             <div className="actions">
               <a className="btn btn--accent" href="https://wa.me/96178822978" target="_blank" rel="noopener noreferrer">Get it for $49 <span aria-hidden="true">↗</span></a>
               <Link className="btn btn--ghost" href="#how">See how it works</Link>
@@ -179,7 +179,7 @@ export default function PhotoQrPage() {
           </div>
           <div className="body">
             <p className="lead-line">Guest Photo QR is a single code that turns every guest&apos;s phone into a contributor to your event album.</p>
-            <p>Place the code on tables, in the program, or beside the guest book. When someone scans it, they&apos;re taken to your private upload page—branded to your event where they can drop in the photos and videos they took that day.</p>
+            <p>Place the code on tables, in the program, or beside the guest book. When someone scans it, they&apos;re taken to your private upload page, branded to your event where they can drop in the photos and videos they took that day.</p>
             <p>Everything lands in one place, in real time. No chasing group chats, no &ldquo;can you send me that one?&rdquo;, no missing the candid shots from the dance floor. It&apos;s a single <em>one-time $49</em>, with no subscription and no per-guest charge.</p>
           </div>
         </div>
@@ -201,7 +201,7 @@ export default function PhotoQrPage() {
             <img className="shot" src="/images/guest-photo-qr-step-2-guests-scan.png" width="1024" height="1536" loading="lazy" decoding="async" alt="A wedding guest scanning the table QR card with their phone camera" />
             <span className="num">02</span>
             <h4>Guests scan it</h4>
-            <p>A quick scan opens your upload page right in their browser—no app to install.</p>
+            <p>A quick scan opens your upload page right in their browser, no app to install.</p>
           </div>
           <div className="step">
             <img className="shot" src="/images/guest-photo-qr-step-3-upload-photos.png" width="1024" height="1536" loading="lazy" decoding="async" alt="A phone showing the photo selection screen ready to upload wedding photos to the shared gallery" />
@@ -282,9 +282,9 @@ export default function PhotoQrPage() {
         <div className="wrap">
           <p className="eyebrow">A one-time $49</p>
           <h2>Don&apos;t let a single moment <em>slip away</em>.</h2>
-          <p>Guest Photo QR is a one-time $49 — its own shared gallery for your event, with no subscription and no per-guest fees.</p>
+          <p>Guest Photo QR is a one-time $49, its own shared gallery for your event, with no subscription and no per-guest fees.</p>
           <div className="actions">
-            <a className="btn btn--light" href="https://wa.me/96178822978" target="_blank" rel="noopener noreferrer">Get Guest Photo QR — $49 <span aria-hidden="true">↗</span></a>
+            <a className="btn btn--light" href="https://wa.me/96178822978" target="_blank" rel="noopener noreferrer">Get Guest Photo QR ($49) <span aria-hidden="true">↗</span></a>
             <Link className="btn btn--light-ghost" href="/">Back to home</Link>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import './globals.css';
 import { Cormorant_Garamond, Jost } from 'next/font/google';
 
-// Site-wide typography — the only two fonts the design uses:
+// Site-wide typography, the only two fonts the design uses:
 //   serif (Cormorant Garamond) for headings & display, sans (Jost) for body & UI.
 const serif = Cormorant_Garamond({
   subsets: ['latin'],
@@ -25,7 +25,7 @@ const OG_IMAGE = '/images/digital-wedding-invitation-phone-mockup.png';
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'My Day — Digital Invitations with RSVP & Guest Photo QR for Every Occasion',
+    default: 'My Day: Digital Invitations with RSVP & Guest Photo QR for Every Occasion',
     template: '%s | My Day',
   },
   description:
@@ -59,7 +59,7 @@ export const metadata = {
     type: 'website',
     siteName: SITE_NAME,
     url: SITE_URL,
-    title: 'My Day — Digital Invitations for Every Occasion',
+    title: 'My Day: Digital Invitations for Every Occasion',
     description:
       'Beautifully crafted digital invitations for weddings, engagements, Kateb Kteb, baptisms, birthdays, Awwal Erbene and more. Unlimited invitees and RSVP management for one fair $99, with a Guest Photo QR available separately for $49.',
     images: [
@@ -74,7 +74,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'My Day — Digital Invitations for Every Occasion',
+    title: 'My Day: Digital Invitations for Every Occasion',
     description:
       'Beautiful digital invitations for weddings, engagements, baptisms, birthdays and more. One-time $99, unlimited invitees, RSVP management. Guest Photo QR available for $49.',
     images: [OG_IMAGE],

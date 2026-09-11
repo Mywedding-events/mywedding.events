@@ -4,9 +4,9 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  title: 'Digital Invitation with RSVP — Custom Design for $99',
+  title: 'Digital Invitation with RSVP: Custom Design for $99',
   description:
-    'A beautifully crafted digital invitation tailored to your occasion — weddings, engagements, Kateb Kteb, baptisms, birthdays, Awwal Erbene and more. Unlimited invitees, RSVP management, custom guest links, location & map, and music — one-time $99. Add the Guest Photo QR for $49.',
+    'A beautifully crafted digital invitation tailored to your occasion, weddings, engagements, Kateb Kteb, baptisms, birthdays, Awwal Erbene and more. Unlimited invitees, RSVP management, custom guest links, location & map, and music, one-time $99. Add the Guest Photo QR for $49.',
   keywords: [
     'digital invitation',
     'digital invitations',
@@ -22,9 +22,9 @@ export const metadata = {
   alternates: { canonical: '/digital-wedding-invitation' },
   openGraph: {
     url: '/digital-wedding-invitation',
-    title: 'Digital Invitation with RSVP — Custom Design for $99',
+    title: 'Digital Invitation with RSVP: Custom Design for $99',
     description:
-      'A beautifully crafted digital invitation tailored to your occasion. Unlimited invitees and RSVP management — one-time $99. Add the Guest Photo QR for $49.',
+      'A beautifully crafted digital invitation tailored to your occasion. Unlimited invitees and RSVP management, one-time $99. Add the Guest Photo QR for $49.',
     images: [
       {
         url: '/images/digital-wedding-invitation-phone-mockup.png',
@@ -36,7 +36,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Digital Invitation with RSVP — Custom Design for $99',
+    title: 'Digital Invitation with RSVP: Custom Design for $99',
     description:
       'Send a beautiful digital invitation for any occasion. Unlimited invitees, RSVP management. One-time $99. Guest Photo QR available for $49.',
     images: ['/images/digital-wedding-invitation-phone-mockup.png'],
@@ -47,7 +47,7 @@ export const metadata = {
 const invitationFaqs = [
   {
     question: 'What occasions can I use a digital invitation for?',
-    answer: 'Any occasion worth gathering for — weddings, engagements, Kateb Kteb, baptisms, birthdays, Awwal Erbene, showers, anniversaries and more. Each invitation is designed around your event.',
+    answer: 'Any occasion worth gathering for: weddings, engagements, Kateb Kteb, baptisms, birthdays, Awwal Erbene, showers, anniversaries and more. Each invitation is designed around your event.',
   },
   {
     question: 'How much does a digital invitation cost?',
@@ -55,7 +55,7 @@ const invitationFaqs = [
   },
   {
     question: 'Can I invite unlimited guests?',
-    answer: 'Yes. Invite ten guests or a thousand — the price never moves.',
+    answer: 'Yes. Invite ten guests or a thousand, the price never moves.',
   },
   {
     question: 'Do guests need an app?',
@@ -84,7 +84,7 @@ const invitationJsonLd = {
   '@type': 'Product',
   name: 'Digital Invitation',
   description:
-    'A beautifully crafted digital invitation tailored to your occasion — weddings, engagements, Kateb Kteb, baptisms, birthdays, Awwal Erbene and more. Includes RSVP management, custom guest links, music, and location with map. Guest Photo QR available separately for $49.',
+    'A beautifully crafted digital invitation tailored to your occasion, weddings, engagements, Kateb Kteb, baptisms, birthdays, Awwal Erbene and more. Includes RSVP management, custom guest links, music, and location with map. Guest Photo QR available separately for $49.',
   brand: { '@type': 'Brand', name: 'My Day' },
   category: 'Invitations',
   image: 'https://mywedding.events/images/digital-wedding-invitation-phone-mockup.png',
@@ -138,9 +138,9 @@ export default function InvitationPage() {
           <div className="inner">
             <p className="eyebrow">Digital Invitation</p>
             <h1>The first thing<br />they&apos;ll <em>fall for</em>.</h1>
-            <p className="sub">A beautifully crafted digital invitation for any occasion—weddings, engagements, Kateb Kteb, baptisms, birthdays, Awwal Erbene and more—tailored to your story, with everything your guests need to say yes and show up. One price, no per-guest fees, ever.</p>
+            <p className="sub">A beautifully crafted digital invitation for any occasion, weddings, engagements, Kateb Kteb, baptisms, birthdays, Awwal Erbene and more, tailored to your story, with everything your guests need to say yes and show up. One price, no per-guest fees, ever.</p>
             <div className="actions" style={{ display: 'flex', gap: 14, flexWrap: 'wrap', marginTop: 34 }}>
-              <Link className="btn btn--accent" href="#pricing">Get started — $99</Link>
+              <Link className="btn btn--accent" href="#pricing">Get started for $99</Link>
               <Link className="btn btn--ghost" href="#included">What&apos;s included</Link>
             </div>
           </div>
@@ -161,7 +161,7 @@ export default function InvitationPage() {
                 <span className="amt"><sup>$</sup>99</span>
                 <span className="meta"><b>One-time payment</b>No subscriptions.<br />No per-guest charges.</span>
               </div>
-              <p className="note">Invite ten guests or a thousand—the price never moves. Built once, beautifully, for your occasion.</p>
+              <p className="note">Invite ten guests or a thousand, the price never moves. Built once, beautifully, for your occasion.</p>
               <div className="actions">
                 <a className="btn btn--accent" href="https://wa.me/96178822978" target="_blank" rel="noopener noreferrer">CONTACT US ON WHATSAPP <span aria-hidden="true">↗</span></a>
               </div>
@@ -207,7 +207,7 @@ export default function InvitationPage() {
       <section className="cta-band" id="cta">
         <div className="wrap">
           <h2>Ready to send something <em>unforgettable</em>?</h2>
-          <p>One beautiful invitation with unlimited guests, all for $99 — and add the Guest Photo QR for $49.</p>
+          <p>One beautiful invitation with unlimited guests, all for $99, and add the Guest Photo QR for $49.</p>
           <div className="actions">
             <a className="btn btn--light" href="https://wa.me/96178822978" target="_blank" rel="noopener noreferrer">CONTACT US ON WHATSAPP <span aria-hidden="true">↗</span></a>
             <Link className="btn btn--light-ghost" href="/wedding-photo-qr-code">Explore Guest Photo QR</Link>

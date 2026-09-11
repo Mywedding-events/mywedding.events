@@ -57,7 +57,7 @@ const faqs = [
   { question: 'Can the design match our wedding style?', answer: 'Yes. Each invitation is customized around your colors, fonts, wording, photos, music, and venue details.' },
   { question: 'Do our guests need to install anything?', answer: 'No. The invitation, RSVP form, and photo upload all open directly in the browser.' },
   { question: 'How much is the Guest Photo QR?', answer: 'Guest Photo QR is a separate product for a one-time $49. Add it to your invitation to collect guest photos and videos in one gallery.' },
-  { question: 'How do we get started?', answer: 'Message mywedding.events on WhatsApp with your wedding date, venue, and design preferences and we will begin your custom invitation.' },
+  { question: 'How do we get started?', answer: 'Message My Day on WhatsApp with your wedding date, venue, and design preferences and we will begin your custom invitation.' },
 ];
 
 export default function Page() {

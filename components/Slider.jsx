@@ -69,9 +69,18 @@ export default function Slider() {
         <section className={slideClass(0)} data-screen-label="Slide 01 — Welcome">
           <div className="slide__content">
             <div className="inner">
-              <p className="eyebrow anim d1">Beautiful weddings, beautifully organized</p>
-              <h2 className="lead anim d2">Your wedding,<br />in <em> one place.</em> </h2>
-              <p className="sub anim d3">Send a digital wedding invitation guests will adore, collect every shared photo with a single QR code, and—soon—book the people who make the day. All under one calm, considered roof.</p>
+              <p className="eyebrow anim d1">Every celebration, beautifully invited</p>
+              <h2 className="lead anim d2">Your day,<br />in <em> one place.</em> </h2>
+              <p className="sub anim d3">Send a digital invitation guests will adore—for weddings, engagements, Kateb Kteb, baptisms, birthdays, Awwal Erbene and every moment worth gathering for. Collect every shared photo with a single QR code, all under one calm, considered roof.</p>
+              <ul className="occasions anim d3">
+                <li>Weddings</li>
+                <li>Engagements</li>
+                <li>Kateb Kteb</li>
+                <li>Baptisms</li>
+                <li>Birthdays</li>
+                <li>Awwal Erbene</li>
+                <li>&amp; more</li>
+              </ul>
               <div className="actions anim d4">
                 <Link className="btn btn--accent" href="/digital-wedding-invitation">Create your invitation</Link>
                 <Link className="btn btn--ghost" href="/wedding-photo-qr-code">Guest Photo QR</Link>
@@ -79,21 +88,21 @@ export default function Slider() {
             </div>
           </div>
           <div className="slide__media">
-            <img className="ph-img" style={{ objectPosition: '50% 40%' }} src="/images/santorini-wedding-couple-portrait.png" alt="A bride and groom walking a whitewashed Santorini path above the caldera at sunset" width="2160" height="2700" loading="eager" fetchPriority="high" decoding="async" />
+            <img className="ph-img" style={{ objectPosition: '50% 40%' }} src="/images/santorini-wedding-couple-portrait.png" alt="A couple walking a whitewashed Santorini path above the caldera at sunset" width="2160" height="2700" loading="eager" fetchPriority="high" decoding="async" />
           </div>
         </section>
 
         <section className={slideClass(1)} data-screen-label="Slide 02 — Digital Invitation">
           <div className="slide__content">
             <div className="inner">
-              <p className="eyebrow anim d1">Digital Wedding Invitation</p>
+              <p className="eyebrow anim d1">Digital Invitation</p>
               <h2 className="lead anim d2">An invitation<br />worthy of the <em>day</em>.</h2>
               <div className="price-row anim d3">
                 <span className="price"><sup>$</sup>99</span>
                 <span className="price-note">one-time · unlimited invitees</span>
               </div>
               <ul className="mini-list anim d3">
-                <li>Customized to your style, with location, map &amp; music</li>
+                <li>Customized to your occasion, with location, map &amp; music</li>
                 <li>RSVP management with an email after every reply</li>
                 <li>A custom link for each invitee</li>
               </ul>
@@ -112,7 +121,7 @@ export default function Slider() {
             <div className="inner">
               <p className="eyebrow anim d1">Guest Photo QR · <span className="serif-italic" style={{ textTransform: 'none', letterSpacing: 0, fontSize: '1.2em' }}>$49</span></p>
               <h2 className="lead anim d2">Every photo,<br />from <em>every</em> guest.</h2>
-              <p className="sub anim d3">One little QR code on each table. Guests scan, upload the moments they captured, and your whole shared wedding photo gallery fills itself—no apps, no chasing, one flat $49.</p>
+              <p className="sub anim d3">One little QR code on each table. Guests scan, upload the moments they captured, and your whole shared photo gallery fills itself—no apps, no chasing, one flat $49.</p>
               <div className="actions anim d4">
                 <Link className="btn btn--accent" href="/wedding-photo-qr-code">How it works</Link>
               </div>
@@ -128,17 +137,17 @@ export default function Slider() {
       <noscript>
         <div className="noscript-content">
           <section>
-            <h2>Your wedding, in one beautiful place.</h2>
-            <p>Send a digital wedding invitation guests will adore, collect every shared photo with a single QR code, and—soon—book the people who make the day.</p>
-            <p><Link href="/digital-wedding-invitation">Create your digital wedding invitation</Link> · <Link href="/wedding-photo-qr-code">Guest Photo QR</Link></p>
+            <h2>Your day, in one beautiful place.</h2>
+            <p>Send a digital invitation guests will adore—for weddings, engagements, Kateb Kteb, baptisms, birthdays, Awwal Erbene and more—and collect every shared photo with a single QR code.</p>
+            <p><Link href="/digital-wedding-invitation">Create your digital invitation</Link> · <Link href="/wedding-photo-qr-code">Guest Photo QR</Link></p>
           </section>
           <section>
-            <h2>Digital Wedding Invitation — $99</h2>
-            <p>One-time payment, unlimited invitees, RSVP management, custom guest links, location with map, and music.</p>
+            <h2>Digital Invitation — $99</h2>
+            <p>One-time payment, unlimited invitees, RSVP management, custom guest links, location with map, and music — for any occasion.</p>
           </section>
           <section>
             <h2>Guest Photo QR — $49</h2>
-            <p>One QR code per table. Guests scan, upload their photos, and your shared wedding gallery fills itself — no apps, no chasing. A one-time $49.</p>
+            <p>One QR code per table. Guests scan, upload their photos, and your shared gallery fills itself — no apps, no chasing. A one-time $49.</p>
           </section>
         </div>
       </noscript>

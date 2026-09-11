@@ -19,36 +19,39 @@ const sans = Jost({
 });
 
 const SITE_URL = 'https://mywedding.events';
-const SITE_NAME = 'mywedding.events';
+const SITE_NAME = 'My Day';
 const OG_IMAGE = '/images/digital-wedding-invitation-phone-mockup.png';
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Digital Wedding Invitations with RSVP & Photo QR — $99 | mywedding.events',
-    template: '%s | mywedding.events',
+    default: 'My Day — Digital Invitations with RSVP & Guest Photo QR for Every Occasion',
+    template: '%s | My Day',
   },
   description:
-    'Send a beautiful digital wedding invitation guests will adore. One-time $99, unlimited invitees, RSVP management, and custom guest links, plus a Guest Photo QR available separately for $49.',
+    'My Day creates beautiful digital invitations for weddings, engagements, Kateb Kteb, baptisms, birthdays, Awwal Erbene and more. One-time $99, unlimited invitees, RSVP management and custom guest links, plus a Guest Photo QR available separately for $49.',
   keywords: [
-    'digital wedding invitation',
-    'digital wedding invitations',
-    'online wedding invitation',
-    'electronic wedding invitation',
-    'e-invite wedding',
-    'wedding invitation website',
-    'paperless wedding invitation',
-    'custom digital wedding invitation',
-    'wedding RSVP management',
-    'wedding guest photo QR',
-    'modern wedding invitation',
-    'wedding invite online',
+    'digital invitation',
+    'digital invitations',
+    'online invitation',
+    'e-invite',
+    'wedding invitation',
+    'engagement invitation',
+    'Kateb Kteb invitation',
+    'baptism invitation',
+    'birthday invitation',
+    'Awwal Erbene invitation',
+    'invitation with RSVP',
+    'custom digital invitation',
+    'guest photo QR',
+    'invitation website',
+    'paperless invitation',
   ],
   applicationName: SITE_NAME,
   authors: [{ name: SITE_NAME, url: SITE_URL }],
   creator: SITE_NAME,
   publisher: SITE_NAME,
-  category: 'Weddings',
+  category: 'Events',
   alternates: {
     canonical: '/',
   },
@@ -56,24 +59,24 @@ export const metadata = {
     type: 'website',
     siteName: SITE_NAME,
     url: SITE_URL,
-    title: 'Digital Wedding Invitations with RSVP & Photo QR — $99',
+    title: 'My Day — Digital Invitations for Every Occasion',
     description:
-      'A beautifully crafted digital wedding invitation tailored to your story. Unlimited invitees and RSVP management for one fair $99, with a Guest Photo QR available separately for $49.',
+      'Beautifully crafted digital invitations for weddings, engagements, Kateb Kteb, baptisms, birthdays, Awwal Erbene and more. Unlimited invitees and RSVP management for one fair $99, with a Guest Photo QR available separately for $49.',
     images: [
       {
         url: OG_IMAGE,
         width: 1200,
         height: 630,
-        alt: 'A digital wedding invitation shown on a phone held in hand',
+        alt: 'A digital invitation shown on a phone held in hand',
       },
     ],
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Digital Wedding Invitations with RSVP & Photo QR — $99',
+    title: 'My Day — Digital Invitations for Every Occasion',
     description:
-      'Send a beautiful digital wedding invitation. One-time $99, unlimited invitees, RSVP management. Guest Photo QR available for $49.',
+      'Beautiful digital invitations for weddings, engagements, baptisms, birthdays and more. One-time $99, unlimited invitees, RSVP management. Guest Photo QR available for $49.',
     images: [OG_IMAGE],
   },
   robots: {
@@ -115,7 +118,7 @@ const organizationJsonLd = {
   logo: `${SITE_URL}/icon.svg`,
   sameAs: [],
   description:
-    'Beautiful digital wedding invitations with RSVP management, plus a Guest Photo QR available separately for $49.',
+    'Beautiful digital invitations for weddings, engagements, Kateb Kteb, baptisms, birthdays, Awwal Erbene and more, with RSVP management, plus a Guest Photo QR available separately for $49.',
   contactPoint: [
     {
       '@type': 'ContactPoint',

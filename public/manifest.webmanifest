@@ -1,7 +1,7 @@
 {
-  "name": "mywedding.events — Digital Wedding Invitations",
-  "short_name": "mywedding.events",
-  "description": "Beautiful digital wedding invitations with RSVP management for a one-time $99, unlimited invitees. Guest Photo QR available separately for $49.",
+  "name": "My Day — Digital Invitations for Every Occasion",
+  "short_name": "My Day",
+  "description": "Beautiful digital invitations for weddings, engagements, baptisms, birthdays and more, with RSVP management for a one-time $99, unlimited invitees. Guest Photo QR available separately for $49.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

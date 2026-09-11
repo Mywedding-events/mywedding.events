@@ -3,26 +3,26 @@ import Header from '@/components/Header';
 import Slider from '@/components/Slider';
 
 export const metadata = {
-  title: 'Digital Wedding Invitations with RSVP & Photo QR — $99',
+  title: 'My Day — Digital Invitations with RSVP & Guest Photo QR',
   description:
-    'Create a beautiful digital wedding invitation with RSVP tracking and custom guest links for a one-time $99, plus a Guest Photo QR available separately for $49.',
+    'Create a beautiful digital invitation for any occasion — weddings, engagements, Kateb Kteb, baptisms, birthdays, Awwal Erbene and more — with RSVP tracking and custom guest links for a one-time $99, plus a Guest Photo QR available separately for $49.',
   alternates: { canonical: '/' },
   openGraph: {
     url: '/',
-    title: 'Digital Wedding Invitations with RSVP & Photo QR — $99',
+    title: 'My Day — Digital Invitations for Every Occasion',
     description:
-      'Beautiful digital wedding invitations with RSVP tracking and custom guest links for a one-time $99, plus a Guest Photo QR available separately for $49.',
+      'Beautiful digital invitations for weddings, engagements, baptisms, birthdays and more, with RSVP tracking and custom guest links for a one-time $99, plus a Guest Photo QR available separately for $49.',
   },
 };
 
 const homeJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Product',
-  name: 'Digital Wedding Invitation',
+  name: 'Digital Invitation',
   description:
-    'A beautifully crafted digital wedding invitation tailored to your story. Includes RSVP management, custom guest links, music, and location with map.',
-  brand: { '@type': 'Brand', name: 'mywedding.events' },
-  category: 'Wedding Invitations',
+    'A beautifully crafted digital invitation tailored to your occasion — weddings, engagements, Kateb Kteb, baptisms, birthdays, Awwal Erbene and more. Includes RSVP management, custom guest links, music, and location with map.',
+  brand: { '@type': 'Brand', name: 'My Day' },
+  category: 'Invitations',
   image: 'https://mywedding.events/images/digital-wedding-invitation-phone-mockup.png',
   offers: {
     '@type': 'Offer',
@@ -37,11 +37,11 @@ const homeJsonLd = {
 const serviceJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
-  serviceType: 'Digital Wedding Invitation Design',
-  provider: { '@type': 'Organization', name: 'mywedding.events', url: 'https://mywedding.events' },
+  serviceType: 'Digital Invitation Design',
+  provider: { '@type': 'Organization', name: 'My Day', url: 'https://mywedding.events' },
   areaServed: 'Worldwide',
   description:
-    'Custom-designed digital wedding invitations with RSVP management, custom guest links, location with map, and music, plus an optional Guest Photo QR for collecting every guest photo.',
+    'Custom-designed digital invitations for every occasion with RSVP management, custom guest links, location with map, and music, plus an optional Guest Photo QR for collecting every guest photo.',
   offers: {
     '@type': 'Offer',
     price: '99',
@@ -55,13 +55,15 @@ export default function HomePage() {
     <div className="home" data-screen-label="Home">
       <Header centered withBrand={false} />
       <h1 className="visually-hidden">
-        Digital Wedding Invitations with RSVP. Beautifully crafted, fully customized, one-time $99
+        My Day — Digital Invitations with RSVP for Every Occasion. Beautifully crafted, fully
+        customized, one-time $99
       </h1>
       <p className="visually-hidden">
-        mywedding.events creates beautiful digital wedding invitations with RSVP management,
-        custom guest links, location and map, and music for a one-time $99, unlimited invitees,
-        no subscriptions. Add the Guest Photo QR — which collects every guest&apos;s photos into
-        one shared wedding gallery — for a one-time $49.
+        My Day creates beautiful digital invitations for weddings, engagements, Kateb Kteb,
+        baptisms, birthdays, Awwal Erbene and more, with RSVP management, custom guest links,
+        location and map, and music for a one-time $99, unlimited invitees, no subscriptions.
+        Add the Guest Photo QR — which collects every guest&apos;s photos into one shared
+        gallery — for a one-time $49.
       </p>
       <Slider />
       <script

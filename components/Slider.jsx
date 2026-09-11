@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 
-const TOTAL = 4;
+const TOTAL = 3;
 
 export default function Slider() {
   const [i, setI] = useState(0);
@@ -120,29 +120,6 @@ export default function Slider() {
           </div>
           <div className="slide__media">
             <img className="ph-img" style={{ objectPosition: '45% 46%' }} src="/images/wedding-guest-photo-qr-code.png" alt="A wedding guest scanning a 'Capture the Love' table card QR code to upload photos to a shared gallery" width="1136" height="1385" loading="lazy" decoding="async" />
-          </div>
-        </section>
-
-        <section className={slideClass(3) + ' trio-slide'} data-screen-label="Slide 04 — Coming Soon">
-          <div className="trio-wrap">
-            <div className="trio-head">
-              <p className="eyebrow anim d1">On the way</p>
-              <h2 className="lead anim d2">The people who make <em>the day</em>.</h2>
-            </div>
-            <div className="trio">
-              <article className="trio-card anim d3">
-                <div className="ph"><img className="ph-fill" src="/images/wedding-photographer.png" alt="Wedding photographer capturing a couple at golden hour" width="1500" height="1200" loading="lazy" decoding="async" /></div>
-                <div className="trio-meta"><h3>Photographers</h3><span className="tag">Coming Soon</span></div>
-              </article>
-              <article className="trio-card anim d3">
-                <div className="ph"><img className="ph-fill" src="/images/wedding-reception-restaurant.png" alt="Elegant wedding reception table setting at a restaurant venue" width="1402" height="1122" loading="lazy" decoding="async" /></div>
-                <div className="trio-meta"><h3>Restaurants</h3><span className="tag">Coming Soon</span></div>
-              </article>
-              <article className="trio-card anim d4">
-                <div className="ph"><img className="ph-fill" style={{ objectPosition: '72% center' }} src="/images/wedding-musicians.png" alt="A wedding singer performing amid candles and white roses" width="1402" height="1122" loading="lazy" decoding="async" /></div>
-                <div className="trio-meta"><h3>Musicians</h3><span className="tag">Coming Soon</span></div>
-              </article>
-            </div>
           </div>
         </section>
 

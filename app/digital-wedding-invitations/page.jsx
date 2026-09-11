@@ -27,7 +27,7 @@ const sections = [
     heading: 'A wedding invitation that does more than a printed card',
     paragraphs: [
       'A printed card looks beautiful on the table, but it cannot update itself, gather replies, or remember who is bringing a plus-one. A digital wedding invitation keeps the elegance of a custom design and adds the practical tools that planning a wedding actually needs.',
-      'Everything your guests need — the story, the schedule, the venue, the music, and the RSVP — lives behind one link they can open on any phone, with nothing to download.',
+      'Everything your guests need, the story, the schedule, the venue, the music, and the RSVP, lives behind one link they can open on any phone, with nothing to download.',
     ],
     items: null,
   },
@@ -36,7 +36,7 @@ const sections = [
     heading: 'From your wedding details to a link you can share',
     paragraphs: [
       'You send us your wedding information, design direction, venue, and any guest questions you want to ask. We assemble it into a polished invitation that reads beautifully on phones and desktops alike.',
-      'When it is ready, you share the link however you like — WhatsApp, email, or a printed insert with a QR code. Guests open it, view the details, and RSVP in a couple of taps.',
+      'When it is ready, you share the link however you like, WhatsApp, email, or a printed insert with a QR code. Guests open it, view the details, and RSVP in a couple of taps.',
     ],
     items: null,
   },
@@ -44,7 +44,7 @@ const sections = [
     eyebrow: 'One fair price',
     heading: 'Everything included for a one-time $99',
     paragraphs: [
-      'There are no monthly fees and no charge per guest. Invite fifty people or five hundred — the price never moves, and the Guest Photo QR can be added for a one-time $49.',
+      'There are no monthly fees and no charge per guest. Invite fifty people or five hundred, the price never moves, and the Guest Photo QR can be added for a one-time $49.',
       'When you are ready, message us on WhatsApp with your wedding details and we will start your custom design.',
     ],
     items: null,
@@ -52,7 +52,7 @@ const sections = [
 ];
 
 const faqs = [
-  { question: 'What is a digital wedding invitation?', answer: 'It is a custom invitation page guests open from a link on any phone or computer. It holds your wedding details, venue map, music, and an RSVP form — no app or printing required.' },
+  { question: 'What is a digital wedding invitation?', answer: 'It is a custom invitation page guests open from a link on any phone or computer. It holds your wedding details, venue map, music, and an RSVP form, no app or printing required.' },
   { question: 'How much does it cost?', answer: 'A one-time $99. There are no subscriptions and no per-guest charges, no matter how many people you invite.' },
   { question: 'Can the design match our wedding style?', answer: 'Yes. Each invitation is customized around your colors, fonts, wording, photos, music, and venue details.' },
   { question: 'Do our guests need to install anything?', answer: 'No. The invitation, RSVP form, and photo upload all open directly in the browser.' },
@@ -65,7 +65,7 @@ export default function Page() {
     <SeoLandingPage
       eyebrow='Digital Wedding Invitations'
       title='Digital wedding invitations designed for modern couples'
-      intro='Create an elegant digital wedding invitation with RSVP, custom guest links, maps, and music for one simple price — and add the $49 wedding photo QR code whenever you like.'
+      intro='Create an elegant digital wedding invitation with RSVP, custom guest links, maps, and music for one simple price, and add the $49 wedding photo QR code whenever you like.'
       heroImage='/images/digital-wedding-invitation-phone-mockup.png'
       heroImageAlt='An elegant digital wedding invitation shown on a phone with RSVP and venue details'
       highlights={highlights}

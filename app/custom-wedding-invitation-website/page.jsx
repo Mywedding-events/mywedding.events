@@ -26,7 +26,7 @@ const sections = [
     eyebrow: 'More than a card',
     heading: 'One website that holds your whole wedding',
     paragraphs: [
-      'A custom wedding invitation website gives every part of your day a home: your story, the timeline, the ceremony and reception venues, what to wear, and how to reply — all in one calm, scrollable place.',
+      'A custom wedding invitation website gives every part of your day a home: your story, the timeline, the ceremony and reception venues, what to wear, and how to reply, all in one calm, scrollable place.',
       'Instead of squeezing details onto a card or scattering them across messages, you hand guests a single link that answers their questions before they ask.',
     ],
     items: null,
@@ -36,7 +36,7 @@ const sections = [
     heading: 'Designed around your wedding, not a stock template',
     paragraphs: [
       'This is not a drag-and-drop builder that ends up looking like everyone else’s. We design the site around your colors, typography, photos, and tone so it feels unmistakably yours.',
-      'You tell us what matters — the story, the schedule, the dress code, the playlist — and we shape it into one cohesive experience.',
+      'You tell us what matters, the story, the schedule, the dress code, the playlist, and we shape it into one cohesive experience.',
     ],
     items: null,
   },
@@ -44,7 +44,7 @@ const sections = [
     eyebrow: 'One fair price',
     heading: 'Your wedding website for a one-time $99',
     paragraphs: [
-      'Everything — the design, the RSVP, the venue maps, and the guest links — is included in a single $99 payment with no per-guest fees, and the Guest Photo QR can be added for a one-time $49.',
+      'Everything, the design, the RSVP, the venue maps, and the guest links, is included in a single $99 payment with no per-guest fees, and the Guest Photo QR can be added for a one-time $49.',
       'Message us on WhatsApp with your details and we will start building your wedding website.',
     ],
     items: null,
@@ -52,7 +52,7 @@ const sections = [
 ];
 
 const faqs = [
-  { question: 'What can the wedding website include?', answer: 'Your story, the day’s schedule, ceremony and reception venues with maps, dress code, music, and an RSVP form — all in one place, with an optional $49 Guest Photo QR.' },
+  { question: 'What can the wedding website include?', answer: 'Your story, the day’s schedule, ceremony and reception venues with maps, dress code, music, and an RSVP form, all in one place, with an optional $49 Guest Photo QR.' },
   { question: 'Is it really custom-designed?', answer: 'Yes. The site is designed around your wedding colors, fonts, wording, photos, and tone rather than a fixed template.' },
   { question: 'Can it cover two venues?', answer: 'Yes. You can show separate ceremony and reception locations, each with its own address and tap-to-open map.' },
   { question: 'Do guests need an app or login?', answer: 'No. The whole site, including RSVP and photo upload, opens in any browser.' },

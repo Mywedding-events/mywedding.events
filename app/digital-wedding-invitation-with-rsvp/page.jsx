@@ -26,8 +26,8 @@ const sections = [
     eyebrow: 'One experience',
     heading: 'The invitation and the RSVP live in the same place',
     paragraphs: [
-      'When the invitation and the reply form are separate, guests read the details in one place and then have to hunt for a form somewhere else — and some never make it back. Here, both live behind one link.',
-      'A guest opens your invitation, reads the story and details, opens the venue map, and replies — all without leaving the page or switching to another tool.',
+      'When the invitation and the reply form are separate, guests read the details in one place and then have to hunt for a form somewhere else, and some never make it back. Here, both live behind one link.',
+      'A guest opens your invitation, reads the story and details, opens the venue map, and replies, all without leaving the page or switching to another tool.',
     ],
     items: null,
   },
@@ -44,7 +44,7 @@ const sections = [
     eyebrow: 'One fair price',
     heading: 'Invitation and RSVP for a one-time $99',
     paragraphs: [
-      'RSVP is not a separate add-on — it is part of the same $99 invitation, with unlimited guests and no per-guest fees. The Guest Photo QR can be added for a one-time $49.',
+      'RSVP is not a separate add-on, it is part of the same $99 invitation, with unlimited guests and no per-guest fees. The Guest Photo QR can be added for a one-time $49.',
       'Message us on WhatsApp with your details and the questions you want to ask, and we will set it up.',
     ],
     items: null,
@@ -52,7 +52,7 @@ const sections = [
 ];
 
 const faqs = [
-  { question: 'How do guests RSVP from the invitation?', answer: 'The RSVP form is built into the invitation. Guests open their personal link, read the details, and reply on the same page — no separate form or app.' },
+  { question: 'How do guests RSVP from the invitation?', answer: 'The RSVP form is built into the invitation. Guests open their personal link, read the details, and reply on the same page, no separate form or app.' },
   { question: 'Will replies be tied to each guest?', answer: 'Yes. Personalized links record each reply against the right name, including plus-ones and any questions you set.' },
   { question: 'Do I get notified of replies?', answer: 'Yes. You receive an email notification after each RSVP, and responses are organized in one place.' },
   { question: 'Can I ask meal or dietary questions?', answer: 'Yes. You can add custom RSVP questions such as meal preference, dietary needs, or song requests.' },
@@ -72,7 +72,7 @@ export default function Page() {
       highlightsTitle='Invitation and RSVP, working together'
       sections={sections}
       faqs={faqs}
-      faqLead='The invitation and RSVP are one experience — included together in your custom digital invitation.'
+      faqLead='The invitation and RSVP are one experience, included together in your custom digital invitation.'
     />
   );
 }

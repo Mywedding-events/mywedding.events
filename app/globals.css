@@ -16,7 +16,7 @@
 }
 
 /* ============================================================
-   My Day — shared elegant design system
+   My Day, shared elegant design system
    Editorial-luxe · warm neutrals · serif + geometric sans
    ============================================================ */
 
@@ -34,7 +34,7 @@
   --accent-d: oklch(0.50 0.066 72);
   --accent-t: oklch(0.60 0.066 72 / 0.12);
 
-  /* Type — loaded via next/font in app/layout.jsx */
+  /* Type, loaded via next/font in app/layout.jsx */
   --serif: var(--font-serif), 'Cormorant Garamond', Georgia, serif;
   --sans:  var(--font-sans), 'Jost', system-ui, sans-serif;
 

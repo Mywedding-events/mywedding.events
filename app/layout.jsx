@@ -25,7 +25,7 @@ const OG_IMAGE = '/images/digital-wedding-invitation-phone-mockup.png';
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'My Day: Digital Invitations with RSVP & Guest Photo QR for Every Occasion',
+    default: 'Digital Invitations with RSVP & Guest Photo QR for Every Occasion',
     template: '%s | My Day',
   },
   description:

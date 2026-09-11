@@ -92,10 +92,10 @@ export const metadata = {
   },
   icons: {
     icon: [
-      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/images/fav_icon.png', type: 'image/png', sizes: '40x40' },
     ],
-    shortcut: '/icon.svg',
-    apple: '/icon.svg',
+    shortcut: '/images/fav_icon.png',
+    apple: '/images/fav_icon.png',
   },
   manifest: '/manifest.webmanifest',
   formatDetection: {
